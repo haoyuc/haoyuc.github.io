@@ -4,9 +4,9 @@ layout: base
 
 <div class="portfolio">
   {% for post in paginator.posts %}
-    <a href="{{ post.url | prepend: site.baseurl }}" class="portfolio-item">
+    <div  class="portfolio-item">
       <div>
-        <h1 class="portfolio-title">{{ post.title }}</h1>
+        <h1 class="portfolio-title"><a href="{{ post.url | prepend: site.baseurl }}"  style="color:#000">{{ post.title }}</a></h1>
         <div class="portfolio-line"></div>
 
         <div class="portfolio-content"> 
@@ -15,7 +15,22 @@ layout: base
           </span>
           </br>
           <span class="portfolio-icon">
-              <i class="fa fa-tags"></i><span class="portfolio-icon-text">{{ post.tech }}</span>
+              <i class="fa fa-tags"></i><span class="portfolio-icon-text">{{ post.tech }} &emsp; </span>
+
+
+                {% if post.pdfurl %}
+                      <a href="{{ post.pdfurl }}" >  &nbsp; [PDF]</a>
+                 {% endif %}
+                {% if post.codeurl %}
+                      <a href="{{ post.codeurl }}" >   &nbsp; [Code]</a>
+                 {% endif %}
+                {% if post.projecturl %}
+                      <a href="{{ post.projecturl }}" >  &nbsp; [Project]</a>
+                 {% endif %}
+
+
+
+
           </span>
           </br>
         <!--   <span class="portfolio-icon">
@@ -27,10 +42,12 @@ layout: base
             <img src={{ post.imgurl }} style="max-width:37%;max-height:180px;min-width:180px;margin-right: 5%;float:left;">
             <p style="font-size: 13px;">{{ post.text }}</p>
           </div>
-
+                         <!--  {% if post.pdfurl %}
+                      <a href="{{ post.pdfurl }}" >[PDF]</a>
+                 {% endif %} -->
 
       </div>
-    </a>
+    </div>
     </br>
   {% endfor %}
 </div>
