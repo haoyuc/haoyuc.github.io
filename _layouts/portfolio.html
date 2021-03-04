@@ -6,7 +6,7 @@ layout: base
   {% for post in paginator.posts %}
     <div  class="portfolio-item">
       <div>
-        <h1 class="portfolio-title"><a href="{{ post.url | prepend: site.baseurl }}"  style="color:#000">{{ post.title }}</a></h1>
+        <h1 class="portfolio-title">{{ post.title }}</h1>
         <div class="portfolio-line"></div>
 
         <div class="portfolio-content"> 
@@ -19,13 +19,13 @@ layout: base
 
 
                 {% if post.pdfurl %}
-                      <a href="{{ post.pdfurl }}" >  &nbsp; [PDF]</a>
+                      <a href="{{ post.pdfurl }}"  style="color:#478ac9 !important;font-family: 'Open Sans', sans-serif;">  &nbsp; <strong>[PDF]</strong></a>
                  {% endif %}
                 {% if post.codeurl %}
-                      <a href="{{ post.codeurl }}" >   &nbsp; [Code]</a>
+                      <a href="{{ post.codeurl }}"  style="color:#478ac9 !important;font-family: 'Open Sans', sans-serif;">   &nbsp; <strong>[Code]</strong></a>
                  {% endif %}
                 {% if post.projecturl %}
-                      <a href="{{ post.projecturl }}" >  &nbsp; [Project]</a>
+                      <a href="{{ post.projecturl }}"  style="color:#478ac9 !important;font-family: 'Open Sans', sans-serif;">  &nbsp; <strong>[Project]</strong></a>
                  {% endif %}
 
 

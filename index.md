@@ -9,21 +9,21 @@ I am an undergraduate student in the School of Science and Engineering, The Chin
 <br/>
 
 # Career
-* AWS Shanghai AI Lab (2020/05 ~ 2020/11)
+* **AWS Shanghai AI Lab** (2020/05 ~ 2020/11)
   * Software Develop Engineer Intern
 
-* Shenzhen Research Institute of Big Data (2019/06 ~ )
+* **Shenzhen Research Institute of Big Data** (2019/06 ~ )
   * Research Assistant
 
-* Institute of Automation Chinese Academy of Sciences (2018/08 ~ 2018/09)
+* **Institute of Automation Chinese Academy of Sciences** (2018/08 ~ 2018/09)
   * Research Assistant
 
 <br/>
 
 # Awards
 
-* 1st place, IEEE ICDM 2018 global AI challenge on meteorology
-* 4th place, ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution
+* **1st place**, IEEE ICDM 2018 global AI challenge on meteorology
+* **4th place**, ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution
 
 
 <br/>
