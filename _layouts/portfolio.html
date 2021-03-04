@@ -11,17 +11,24 @@ layout: base
 
         <div class="portfolio-content"> 
           <span class="portfolio-icon">
-              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text">[{{ post.type }}] {{ post.info }}</span>
+              <i class="fa fa-sticky-note"></i><span class="portfolio-icon-text"><strong>[{{ post.type }}]</strong> {{ post.info }}</span>
           </span>
           </br>
           <span class="portfolio-icon">
-              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">{{ post.date | date: "%B %d, %Y" }}</span>
+              <i class="fa fa-tags"></i><span class="portfolio-icon-text">{{ post.tech }}</span>
           </span>
           </br>
-          <span class="portfolio-icon">
-              <i class="fa fa-cog"></i><span class="portfolio-icon-text">{{ post.tech }}</span>
-          </span>
+        <!--   <span class="portfolio-icon">
+              <i class="fa fa-calendar-alt"></i><span class="portfolio-icon-text">{{ post.date | date: "%Y" }}</span>
+          </span>   -->        
         </div>
+
+        <div id="content">
+            <img src={{ post.imgurl }} style="max-width:37%;max-height:180px;min-width:180px;margin-right: 5%;float:left;">
+            <p style="font-size: 13px;">{{ post.text }}</p>
+          </div>
+
+
       </div>
     </a>
     </br>
