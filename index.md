@@ -2,6 +2,8 @@
 layout: about 
 ---
 
+<br/>
+
 # Bio
 
 I am an undergraduate student in the School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen (CUHKSZ). Mainly intrest in computer vision and image processing.
@@ -30,10 +32,17 @@ I am an undergraduate student in the School of Science and Engineering, The Chin
 
 # Publications
 
-- PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration
-	- (ECCV 2020) - Jinjin Gu, Haoming Cai, **Haoyu Chen**, Xiaoxin Ye, Jimmy S.Ren, Chao Dong 
-	- [[Homepage]](https://www.jasongt.com/projectpages/pipal.html)
+> **Attention in Attention Network for Image Super-Resolution**    
+> **Haoyu Chen**, Jinjin Gu, Zhi Zhang    
+> [[PDF]](https://arxiv.org/abs/2104.09497)[[Code]](https://github.com/haoyuc/A2N)
 
-- Super Resolution Perception of Industrial Sensor Data
-	- (aiXiv) - Jinjin Gu, **Haoyu Chen**, Guolong Liu, Gaoqi Liang, Xinlei Wang, Junhua Zhao 
-	- [[link]](https://arxiv.org/abs/1809.06687)
+
+> **PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration**   
+> Jinjin Gu, Haoming Cai, **Haoyu Chen**, Xiaoxin Ye, Jimmy S.Ren, Chao Dong 
+> European Conference on Computer Vision (**ECCV**), 2020    
+> [[PDF]](https://arxiv.org/pdf/2007.12142)  [[Homepage]](https://www.jasongt.com/projectpages/pipal.html) [[Dataset]](https://competitions.codalab.org/competitions/28050)
+
+
+> **Super Resolution Perception of Industrial Sensor Data**   
+> Jinjin Gu, **Haoyu Chen**, Guolong Liu, Gaoqi Liang, Xinlei Wang, Junhua Zhao   
+> [[PDF]](https://arxiv.org/abs/1809.06687)

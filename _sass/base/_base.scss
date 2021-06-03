@@ -71,6 +71,16 @@ a {
   text-decoration: none;
 }
 
+blockquote a {
+  color: #069;
+  text-decoration: none;
+}
+
+.about strong {
+  color: #252525;
+}
+
+
 blockquote {
   border-left: .25rem solid $grey-2;
   color: $grey-1;

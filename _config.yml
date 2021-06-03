@@ -7,7 +7,7 @@ google_analytics: # Tracking ID, e.g. "UA-000000-01"
 # Author
 author:
   name: Haoyu Chen
-  desc: Hello nice to meet you
+  desc: 
   email: haoyuchen@link.cuhk.edu.cn
   selfie: assets/img/profile.jpg
 
