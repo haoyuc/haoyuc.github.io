@@ -11,14 +11,24 @@ I am an undergraduate student in the School of Science and Engineering, The Chin
 <br/>
 
 # Career
-* **AWS Shanghai AI Lab** &ensp; <font color=gray>( 2020/05 ~ 2020/11 )</font>
+
+- ( 2021.6 ~ present ) **The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
+	*Research Assistant.*   
+- ( 2020.5 ~ 2020.11 ) **AWS Shanghai AI Lab**.   
+	*Software Develop Engineer Intern.*          
+- ( 2019.6 ~ present) **Shenzhen Research Institute of Big Data**.   
+	*Research Assistant.*     
+- ( 2018.8 ~ 2018.9 ) **Institute of Automation Chinese Academy of Sciences**.           
+	*Research Assistant.*      
+
+<!--* **AWS Shanghai AI Lab** &ensp; <font color=gray>( 2020/05 ~ 2020/11 )</font>
   * Software Develop Engineer Intern
 
 * **Shenzhen Research Institute of Big Data** &ensp;<font color=gray>( 2019/06 ~ )</font>
   * Research Assistant
 
 * **Institute of Automation Chinese Academy of Sciences** &ensp;<font color=gray>( 2018/08 ~ 2018/09 )</font>
-  * Research Assistant
+  * Research Assistant-->
 
 <br/>
 
