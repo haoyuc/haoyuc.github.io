@@ -14,6 +14,9 @@ Mainly intrest in computer vision and image processing.
 
 # Research Experience 
 
+- ( 2021.6 ~ present ) **Xiaobing.AI**.   
+	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ)  
+	<p> </p>    
 - ( 2021.6 ~ present ) **The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
 	Research Assistant.  Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)  
 	<p> </p>    
