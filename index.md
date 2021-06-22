@@ -16,16 +16,16 @@ Mainly intrest in computer vision and image processing.
 
 - ( 2021.6 ~ present ) **Xiaobing.AI**.   
 	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ)  
-	<p> </p>    
-- ( 2021.6 ~ present ) **The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
-	Research Assistant.  Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)  
-	<p> </p>    
+	<p> </p>     
 - ( 2020.5 ~ 2020.11 ) **AWS Shanghai AI Lab**.   
 	Software Develop Engineer Intern. Mentor: [Zhi Zhang](https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ)  
-	<p> </p>           
-- ( 2019.6 ~ present) **Shenzhen Research Institute of Big Data**.   
+	<p> </p>        
+- ( 2019.6 ~ present ) **The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
+	Research Assistant.  Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)  
+	<p> </p>   	   
+<!--- ( 2019.6 ~ present) **Shenzhen Research Institute of Big Data**.   
 	Research Assistant.   Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)      
-	<p> </p>       
+	<p> </p>   -->    
 - ( 2018.8 ~ 2018.9 ) **Institute of Automation Chinese Academy of Sciences**.           
 	Research Assistant. Advisor: [Dr. Bo Xu](http://people.ucas.edu.cn/~xubo_casia)      
 	<p> </p> 
