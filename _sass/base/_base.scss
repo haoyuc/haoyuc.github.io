@@ -27,6 +27,7 @@ body {
   color: $default-color;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 html {
@@ -109,4 +110,59 @@ img {
 
 td {
   vertical-align: top;
+}
+
+
+
+
+
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+h1 {
+  margin-bottom: 35px;
+  color: #0f0f0f!important;
+}
+
+.media-left, .media>.pull-left {
+  padding-right: 15px;
+}
+.pull-left {
+  float: left;
+}
+.pull-left {
+  float: left!important;
+}
+
+.media-object {
+  display: block;
+}
+img {
+  vertical-align: middle;
+}
+
+.media-heading {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.media-body, .media-left, .media-right {
+  display: table-cell;
+  vertical-align: top;
+}
+.media-body {
+  width: 10000px;
+}
+.media, .media-body {
+  overflow: hidden;
+  zoom: 1;
+}
+
+.whiteline {
+  margin-bottom: 25px;
 }
