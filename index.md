@@ -6,9 +6,11 @@ layout: about
 
 # Bio
 
-I am an undergraduate student in the School of Science and Engineering, The Chinese University of Hong Kong, Shenzhen (CUHKSZ). 
+I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. 
 
 Mainly intrest in computer vision and image processing.
+
+To know more about me, please refer to my [Publication](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
 
 <hr>
 
@@ -16,7 +18,7 @@ Mainly intrest in computer vision and image processing.
 
 <div class="media">
 	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/cuhksz.jpg" width="50px" height="48px">
+		<img class="media-object" src="../assets/img/cuhksz.png" width="50px" height="48px">
 	</a>
 	<div class="media-body">
 		<p class="media-heading">
@@ -32,7 +34,7 @@ Mainly intrest in computer vision and image processing.
 
 
 
-# Research Experience 
+# Experience 
 
 **Xiaobing.AI**.   
 	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ), ( 2021.6 ~ 2022.2 )
