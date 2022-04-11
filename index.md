@@ -7,6 +7,8 @@ layout: about
 # Bio
 
 I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. 
+  
+I will be a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) in 2022 fall, where I am advised by [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home).
 
 Mainly intrest in computer vision and image processing.
 
@@ -35,6 +37,12 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 
 
 # Experience 
+ 
+**Hong Kong University of Science and Technology (Guangzhou)**     
+	Research Assistant.  Advisor: [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home), ( 2022.4 ~ present )
+
+<p class="whiteline">
+</p>
 
 **Xiaobing.AI**.   
 	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ), ( 2021.6 ~ 2022.2 )
