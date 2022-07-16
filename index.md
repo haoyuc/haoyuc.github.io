@@ -27,7 +27,7 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 			<strong>
 				 Hong Kong University of Science and Technology (Guangzhou)
 		 </strong><br>
-			Ph.D. student, 2022 - .
+			<strong>Ph.D. student</strong>, 2022 - .
 		</p>
 	</div>
 </div>
@@ -96,7 +96,7 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 
 <hr>
 
-# Awards
+<!--# Awards
 
 **IEEE ICDM 2018 global AI challenge on meteorology** 1st place.
 
@@ -105,4 +105,29 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 
 <hr>
 
+
+# Academic Service
+
+**Reviewer:**     
+Winter Conference on Applications of Computer Vision (WACV) 2023
+
+<hr>-->
+
+# Academic Service & Awards
+
+**Competition Awards:**     
+IEEE ICDM 2018 global AI challenge on meteorology, **1st place**.   
+ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th place**.
+
+<p class="whiteline">
+</p>
+
+**Reviewer:**     
+Winter Conference on Applications of Computer Vision (WACV), 2023
+
+<hr>
+
+# Publications
+
+Please refer to my [Publication](https://chenhaoyu.com/portfolio/) or [Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
 
