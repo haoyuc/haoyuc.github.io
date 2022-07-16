@@ -20,6 +20,20 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 
 <div class="media">
 	<a name="fsaf" class="pull-left">
+		<img class="media-object" src="../assets/img/hkust.png" width="50px" height="48px">
+	</a>
+	<div class="media-body">
+		<p class="media-heading">
+			<strong>
+				 Hong Kong University of Science and Technology (Guangzhou)
+		 </strong><br>
+			PhD student, 2022 - .
+		</p>
+	</div>
+</div>
+
+<div class="media">
+	<a name="fsaf" class="pull-left">
 		<img class="media-object" src="../assets/img/cuhksz.png" width="50px" height="48px">
 	</a>
 	<div class="media-body">
