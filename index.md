@@ -10,7 +10,7 @@ I received a Bachelor degree in Computer Science and Engineering at The Chinese 
   
 I will be a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) in 2022 fall, where I am advised by [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home).
 
-Mainly intrest in computer vision and image processing.
+Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 To know more about me, please refer to my [Publication](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
 
@@ -27,7 +27,7 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 			<strong>
 				 Hong Kong University of Science and Technology (Guangzhou)
 		 </strong><br>
-			PhD student, 2022 - .
+			Ph.D. student, 2022 - .
 		</p>
 	</div>
 </div>
