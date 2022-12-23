@@ -6,13 +6,13 @@ layout: about
 
 # Bio
 
-I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. 
-  
-I will be a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) in 2022 fall, where I am advised by [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home).
-
+I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021.    
+I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home).   
 Mainly intrest in computer vision, especially in **Low-level Vision**.
 
-To know more about me, please refer to my [Publication](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
+[Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ) &nbsp;&nbsp;&nbsp;
+[GitHub](https://github.com/haoyuc) &nbsp;&nbsp;&nbsp;
+[Email](mailto:hchen794@connect.hkust-gz.edu.cn)
 
 <hr>
 
@@ -56,11 +56,11 @@ To know more about me, please refer to my [Publication](https://scholar.google.c
 
 # Experience 
  
-**Hong Kong University of Science and Technology (Guangzhou)**     
+<!--**Hong Kong University of Science and Technology (Guangzhou)**     
 	Research Assistant.  Advisor: [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home), ( 2022.4 ~ present )
 
 <p class="whiteline">
-</p>
+</p>-->
 
 **Xiaobing.AI**.   
 	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ), ( 2021.6 ~ 2022.2 )
@@ -122,12 +122,14 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 <p class="whiteline">
 </p>
 
-**Reviewer:**     
-Winter Conference on Applications of Computer Vision (WACV), 2023
+**Program Committee / Reviewer:**     
+Winter Conference on Applications of Computer Vision **(WACV)**, 2023  
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023   
+ACM SIGGRAPH VRCAI, 2022
 
 <hr>
 
 # Publications
 
-Please refer to my [Publication](https://chenhaoyu.com/portfolio/) or [Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
+Please refer to my [Publication](https://haoyuchen.com/portfolio/) or [Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
 
