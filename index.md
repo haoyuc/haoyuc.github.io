@@ -72,7 +72,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <!-- =================================================================================== -->
       <tr>
         <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center">
-          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/empty.jpg" alt="dise">
+          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/mask.jpg" alt="dise">
         </td>
         <td width="75%" valign="center">
           <papertitle>
@@ -81,7 +81,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
            </strong>
          </papertitle>
           <br>
-          <strong>Haoyu Chen</strong>, Jinjin Gu
+          <strong>Haoyu Chen</strong>, Jinjin Gu, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu
           <br>
           <em>IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong></em>, 2023
      <br>
