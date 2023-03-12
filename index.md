@@ -39,7 +39,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 <p> Mainly intrest in computer vision, especially in <strong>Low-level Vision</strong>. </p>
 
-      <p style="text-align:center;margin-bottom:0px;">
+      <p style="margin-bottom:0px;">
         <a href="mailto:hchen794@connect.hkust-gz.edu.cn"> Email </a> &nbsp;/&nbsp;
         <a href="https://scholar.google.com/citations?&user=KWbcBucAAAAJ"> Google Scholar </a> &nbsp;/&nbsp;
         <!-- <a href="https://twitter.com/Wanhua_Ethan_Li">Twitter</a> &nbsp;/&nbsp; -->
@@ -47,7 +47,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       </p>
     </td>
     <td style="padding:5%;width:20%;max-width:20%">
-      <a href="../assets/img/profile2.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile2.jpg" class="hoverZoomLink"></a>
+      <a href="../assets/img/profile2.jpg"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile2.jpg" class="hoverZoomLink"></a>
     </td>
   </tr>
 </tbody>
