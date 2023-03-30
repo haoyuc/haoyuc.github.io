@@ -26,7 +26,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 <tbody>
   <tr style="padding:0px">
-    <td style="width:63%;vertical-align:middle">
+    <td style="width:99%;vertical-align:middle">
       <p style="text-align:left">
         <h1>
           <name>Haoyu Chen</name>
@@ -47,7 +47,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       </p>
     </td>
     <td style="padding:5%;width:20%;max-width:20%">
-      <a href="../assets/img/profile2.jpg"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile2.jpg" class="hoverZoomLink"></a>
+    
+      <!--<a href="../assets/img/profile2.jpg"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile2.jpg" class="hoverZoomLink"></a>-->
+      
     </td>
   </tr>
 </tbody>
@@ -62,8 +64,6 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 # Publications
-
-1 **CVPR** &nbsp;&nbsp; 1 **ECCV** &nbsp;&nbsp; 2 **arXiv**
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
@@ -203,7 +203,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
        </tbody>
 </table>
-       
+
+
+1 **CVPR** &nbsp;&nbsp; 1 **ECCV** &nbsp;&nbsp; 2 **arXiv**
+
 
 # Education
 
