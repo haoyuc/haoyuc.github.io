@@ -205,7 +205,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-1 **CVPR** &nbsp;&nbsp; 1 **ECCV** &nbsp;&nbsp; 2 **arXiv**
+1 ***CVPR*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 2 ***arXiv***
 
 
 # Education
