@@ -81,7 +81,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
            </strong>
          </papertitle>
           <br>
-          <strong>Haoyu Chen</strong>, Jinjin Gu, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu
+          <strong>Haoyu Chen*</strong>, Jinjin Gu*, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu
           <br>
           <em>IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong></em>, 2023
      <br>
