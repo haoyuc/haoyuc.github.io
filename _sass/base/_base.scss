@@ -24,6 +24,47 @@
 
 }
 
+.container {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.image-wrapper {
+  max-width: 30%;
+  display: none;
+}
+
+.text-wrapper {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+td {
+  padding: 5px;
+  vertical-align: top;
+}
+
+@media screen and (min-width: 660px) {
+  .image-wrapper {
+      display: table-cell;
+  }
+
+  .text-wrapper {
+      width: 70%;
+  }
+
+  td {
+    padding: 2px;
+    vertical-align: top;
+  }
+}
+
+
+
 html,
 body {
   color: $default-color;

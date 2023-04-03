@@ -71,10 +71,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
       <!-- =================================================================================== -->
       <tr>
-        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center">
           <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/mask.jpg" alt="dise">
         </td>
-        <td width="75%" valign="center" class="text-wrapper"> 
+        <td width="75%" valign="center">
           <papertitle>
            <strong>
             Masked Image Training for Generalizable Deep Image Denoising
@@ -86,8 +86,8 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
           <em>IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong></em>, 2023
      <br>
           <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-          <a href="https://arxiv.org/abs/2303.13132">[arxiv]</a> 
-          <a href="https://github.com/haoyuc/MaskedDenoising">[Code]</a>
+          <!-- <a href="https://arxiv.org/abs/2104.09497">[arxiv]</a>  -->
+          <!-- <a href="https://github.com/haoyuc/A2N">[Code]</a> -->
           <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
           <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
           <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
@@ -105,10 +105,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
       <!-- =================================================================================== -->
       <tr>
-        <td style="padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+        <td style="padding:5px;width:30%;max-width:30%" align="center">
           <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/AAN.jpg" alt="dise">
         </td>
-        <td width="75%" valign="center"  class="text-wrapper">
+        <td width="75%" valign="center">
           <papertitle>
            <strong>
             Attention in Attention Network for Image Super-Resolution
@@ -139,10 +139,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
       <!-- =================================================================================== -->
       <tr>
-          <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+          <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center">
             <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/PIPAL.jpg" alt="dise">
           </td>
-          <td width="75%" valign="center" class="text-wrapper">
+          <td width="75%" valign="center">
             <papertitle>
              <strong>
               PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration
@@ -172,10 +172,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
    
       <!-- =================================================================================== -->
       <tr>
-           <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+           <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center">
              <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/SRP.jpg" alt="dise">
            </td>
-           <td width="75%" valign="center"  class="text-wrapper">
+           <td width="75%" valign="center">
              <papertitle>
               <strong>
               Super-resolution perception for industrial sensor data
