@@ -26,7 +26,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 <tbody>
   <tr style="padding:0px">
-    <td style="width:99%;vertical-align:middle">
+    <td style="width:70%;vertical-align:middle"  class="text-wrapper">
       <p style="text-align:left">
         <h1>
           <name>Haoyu Chen</name>
@@ -46,9 +46,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
         <a href="https://github.com/haoyuc"> GitHub </a> 
       </p>
     </td>
-    <td style="padding:5%;width:20%;max-width:20%">
+    <td style="padding:5%;width:30%;max-width:30%" class="image-wrapper">
     
-      <!--<a href="../assets/img/profile2.jpg"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile2.jpg" class="hoverZoomLink"></a>-->
+      <a href="../assets/img/profile.png"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile.png" class="hoverZoomLink"></a>
       
     </td>
   </tr>
