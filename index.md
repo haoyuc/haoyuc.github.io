@@ -59,6 +59,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 # News
 
+- **2023-04**: One paper to appear in ICML 2023.
 - **2023-02**: One first author papers to appear in CVPR 2023.  
 - **2022-09**: I am now a Ph.D. student at HKUSTGZ.
 
@@ -67,7 +68,43 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-		
+
+
+      <!-- =================================================================================== -->
+      <tr>
+        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/0.jpg" alt="">
+        </td>
+        <td width="75%" valign="center" class="text-wrapper"> 
+          <papertitle>
+           <strong>
+            Crafting Training Degradation Distribution for the Accuracy-Generalization Trade-off in Real-World Super-Resolution
+           </strong>
+         </papertitle>
+          <br>
+          Ruofan Zhang, Jinjin Gu, <strong> Haoyu Chen </strong>, Chao Dong, Yulun Zhang, Wenming Yang
+          <br>
+          <em>International Conference on Machine Learning <strong>(ICML)</strong></em>, 2023
+     <br>
+          <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
+          <a href="">[arxiv]</a> 
+          <a href="">[Code]</a>
+          <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+          <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+          <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+          <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+     <br>
+          <!-- <p> 
+             We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+          </p> -->
+        </td>
+    </tr>
+    <!-- =================================================================================== -->
+   
+    
+    
+
+    		
 
       <!-- =================================================================================== -->
       <tr>
@@ -205,7 +242,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-1 ***CVPR*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 2 ***arXiv***
+1 ***CVPR*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 2 ***arXiv***
 
 
 # Education
