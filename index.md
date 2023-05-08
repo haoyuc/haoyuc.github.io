@@ -263,9 +263,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 	</div>
 </div>
 
-<!--<p class="whiteline">
-</p>
--->
+
 
 <div class="media">
 	<a name="fsaf" class="pull-left">
@@ -285,62 +283,29 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 # Experience 
- 
-<!--**Hong Kong University of Science and Technology (Guangzhou)**     
-	Research Assistant.  Advisor: [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home), ( 2022.4 ~ present )
 
-<p class="whiteline">
-</p>-->
 
 **Xiaobing.AI**.   
 	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ), ( 2021.6 ~ 2022.2 )
 
-<!--<p class="whiteline">
-</p>-->
+
 
 **AWS Shanghai AI Lab**.   
 	Software Develop Engineer Intern. Mentor: [Zhi Zhang](https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ), ( 2020.5 ~ 2020.11 )   
 
-<!--<p class="whiteline">
-</p>
--->
+
 **The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
 	Research Assistant.  Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html), ( 2019.6 ~ 2021 )   
 
-<!--<p class="whiteline">
-</p>-->
 
 **Institute of Automation Chinese Academy of Sciences**.           
 	Research Assistant. Advisor: [Dr. Bo Xu](http://people.ucas.edu.cn/~xubo_casia), ( 2018.8 ~ 2018.9 )       
 
 
-<!--* **AWS Shanghai AI Lab** &ensp; <font color=gray>( 2020/05 ~ 2020/11 )</font>
-  * Software Develop Engineer Intern
-
-* **Shenzhen Research Institute of Big Data** &ensp;<font color=gray>( 2019/06 ~ )</font>
-  * Research Assistant
-
-* **Institute of Automation Chinese Academy of Sciences** &ensp;<font color=gray>( 2018/08 ~ 2018/09 )</font>
-  * Research Assistant-->
 
 
 
 
-<!--# Awards
-
-**IEEE ICDM 2018 global AI challenge on meteorology** 1st place.
-
-**ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution** 4th place.
-
-
-
-
-# Academic Service
-
-**Reviewer:**     
-Winter Conference on Applications of Computer Vision (WACV) 2023
-
-<hr>-->
 
 # Academic Service & Awards
 
@@ -351,10 +316,11 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 <p class="whiteline">
 </p>
 
-**Program Committee / Reviewer:**     
-Winter Conference on Applications of Computer Vision **(WACV)**, 2023  
-ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023   
-ACM SIGGRAPH VRCAI, 2022
+**Program Committee / Reviewer:**  
+ACM Multimedia **(ACM MM)**, 2023      
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
+Winter Conference on Applications of Computer Vision **(WACV)**, 2023    
+ACM SIGGRAPH VRCAI, 2022   
 
 
 <!--# Publications
