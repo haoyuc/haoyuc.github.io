@@ -48,7 +48,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     </td>
     <td style="padding:5%;width:30%;max-width:30%" class="image-wrapper">
     
-      <a href="../assets/img/profile.png"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile.JPG" class="hoverZoomLink"></a>
+      <a href="../assets/img/profile.jpg"><img style="margin-top:50px;width:100%;max-width:100%" alt="profile photo" src="../assets/img/profile.jpg" class="hoverZoomLink"></a>
       
     </td>
   </tr>
