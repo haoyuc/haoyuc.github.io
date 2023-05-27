@@ -319,7 +319,7 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 **Program Committee / Reviewer:**  
 ACM Multimedia **(ACM MM)**, 2023      
 ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
-Winter Conference on Applications of Computer Vision **(WACV)**, 2023    
+Winter Conference on Applications of Computer Vision **(WACV)**, 2023, 2024    
 ACM SIGGRAPH VRCAI, 2022   
 
 
