@@ -84,7 +84,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
            </strong>
          </papertitle>
           <br>
-          <strong> Haoyu Chen </strong>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
+          <strong> Haoyu Chen</strong>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
           <br>
           <em>International Conference on Computer Vision <strong>(ICCV)</strong></em>, 2023
      <br>
