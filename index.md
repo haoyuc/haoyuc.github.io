@@ -59,6 +59,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 # News
 
+- **2023-07**: Three paper to appear in ACM MM 2023.
 - **2023-07**: One first author papers to appear in ICCV 2023.
 - **2023-04**: One paper to appear in ICML 2023.
 - **2023-02**: One first author papers to appear in CVPR 2023.  
@@ -75,6 +76,107 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <!-- =================================================================================== -->
       <tr>
         <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/mm1.jpg" alt="">
+        </td>
+        <td width="75%" valign="center" class="text-wrapper"> 
+          <papertitle>
+           <strong>
+            Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos
+           </strong>
+         </papertitle>
+          <br>
+          Hongtao Wu, Yijun Yang, <strong>Haoyu Chen</strong>, Jingjing Ren, Lei Zhu
+          <br>
+          <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023
+     <br>
+          <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
+          <a href="">[arxiv]</a> 
+          <a href="">[Code]</a>
+          <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+          <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+          <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+          <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+     <br>
+          <!-- <p> 
+             We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+          </p> -->
+        </td>
+    </tr>
+    <!-- =================================================================================== -->
+   
+        
+
+      <!-- =================================================================================== -->
+      <tr>
+        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/mm2.jpg" alt="">
+        </td>
+        <td width="75%" valign="center" class="text-wrapper"> 
+          <papertitle>
+           <strong>
+            Uncertainty-Driven Dynamic Degradation Perceiving and Background Modeling for Efficient Single Image Desnowing
+           </strong>
+         </papertitle>
+          <br>
+          SiXiang Chen*, Tian Ye*, Chenghao Xue, <strong>Haoyu Chen</strong>, Yun Liu, Erkang Chen, Lei Zhu
+          <br>
+          <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023
+     <br>
+          <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
+          <a href="">[arxiv]</a> 
+          <a href="">[Code]</a>
+          <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+          <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+          <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+          <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+     <br>
+          <!-- <p> 
+             We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+          </p> -->
+        </td>
+    </tr>
+    <!-- =================================================================================== -->
+   
+
+
+    
+
+      <!-- =================================================================================== -->
+      <tr>
+        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/mm3.jpg" alt="">
+        </td>
+        <td width="75%" valign="center" class="text-wrapper"> 
+          <papertitle>
+           <strong>
+            Cross-scale Prototype Learning Transformer for Image Snow Removal
+           </strong>
+         </papertitle>
+          <br>
+          SiXiang Chen*, Tian Ye*, Yun Liu, Jinbin Bai, <strong>Haoyu Chen</strong>, Yunlong Lin, Jun Shi, Erkang Chen
+          <br>
+          <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023
+     <br>
+          <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
+          <a href="">[arxiv]</a> 
+          <a href="">[Code]</a>
+          <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+          <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+          <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+          <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+     <br>
+          <!-- <p> 
+             We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+          </p> -->
+        </td>
+    </tr>
+    <!-- =================================================================================== -->
+   
+    
+    
+          <!-- =================================================================================== -->
+      <tr>
+        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
           <img style="margin:5px;padding-right:20px;width:100%;max-width:100%" src="../assets/img/desnow.jpg" alt="">
         </td>
         <td width="75%" valign="center" class="text-wrapper"> 
@@ -84,7 +186,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
            </strong>
          </papertitle>
           <br>
-          <strong> Haoyu Chen</strong>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
+          <strong>Haoyu Chen</strong>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
           <br>
           <em>International Conference on Computer Vision <strong>(ICCV)</strong></em>, 2023
      <br>
@@ -103,7 +205,6 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     </tr>
     <!-- =================================================================================== -->
    
-    
 
 
       <!-- =================================================================================== -->
@@ -278,7 +379,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 2 ***arXiv***
+1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 2 ***arXiv***
 
 
 # Education
