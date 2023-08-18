@@ -77,7 +77,21 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
+<div style="background-color:#f0f1f3a6;">
 <h2 class="post-section" style="
+    padding-left: 25px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+">Abstract</h2>
+<p style="
+    padding: 25px;
+    padding-top: 10px;
+">Snowfall is a common weather phenomenon that can severely affect computer vision tasks by obscuring objects and scenes. However, existing deep learning-based snow removal methods are designed for single images only. In this paper, we target a more complex task – video snow removal, which aims to restore the clear video from the snowy video. To facilitate this task, we propose the first high-quality video dataset, which simulates realistic physical characteristics of snow and haze using a rendering engine and augmentation techniques. We also develop a deep learning framework for video snow removal. Specifically, we propose a snow-query temporal aggregation module and a snow-aware contrastive learning loss function. The module aggregates features between video frames and removes snow effectively, while the loss function helps identify and eliminate snow features. We conduct extensive experiments and demonstrate that our proposed dataset is more realistic than previous datasets, and the models trained on it achieve better performance in real-world snowing images. Our proposed method outperforms state-of-the-art video and image-based methods on both synthetic and real snowy videos.</p>
+
+
+</div>
+
+<!-- <h2 class="post-section" style="
     padding-left: 25px;
     background-color: #f0f1f3a6;
     margin-bottom: 0px;
@@ -88,7 +102,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
     background-color: #f0f1f3a6;
     padding-top: 10px;
 ">Snowfall is a common weather phenomenon that can severely affect computer vision tasks by obscuring objects and scenes. However, existing deep learning-based snow removal methods are designed for single images only. In this paper, we target a more complex task – video snow removal, which aims to restore the clear video from the snowy video. To facilitate this task, we propose the first high-quality video dataset, which simulates realistic physical characteristics of snow and haze using a rendering engine and augmentation techniques. We also develop a deep learning framework for video snow removal. Specifically, we propose a snow-query temporal aggregation module and a snow-aware contrastive learning loss function. The module aggregates features between video frames and removes snow effectively, while the loss function helps identify and eliminate snow features. We conduct extensive experiments and demonstrate that our proposed dataset is more realistic than previous datasets, and the models trained on it achieve better performance in real-world snowing images. Our proposed method outperforms state-of-the-art video and image-based methods on both synthetic and real snowy videos.</p>
-
+ -->
 
 
 
@@ -104,8 +118,8 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<div style="background-color:#f5f5f5a1;box-shadow:3px 6px 13px 0px rgba(0,0,0,0.5)">
-<div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 20px;padding-left: 25px;padding-bottom:15px">Dataset Download</div>
+<div style="background-color:#f5f5f5a1;box-shadow:3px 6px 13px 0px rgba(0,0,0,0.5);margin-left:-5px;">
+<div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 20px;padding-left: 25px;padding-bottom:15px">RVSD Download</div>
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;">
         <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;">Train (80 videos)</p>
