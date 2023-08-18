@@ -104,8 +104,26 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
+<div style="background-color:#f5f5f5a1;box-shadow:3px 6px 13px 0px rgba(0,0,0,0.5)">
+<div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 20px;padding-left: 25px;padding-bottom:15px">Dataset Download</div>
+<div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
+    <div class="column" style="flex:1;">
+        <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;">Train (80 videos)</p>
+        <p>[Google Drive] [Baidu Netdisk (password: 7t74)]</p>
+    </div>
+    <div class="column" style="flex:1;padding-left:30px;margin-right:15px">
+        <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;">Test (30 videos)</p>
+        <p>[Google Drive] [Baidu Netdisk (password: 7t74)]</p>
+    </div>
+</div>
+  <div class="post-img-group">
+    <img class="post-img" style="max-width:100%;left:0;right:0;margin-bottom:0;" src="../assets/img/VideoDesnowing/3.jpg" alt="Left Image">
+  </div>
+</div>
 
-<div class="post-section" style="font-weight:700;margin-bottom: 0;background-color: #f5f5f5a1;padding: 20px;padding-left: 25px;padding-bottom:15px">Dataset Download</div>
+
+
+<!-- <div class="post-section" style="font-weight:700;margin-bottom: 0;background-color: #f5f5f5a1;padding: 20px;padding-left: 25px;padding-bottom:15px">Dataset Download</div>
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;background-color: #f5f5f5a1;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;">
         <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;">Train (80 videos)</p>
@@ -118,10 +136,10 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 </div>
   <div class="post-img-group">
     <img class="post-img" style="max-width:100%;left:0;right:0;" src="../assets/img/VideoDesnowing/3.jpg" alt="Left Image">
-  </div>
+  </div> -->
 
 
-<h2 class="post-section" style="margin-top:35px">Citation</h2>
+<h2 class="post-section" style="margin-top:50px">Citation</h2>
 
 
 ```
