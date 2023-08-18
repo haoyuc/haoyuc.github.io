@@ -17,17 +17,17 @@
     color: rgba(34,110,147,1);
     // text-shadow: 0 1px 1px #3d5a9a;
     font-family: Lato, sans-serif;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin: 1rem 0;
     text-align: center;
   }
 
   &-authors {
     // font-weight: 300;
-    color: rgba(34,110,147,1);
+    // color: rgba(34,110,147,1);
     // text-shadow: 0 1px 1px #3d5a9a;
     font-family: Lato, sans-serif;
-    // font-size: 2rem;
+    font-size: 1rem;
     // margin: 1rem 0;
     text-align: center;
   }
@@ -37,7 +37,7 @@
     color: rgba(34,110,147,1);
     // text-shadow: 0 1px 1px #3d5a9a;
     font-family: Lato, sans-serif;
-    font-size: 1rem;
+    font-size: 1.2rem;
     // margin: 1rem 0;
     margin-bottom:15px;
     margin-top:25px;
@@ -55,6 +55,12 @@
 
   &-img {
     // margin: 0 5px !important;// margin: 0 10px; /* 在左右两侧添加 10px 的间距 */
+  }
+
+  &-logo {
+    margin: auto !important;// margin: 0 10px; /* 在左右两侧添加 10px 的间距 */
+    height: 50px !important;
+    margin-bottom: -15px !important;
   }
 
   &-line {
