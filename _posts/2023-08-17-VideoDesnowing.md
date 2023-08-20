@@ -17,8 +17,7 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
 <div class="post-authors" style="margin-bottom:5px;font-size:1.1em !important;">
 <strong><a style="font-size:1.1em !important;" href="https://haoyuchen.com">Haoyu Chen</a></strong>, 
 <a style="font-size:1.1em !important;" href="https://scholar.google.com/citations?hl=zh-CN&user=wcuqACgAAAAJ">Jingjing Ren</a>, 
-<a style="font-size:1.1em !important;" href="https://www.jasongt.com/">Jinjin Gu</a>, Hongtao Wu, 
-<a style="font-size:1.1em !important;" href="https://scholar.google.com/citations?hl=zh-CN&user=wcuqACgAAAAJ">Jingjing Ren</a>, Xuequan Lu, 
+<a style="font-size:1.1em !important;" href="https://www.jasongt.com/">Jinjin Gu</a>, Hongtao Wu, Xuequan Lu, 
 <a style="font-size:1.1em !important;" href="https://www.haomingcai.com/">Haoming Cai</a>, 
 <a style="font-size:1.1em !important;" href="https://sites.google.com/site/indexlzhu/home?authuser=0">Lei Zhu</a>
 </div>
