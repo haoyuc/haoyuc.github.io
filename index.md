@@ -394,7 +394,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 	<div class="media-body">
 		<p class="media-heading">
 			<strong>
-				 Hong Kong University of Science and Technology (Guangzhou)
+				 The Hong Kong University of Science and Technology (Guangzhou)
 		 </strong><br>
 			<strong>Ph.D. student</strong>, 2022 - .
 		</p>
@@ -458,7 +458,8 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 ACM Multimedia **(ACM MM)**, 2023      
 ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
 Winter Conference on Applications of Computer Vision **(WACV)**, 2023, 2024    
-ACM SIGGRAPH VRCAI, 2022   
+ACM SIGGRAPH VRCAI, 2022     
+IEEE Transactions on Circuits and Systems for Video Technology     
 The Computer Vison     
 
 
