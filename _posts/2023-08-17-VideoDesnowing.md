@@ -126,7 +126,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<h2 class="post-section"  style="margin-top:39px;font-size:1.6rem">Realistic Video DeSnowing Dataset</h2>
+<h2 class="post-section"  style="margin-top:39px;font-size:1.8rem;font-family:monospace;letter-spacing:0px;">Realistic Video DeSnowing Dataset</h2>
 
 - <strong>R</strong>ealistic <strong>V</strong>ideo De<strong>S</strong>nowing <strong>D</strong>ataset<strong> (RVSD) </strong> contains a total of 110 pairs of videos. 
 - Each pair contains <strong>snowy</strong> and  <strong>hazy</strong> videos and corresponding snow-free and haze-free ground truth videos. 
@@ -181,11 +181,19 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
+
+
+
 <div class="language-plaintext highlighter-rouge">
-<div class="highlight"  style="background-color:rgb(32, 33, 34);"><pre class="highlight" style="background-color:rgb(32, 33, 34);"><code>@inproceedings{chen2023desnow,
-  title={Snow Removal in Video: A New Dataset and A Novel Method},
-  author={Chen, Haoyu and Ren, Jingjing and Gu, Jinjin and Wu, Hongtao and Lu, Xuequan and Cai, Haoming and Zhu, Lei},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  year={2023}
-}
-</code></pre></div></div>
+  <div class="highlight" style="background-color:rgb(32, 33, 34);">
+    <pre class="highlight" style="background-color:rgb(32, 33, 34); white-space: pre-wrap;padding-top:0;padding-bottom:0;font-size:0.8rem">
+      <code>
+@inproceedings{chen2023desnow, 
+    title={Snow Removal in Video: A New Dataset and A Novel Method}, 
+    author={Chen, Haoyu and Ren, Jingjing and Gu, Jinjin and Wu, Hongtao and Lu, Xuequan and Cai, Haoming and Zhu, Lei}, 
+    booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision}, 
+    year={2023} 
+}</code>
+    </pre>
+  </div>
+</div>
