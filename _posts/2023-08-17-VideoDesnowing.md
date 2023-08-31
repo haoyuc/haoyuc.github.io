@@ -126,7 +126,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<h2 class="post-section"  style="margin-top:39px;font-size:1.8rem;font-family:monospace;letter-spacing:0px;">Realistic Video DeSnowing Dataset</h2>
+<h2 class="post-section"  style="margin-top:39px;font-size:1.8rem;font-family:monospace;letter-spacing:-0.2px;">Realistic Video DeSnowing Dataset</h2>
 
 - <strong>R</strong>ealistic <strong>V</strong>ideo De<strong>S</strong>nowing <strong>D</strong>ataset<strong> (RVSD) </strong> contains a total of 110 pairs of videos. 
 - Each pair contains <strong>snowy</strong> and  <strong>hazy</strong> videos and corresponding snow-free and haze-free ground truth videos. 
