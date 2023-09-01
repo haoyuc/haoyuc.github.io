@@ -187,8 +187,8 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 <div class="language-plaintext highlighter-rouge">
-  <div class="highlight" style="background-color:rgb(32, 33, 34);">
-    <pre class="highlight" style="background-color:rgb(32, 33, 34); white-space: pre-wrap;padding-top:0;padding-bottom:0;font-size:0.8rem">
+  <div class="highlight" style="background-color:rgba(32, 33, 34, 0);">
+    <pre class="highlight" style="background-color:rgba(32, 33, 34, 0); white-space: pre-wrap;padding-top:0;padding-bottom:0;font-size:0.8rem">
       <code>
 @inproceedings{chen2023desnow, 
     title={Snow Removal in Video: A New Dataset and A Novel Method}, 
