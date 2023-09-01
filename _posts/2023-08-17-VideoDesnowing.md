@@ -31,7 +31,7 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
         color: rgb(116 144 158) !important;
     }
     .gradient-text {
-      background: linear-gradient(137deg, #d7e3f794, #315570cf);
+      background: linear-gradient(137deg, #d7e3f794, #406f92cf);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }    
