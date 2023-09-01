@@ -177,7 +177,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
   </div> -->
 
 
-<h2 class="post-section" style="margin-top:50px">Citation</h2>
+<h2 class="post-section" style="margin-top:70px;margin-bottom:0px;">Citation</h2>
 
 
 
