@@ -24,17 +24,22 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
     p {
         color: rgb(186 180 173);
     }
-    post-title {
+    .post-title {
         color: #5188aabd;
     }
-    post-section {
+    .post-section {
         color: rgb(116 144 158) !important;
     }
+    .gradient-text {
+      background: linear-gradient(137deg, #d7e3f794, #315570cf);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }    
 </style>
 
 
-<h2 class="post-title" style="margin-bottom:7px;margin-top:10px;font-weight:700;">Snow Removal in Video: </h2>
-<h2 class="post-title" style="margin-bottom:25px;margin-top:0;">A New Dataset and A Novel Method</h2>
+<h2 class="post-title gradient-text" style="margin-bottom:7px;margin-top:10px;font-weight:700;">Snow Removal in Video: </h2>
+<h2 class="post-title gradient-text" style="margin-bottom:25px;margin-top:0;">A New Dataset and A Novel Method</h2>
 
 <div class="post-authors" style="margin-bottom:5px;font-size:1.1em !important;">
 <strong><a style="font-size:1.1em !important;" href="https://haoyuchen.com">Haoyu Chen</a></strong>, 
