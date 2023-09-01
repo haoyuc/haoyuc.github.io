@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Snow Removal in Video: A New Dataset and A Novel Method"
+title:  "Snow Removal in Video"
 info: "Haoyu Chen, Jinjin Gu, Zhi Zhang "
 tech : "Super Resolution"
 type: arXiv
