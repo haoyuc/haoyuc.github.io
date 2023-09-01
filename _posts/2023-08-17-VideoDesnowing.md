@@ -141,7 +141,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<div style="background:linear-gradient(177deg, #0203055c, #1b2c3d);box-shadow:3px 6px 13px 0px rgba(0,0,0,0.5);margin-left:-5px;">
+<div style="background:linear-gradient(177deg, #0203055c, #354b62);box-shadow:3px 6px 13px 0px rgba(0,0,0,0.65);margin-left:-5px;">
 <div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 25px;padding-left: 25px;padding-bottom:15px">RVSD Download</div>
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;color:rgb(186 180 173);">
