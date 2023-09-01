@@ -25,7 +25,7 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
         color: rgb(186 180 173);
     }
     post-title {
-        color: #759ec499;
+        color: #5188aabd;
     }
     post-section {
         color: rgb(116 144 158) !important;
