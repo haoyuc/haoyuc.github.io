@@ -103,6 +103,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
     padding-left: 25px;
     margin-bottom: 0px;
     padding-top: 20px;
+    color: rgb(116 144 158);
 ">Abstract</h2>
 <p style="
     padding: 25px;
@@ -128,7 +129,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<h2 class="post-section"  style="margin-top:39px;font-size:1.7rem;font-family:monospace;letter-spacing:-0.2px;">Realistic Video DeSnowing Dataset</h2>
+<h2 class="post-section"  style="margin-top:39px;font-size:1.7rem;font-family:monospace;letter-spacing:-0.2px;color:rgb(116 144 158);">Realistic Video DeSnowing Dataset</h2>
 
 - <strong>R</strong>ealistic <strong>V</strong>ideo De<strong>S</strong>nowing <strong>D</strong>ataset<strong> (RVSD) </strong> contains a total of 110 pairs of videos. 
 - Each pair contains <strong>snowy</strong> and  <strong>hazy</strong> videos and corresponding snow-free and haze-free ground truth videos. 
@@ -142,7 +143,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 <div style="background:linear-gradient(177deg, #0203055c, #354b62);box-shadow:3px 6px 13px 0px rgba(0,0,0,0.65);margin-left:-5px;">
-<div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 25px;padding-left: 25px;padding-bottom:15px">RVSD Download</div>
+<div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 25px;padding-left: 25px;padding-bottom:15px;color:rgb(116 144 158);">RVSD Download</div>
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;color:rgb(186 180 173);">
         <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;color:rgb(186 180 173);">Train (80 videos)</p>
@@ -177,7 +178,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
   </div> -->
 
 
-<h2 class="post-section" style="margin-top:70px;margin-bottom:0px;">Citation</h2>
+<h2 class="post-section" style="margin-top:70px;margin-bottom:0px;color:rgb(116 144 158);">Citation</h2>
 
 
 
