@@ -152,11 +152,11 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;color:rgb(186 180 173);">
         <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;color:rgb(186 180 173);">Train (80 videos)</p>
-        <p>[Google Drive]  [<a href="https://pan.baidu.com/s/1Tg8FW1whWw1t4e2Z8wohAQ">Baidu Netdisk</a> (password: uvmu)]</p>
+        <p>[<a href="https://drive.google.com/drive/folders/1h21xh9JVhb_gmet8Vj8gxZy1_PpKJr8L?usp=drive_link">Google Drive</a>]  [<a href="https://pan.baidu.com/s/1Tg8FW1whWw1t4e2Z8wohAQ">Baidu Netdisk</a> (password: uvmu)]</p>
     </div>
     <div class="column" style="flex:1;padding-left:30px;margin-right:15px">
         <p style="font-size:1.15em;font-weight:700;margin-bottom:5px;color:rgb(186 180 173);">Test (30 videos)</p>
-        <p>[Google Drive] [<a href="https://pan.baidu.com/s/1PRrsa5NKs97nBIRxIxxZBQ">Baidu Netdisk</a> (password: d82f)]</p>
+        <p>[<a href="https://drive.google.com/drive/folders/1h21xh9JVhb_gmet8Vj8gxZy1_PpKJr8L?usp=drive_link">Google Drive</a>] [<a href="https://pan.baidu.com/s/1PRrsa5NKs97nBIRxIxxZBQ">Baidu Netdisk</a> (password: d82f)]</p>
     </div>
 </div>
   <div class="post-img-group">
