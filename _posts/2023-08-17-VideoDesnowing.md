@@ -58,20 +58,20 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
                 <div class="col-md-8 col-md-offset-2 text-center">
                     <ul class="nav nav-pills nav-justified" style="box-shadow:0 0">
                         <li>
-                            <a href="">
+                            <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.html">
                             <!-- <a href="https://arxiv.org/abs/2112.05504"> -->
                             <img class="post-logo" src="../assets/img/paper.png" height="50px">
                                 <h5><strong>arXiv</strong></h5>
                             </a>
                         </li>
                         <li>
-                             <a href="">
+                             <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.html">
                             <img class="post-logo" src="../assets/img/paper.png" height="50px">
                                 <h5><strong>ICCV 2023</strong></h5>
                             </a>
                         </li>
                         <li>
-                             <a href="/VideoDesnowing#:~:text=Realistic Video DeSnowing Datase">
+                             <a href="#download">
                             <img class="post-logo" src="../assets/img/download.png" height="50px">
                                 <h5><strong>Dataset</strong></h5>
                             </a>
@@ -83,7 +83,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
                             </a>
                         </li>
                         <li>
-                             <a href="">
+                             <a href="https://openaccess.thecvf.com/content/ICCV2023/supplemental/Chen_Snow_Removal_in_ICCV_2023_supplemental.zip">
                             <img class="post-logo" src="../assets/img/paperclip.png" height="50px">
                                 <h5><strong>Supplementery</strong></h5>
                             </a>
@@ -147,7 +147,7 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
 
 
 
-<div style="background:linear-gradient(177deg, #0203055c, #354b62);box-shadow:3px 6px 13px 0px rgba(0,0,0,0.65);margin-left:-5px;">
+<div style="background:linear-gradient(177deg, #0203055c, #354b62);box-shadow:3px 6px 13px 0px rgba(0,0,0,0.65);margin-left:-5px;" id="download">
 <div class="post-section" style="font-weight:700;margin-bottom: 0;padding: 25px;padding-left: 25px;padding-bottom:15px;color:rgb(116 144 158)!important;">RVSD Download</div>
 <div class="container" style="display:flex;margin:0 0;width:100%;padding-left: 50px;padding-top: 0;padding-bottom:12px;">
     <div class="column" style="flex:1;color:rgb(186 180 173);">
