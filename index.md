@@ -191,8 +191,8 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
           <em>International Conference on Computer Vision <strong>(ICCV)</strong></em>, 2023
      <br>
           <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-          <a href="">[arxiv]</a> 
-          <a href="">[Code]</a>
+          <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.html">[arxiv]</a> 
+          <a href="https://github.com/haoyuc/VideoDesnowing">[Code]</a>
           <a href="https://haoyuchen.com/VideoDesnowing">[Dataset]</a>
           <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
           <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
