@@ -20,11 +20,11 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 -->
 
 
-<div style="display: flex; padding-top:20px; padding-bottom:5px;">
+<div style="display: flex; padding-top:20px; padding-bottom:5px; flex-wrap: wrap;">
 
 
   <!-- Left Column -->
-  <div style="flex: 1.35; width: 25%; padding: 0px; box-sizing: border-box; min-width:150px;">
+  <div style="flex: 1.35; width: 25%; padding: 0px; box-sizing: border-box; min-width:150px;" class="left-column">
     <img src="../assets/img/IMG_6589.JPG" alt="Left Image" style="max-width: 100%; height: auto; margin-bottom: 30px; box-shadow:1px 1px 5px 0px rgba(0,0,0,0.5);">
     <!-- <p style="text-align:left;"> -->
       <!-- <h1 style="margin-top:2px!important;">
@@ -81,7 +81,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
   <!-- Right Column -->
-  <div style="flex: 3; width: 70%; padding: 20px; box-sizing: border-box; margin-left: auto; padding-left:50px; padding-top:0px;">
+  <div style="flex: 3; width: 70%; padding: 20px; box-sizing: border-box; margin-left: auto; padding-left:50px; padding-top:0px;" class="right-column">
     <h1 style="margin-top:2px!important;">
         <name>Haoyu Chen</name>
     </h1>
@@ -584,6 +584,7 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024     
 ACM Multimedia **(ACM MM)**, 2023      
 ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
+SIAM International Conference on Data Mining **(SDM)**, 2024      
 Winter Conference on Applications of Computer Vision **(WACV)**, 2023, 2024    
 ACM SIGGRAPH VRCAI, 2022     
 IEEE Transactions on Circuits and Systems for Video Technology     
