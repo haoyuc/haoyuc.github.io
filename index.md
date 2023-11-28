@@ -38,26 +38,41 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img class="media-object" src="../assets/img/email.svg" width="20px" height="20px" style="margin-bottom:10px;">
     </a>
     <div class="media-body">
-      <p class="media-heading">
+      <p class="media-heading"  style="color: rgb(118, 130, 150); font-size: 0.9em;">
         <strong style="color: rgb(90, 100, 120);">
-          <a href="mailto:hchen794@connect.hkust-gz.edu.cn" style="color: rgb(90, 100, 120);">E-mail</a>
+          <a href="mailto:hchen794@connect.hkust-gz.edu.cn" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">E-mail</a>
       </strong>
         <!-- @hchen794 -->
         <!-- @connect.hkust-gz.edu.cn -->
       </p>
     </div>
   </div>
-  
+
+  <div class="media">
+    <a name="fsaf" class="pull-left" style="padding-right:10px;">
+      <img class="media-object" src="../assets/img/google_scholar.png" width="20px" height="20px" style="margin-bottom:10px;" />
+    </a>
+    <div class="media-body">
+      <p class="media-heading" style="color: rgb(118, 130, 150); font-size: 0.9em;">
+        <strong style="color: rgb(90, 100, 120);">
+          <a href="https://scholar.google.com/citations?user=KWbcBucAAAAJ" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">Scholar</a>
+      </strong>
+        <!-- @Haoyu Chen -->
+        <!-- @connect.hkust-gz.edu.cn -->
+      </p>
+    </div>
+  </div>
+
   <div class="media">
     <a name="fsaf" class="pull-left"  style="padding-right:10px;">
       <img class="media-object" src="../assets/img/github.svg" width="20px" height="20px" style="margin-bottom:10px;">
     </a>
     <div class="media-body">
-      <p class="media-heading">
+      <p class="media-heading"  style="color: rgb(118, 130, 150); font-size: 0.9em;">
         <strong style="color: rgb(90, 100, 120);">
           Github
       </strong>
-        <a href="https://github.com/haoyuc" style="color: rgb(90, 100, 120);">@haoyuc</a>
+        <a href="https://github.com/haoyuc" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">@haoyuc</a>
       </p>
     </div>
   </div>
@@ -67,7 +82,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     <img class="media-object" src="../assets/img/wechat.svg" width="20px" height="20px">
   </a>
   <div class="media-body">
-    <p class="media-heading">
+    <p class="media-heading"  style="color: rgb(118, 130, 150); font-size: 0.9em;">
       <strong style="color: rgb(90, 100, 120);">
         Wechat
     </strong>
