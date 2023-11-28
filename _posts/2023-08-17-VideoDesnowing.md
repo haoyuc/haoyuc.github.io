@@ -12,7 +12,7 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
 
 <style>
     body {
-    background: linear-gradient(to bottom, #1d2742 0%, #000000 25%, #161a24 50%, #293139 100%);
+    background: linear-gradient(to bottom, #232733 0%, #1c1e24 25%, #161a24 50%, #272c31 100%);
     color: rgb(186 180 173);
     }
     strong {
@@ -205,3 +205,29 @@ International Conference on Computer Vision <strong>(ICCV)</strong>, 2023
     </pre>
   </div>
 </div>
+
+
+
+
+
+
+
+<!-- Statcounter code for VideoDesno
+https://haoyuchen.com/VideoDesnowing on Google Sites (new)
+-->
+<script type="text/javascript">
+var sc_project=12944817; 
+var sc_invisible=0; 
+var sc_security="f69367ae"; 
+var scJsHost = "https://";
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="Web Analytics
+Made Easy - Statcounter" href="https://statcounter.com/"
+target="_blank"><img class="statcounter"
+src="https://c.statcounter.com/12944817/0/f69367ae/0/"
+alt="Web Analytics Made Easy - Statcounter"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
