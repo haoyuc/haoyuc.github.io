@@ -24,7 +24,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
   <!-- Left Column -->
-  <div style="flex: 1.35; width: 25%; padding: 0px; box-sizing: border-box; min-width:150px;" class="left-column">
+  <div style="flex: 1.35; width: 25%; padding: 0px; box-sizing: border-box; min-width:150px; padding-bottom:30px;" class="left-column">
     <img src="../assets/img/IMG_6589.JPG" alt="Left Image" style="max-width: 100%; height: auto; margin-bottom: 30px; box-shadow:1px 1px 5px 0px rgba(0,0,0,0.5);">
     <!-- <p style="text-align:left;"> -->
       <!-- <h1 style="margin-top:2px!important;">
@@ -86,10 +86,61 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <strong style="color: rgb(90, 100, 120);">
         Wechat
     </strong>
-      @haoyuc98
+    <span onmouseover="showText('Feel free to contact me.')" onmouseout="hideText()">@haoyuc98</span>
     </p>
   </div>
 </div>
+
+  <!-- <style>
+    /* 添加样式以使 tooltip 更美观 */
+    span.tooltip {
+      position: relative;
+      cursor: pointer;
+    }
+
+    span.tooltip::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      background-color: #fff;
+      color: #000;
+      padding: 5px;
+      border-radius: 5px;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    span.tooltip:hover::after {
+      opacity: 1;
+      visibility: visible;
+      writing-mode: horizontal-tb;
+
+    }
+  </style>
+
+
+  <p>悬停在 <span class="tooltip" data-tooltip="Feel free to content me.">这里</span> 显示新的文字。</p> -->
+
+
+<!-- <span onmouseover="showText('Feel free to content me.')" onmouseout="hideText()">悬停在这里</span> -->
+
+<div id="tooltip" style="display: none; position: absolute; background-color: #fff; border: 1px solid #ccc; padding: 5px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); border-radius: 8px; transition: opacity 0.s;"></div>
+
+<script>
+  function showText(text) {
+    var tooltip = document.getElementById('tooltip');
+    tooltip.innerHTML = text;
+    tooltip.style.display = 'block';
+  }
+
+  function hideText() {
+    var tooltip = document.getElementById('tooltip');
+    tooltip.style.display = 'none';
+  }
+</script>
 
 
   </div>
@@ -101,6 +152,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
         <name>Haoyu Chen</name>
     </h1>
     <p style="color: rgb(0, 102, 153); margin-top: 0px;">PhD student @ HKUST(GZ)</p>
+    <p style="margin-bottom: 25px;"></p>
     <p style="margin: 0;">I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. </p>
     <br/>
         I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Prof. Lei Zhu</a>.  
@@ -292,7 +344,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 
-      <!-- =================================================================================== -->
+  <!-- =================================================================================== -->
   <tr>
     <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.jpg" alt="">
