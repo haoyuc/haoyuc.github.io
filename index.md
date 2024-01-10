@@ -651,7 +651,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </div>
 
 
-<div class="media">
+<!-- <div class="media">
 	<a name="fsaf" class="pull-left">
 		<img class="media-object" src="../assets/img/casia.png" width="50px" height="48px">
 	</a>
@@ -664,7 +664,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 		</p>
 	</div>
 </div>
-
+ -->
 
 
 
