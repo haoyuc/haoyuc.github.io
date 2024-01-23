@@ -628,7 +628,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 2 ***arXiv***
+1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 3 ***arXiv***
 
 
 
@@ -720,8 +720,9 @@ ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th 
 **Program Committee / Reviewer**  
 <p style="margin-bottom: 2px;"></p>
 
-IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024     
-ACM Multimedia **(ACM MM)**, 2023      
+IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024  
+European Conference on Computer Vision <strong>(ECCV)</strong>, 2024     
+ACM Multimedia **(ACM MM)**, 2023, 2024      
 ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
 SIAM International Conference on Data Mining **(SDM)**, 2024      
 Winter Conference on Applications of Computer Vision **(WACV)**, 2023, 2024    
