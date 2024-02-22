@@ -20,6 +20,36 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 -->
 
 
+
+<style>
+  a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+
+<style>
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  a:hover {
+    animation: blink 1s forwards;
+    /* color: red; */
+    /* text-shadow: 0 0 4px yellow; */
+  }
+</style>
+
+
 <div style="display: flex; padding-top:20px; padding-bottom:5px; flex-wrap: wrap;">
 
 
@@ -151,7 +181,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     <h1 style="margin-top:2px!important;">
         <name>Haoyu Chen</name>
     </h1>
-    <p style="color: rgb(0, 102, 153); margin-top: 0px;">PhD student @ HKUST(GZ)</p>
+    <p style="color: #0070c9; margin-top: 0px;">PhD student @ HKUST(GZ)</p>
     <p style="margin-bottom: 25px;"></p>
     <p style="margin: 0;">I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. </p>
     <br/>
@@ -250,7 +280,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/face.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">arXiv, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2023</div>
       <div  class="paper-title">
         <strong>
         Towards Flexible, Scalable, and Adaptive Multi-Modal Conditioned Face Synthesis
@@ -286,7 +316,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/coser.png" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">arXiv, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2023</div>
       <div  class="paper-title">
         <strong>
         CoSeR: Bridging Image and Language for Cognitive Super-Resolution
@@ -321,7 +351,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm1.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
       <div  class="paper-title">
         <strong>
         Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos
@@ -355,7 +385,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm2.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
       <div  class="paper-title">
         <strong>
         Uncertainty-Driven Dynamic Degradation Perceiving and Background Modeling for Efficient Single Image Desnowing
@@ -391,7 +421,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm3.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
       <div  class="paper-title">
         <strong>
         Cross-scale Prototype Learning Transformer for Image Snow Removal
@@ -425,7 +455,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ICCV, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ICCV, 2023</div>
       <div  class="paper-title">
         <strong>
         Snow Removal in Video: A New Dataset and A Novel Method
@@ -460,7 +490,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/icml23.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ICML, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ICML, 2023</div>
       <div  class="paper-title">
         <strong>
         Crafting Training Degradation Distribution for the Accuracy-Generalization Trade-off in Real-World Super-Resolution
@@ -497,7 +527,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mask.jpg" alt="dise">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">CVPR, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">CVPR, 2023</div>
       <div  class="paper-title">
         <strong>
         Masked Image Training for Generalizable Deep Image Denoising
@@ -532,7 +562,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/AAN.jpg" alt="dise">
     </td>
     <td width="75%" valign="center"  class="text-wrapper">
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em;">arXiv, 2021</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2021</div>
       <div  class="paper-title">
         <strong>
         Attention in Attention Network for Image Super-Resolution
@@ -566,7 +596,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
         <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/PIPAL.jpg" alt="dise">
       </td>
       <td width="75%" valign="center" class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em;">ECCV, 2020</div>
+        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ECCV, 2020</div>
         <div  class="paper-title">
           <strong>
           PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration
@@ -600,7 +630,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
           <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/SRP.jpg" alt="dise">
         </td>
         <td width="75%" valign="center"  class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em;">arXiv, 2018</div>
+        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2018</div>
         <div  class="paper-title">
         <strong>
         Super-resolution perception for industrial sensor data
@@ -632,10 +662,11 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 3 ***arXiv***
 
+<p style="padding:6px;"> </p>
 
 
 
-
+<!-- <br> -->
 
 # Experience 
 
