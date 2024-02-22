@@ -744,24 +744,27 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 **Competition Awards**   
 <p style="margin-bottom: 2px;"></p>
 
-IEEE ICDM 2018 global AI challenge on meteorology, **1st place**.   
-ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, **4th place**.
+<div class="small-text">
+IEEE ICDM 2018 global AI challenge on meteorology, <span class="s1">1st place</span>.  <br> 
+ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, <span class="s1">4th place</span>.
+</div>
 
-<p class="whiteline">
-</p>
+<p class="whiteline"></p>
 
 **Program Committee / Reviewer**  
 <p style="margin-bottom: 2px;"></p>
 
-IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2024  
-European Conference on Computer Vision <strong>(ECCV)</strong>, 2024     
-ACM Multimedia **(ACM MM)**, 2023, 2024      
-ACM SIGKDD Conference on Knowledge Discovery and Data Mining **(KDD)**, 2023     
-SIAM International Conference on Data Mining **(SDM)**, 2024      
-Winter Conference on Applications of Computer Vision **(WACV)**, 2023, 2024    
-ACM SIGGRAPH VRCAI, 2022     
-IEEE Transactions on Circuits and Systems for Video Technology     
-The Computer Vison     
+<div class="small-text">
+IEEE Conference on Computer Vision and Pattern Recognition <span class="s1">(CVPR)</span>, 2024   <br>
+European Conference on Computer Vision <span class="s1">(ECCV)</span>, 2024     <br>
+ACM Multimedia <span class="s1">(ACM MM)</span>, 2023, 2024      <br>
+ACM SIGKDD Conference on Knowledge Discovery and Data Mining <span class="s1">(KDD)</span>, 2023     <br>
+SIAM International Conference on Data Mining <span class="s1">(SDM)</span>, 2024      <br>
+Winter Conference on Applications of Computer Vision <span class="s1">(WACV)</span>, 2023, 2024    <br>
+ACM SIGGRAPH VRCAI, 2022     <br>
+IEEE Transactions on Circuits and Systems for Video Technology     <br>
+The Computer Vison     <br>
+</div>
 
 
 
