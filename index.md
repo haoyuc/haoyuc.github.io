@@ -236,10 +236,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 		<p class="media-heading">
 			<strong  style="font-size: 15px;">
 				 The Hong Kong University of Science and Technology (Guangzhou)
-		 </strong>
-     <div>
+		 </strong><br>
+     <span   style="font-size: 14px;">
 			Ph.D. student, 2022 ~ present.
-     </div>
+     </span>
 		</p>
 	</div>
 </div>
@@ -255,7 +255,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 			<strong style="font-size: 15px;">
 				 The Chinese University of Hong Kong, Shenzhen
 		 </strong><br>
+     <span   style="font-size: 14px;">
 			B.Eng., Major in Computer Science and Engineering, Sep 2017 - Jul 2021.
+     </span>
 		</p>
 	</div>
 </div>
@@ -280,11 +282,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/face.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2023</div>
       <div  class="paper-title">
-        <strong>
         Towards Flexible, Scalable, and Adaptive Multi-Modal Conditioned Face Synthesis
-        </strong>
       </div>
       <div class="author">
       Jingjing Ren, Cheng Xu, <span class="author-me">Haoyu Chen</span>, Xinran Qin, Chongyi Li, Lei Zhu
@@ -316,11 +316,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/coser.png" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2023</div>
       <div  class="paper-title">
-        <strong>
         CoSeR: Bridging Image and Language for Cognitive Super-Resolution
-        </strong>
       </div>
       <div class="author">
       Haoze Sun, Wenbo Li, Jianzhuang Liu, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Xueyi Zou, Youliang Yan, Yujiu Yang
@@ -351,11 +349,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm1.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
       <div  class="paper-title">
-        <strong>
         Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos
-        </strong>
       </div>
       <div class="author">
       Hongtao Wu, Yijun Yang, <span class="author-me">Haoyu Chen</span>, Jingjing Ren, Lei Zhu
@@ -385,11 +381,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm2.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
       <div  class="paper-title">
-        <strong>
         Uncertainty-Driven Dynamic Degradation Perceiving and Background Modeling for Efficient Single Image Desnowing
-        </strong>
       </div>
       <div class="author">
       Sixiang Chen*, Tian Ye*, Chenghao Xue, <span class="author-me">Haoyu Chen</span>, Yun Liu, Erkang Chen, Lei Zhu
@@ -421,11 +415,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm3.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ACM MM, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
       <div  class="paper-title">
-        <strong>
         Cross-scale Prototype Learning Transformer for Image Snow Removal
-        </strong>
       </div>
       <div class="author">
       Sixiang Chen*, Tian Ye*, Yun Liu, Jinbin Bai, <span class="author-me">Haoyu Chen</span>, Yunlong Lin, Jun Shi, Erkang Chen
@@ -455,11 +447,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ICCV, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ICCV, 2023</div>
       <div  class="paper-title">
-        <strong>
         Snow Removal in Video: A New Dataset and A Novel Method
-        </strong>
       </div>
       <div class="author">
       <span class="author-me">Haoyu Chen</span>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
@@ -490,11 +480,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/icml23.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ICML, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ICML, 2023</div>
       <div  class="paper-title">
-        <strong>
         Crafting Training Degradation Distribution for the Accuracy-Generalization Trade-off in Real-World Super-Resolution
-        </strong>
       </div>
       <div class="author">
       Ruofan Zhang, Jinjin Gu, <span class="author-me">Haoyu Chen</span>, Chao Dong, Yulun Zhang, Wenming Yang
@@ -527,11 +515,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mask.jpg" alt="dise">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">CVPR, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2023</div>
       <div  class="paper-title">
-        <strong>
         Masked Image Training for Generalizable Deep Image Denoising
-        </strong>
       </div>
       <div class="author">
       <span class="author-me">Haoyu Chen*</span>, Jinjin Gu*, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu
@@ -562,11 +548,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/AAN.jpg" alt="dise">
     </td>
     <td width="75%" valign="center"  class="text-wrapper">
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2021</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2021</div>
       <div  class="paper-title">
-        <strong>
         Attention in Attention Network for Image Super-Resolution
-        </strong>
       </div>
       <div class="author">
       <span class="author-me">Haoyu Chen</span>, Jinjin Gu, Zhi Zhang
@@ -596,11 +580,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
         <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/PIPAL.jpg" alt="dise">
       </td>
       <td width="75%" valign="center" class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">ECCV, 2020</div>
+        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ECCV, 2020</div>
         <div  class="paper-title">
-          <strong>
           PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration
-          </strong>
         </div>
       <div class="author">
         Jinjin Gu, Haoming Cai, <span class="author-me">Haoyu Chen</span>, Xiaoxin Ye, Jimmy S.Ren, Chao Dong
@@ -630,11 +612,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
           <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/SRP.jpg" alt="dise">
         </td>
         <td width="75%" valign="center"  class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1;">arXiv, 2018</div>
+        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2018</div>
         <div  class="paper-title">
-        <strong>
         Super-resolution perception for industrial sensor data
-        </strong>
       </div>
       <div class="author">
         Jinjin Gu, <span class="author-me">Haoyu Chen</span>, Guolong Liu, Gaoqi Liang, Xinlei Wang, Junhua Zhao             
@@ -699,7 +679,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 			<strong>
 				 Xiaobing.AI
 		 </strong><br>
+     <span   style="font-size: 14px;">
 			2021.6 ~ 2022.2. Research Intern.  <a href="https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ" target="_blank">Mentor: Dr. Baoyuan, Wang</a> 
+     </span>
 		</p>
 	</div>
 </div>
@@ -715,7 +697,9 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 			<strong>
 				 AWS Shanghai AI Lab
 		 </strong><br>
+     <span   style="font-size: 14px;">
 			2020.5 ~ 2020.11. Software Develop Engineer Intern. <a href="https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ" target="_blank">Mentor: Zhi Zhang</a>  
+     </span>
 		</p>
 	</div>
 </div>
