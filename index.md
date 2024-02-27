@@ -216,6 +216,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 <ul>
+  <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in CVPR 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: Three papers to appear in ACM MM 2023.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: One first author paper to appear in ICCV 2023.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-04</strong>: One paper to appear in ICML 2023.</li>
@@ -275,6 +276,38 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 
+<!-- =================================================================================== -->
+  <tr>
+    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/cvpr24.jpg" alt="">
+    </td>
+    <td width="75%" valign="center" class="text-wrapper"> 
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2024</div>
+      <div  class="paper-title">
+        Low-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning
+      </div>
+      <div class="author">
+      <span class="author-me">Haoyu Chen</span>, Wenbo Li, Jinjin Gu, Jingjing Ren, Haoze Sun, Xueyi Zou, Youliang Yan, Zhensong Zhang, Lei Zhu
+      </div>
+      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
+     <!-- <br> -->
+      <!-- <a href="https://coser-main.github.io/">[Website]</a>  -->
+      <!-- <a href="https://arxiv.org/abs/2311.16512">[arxiv]</a>  -->
+      <!-- <a href="">[Code]</a> -->
+      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+      <br>
+      <!-- <p> 
+          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+      </p> -->
+    </td>
+</tr>
+<!-- =================================================================================== -->
+
+
+
 
 <!-- =================================================================================== -->
   <tr>
@@ -316,7 +349,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/coser.png" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2023</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2024</div>
       <div  class="paper-title">
         CoSeR: Bridging Image and Language for Cognitive Super-Resolution
       </div>
@@ -640,7 +673,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-1 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 3 ***arXiv***
+3 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 3 ***arXiv***
 
 <p style="padding:6px;"> </p>
 
