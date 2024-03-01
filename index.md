@@ -25,6 +25,14 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
   a:hover {
     text-decoration: underline;
   }
+ main,
+ footer,
+ .nav-container {
+   display: block;
+   margin: 0 auto;
+   max-width: 800px;
+   width: 80%;
+ }  
 </style>
 
 

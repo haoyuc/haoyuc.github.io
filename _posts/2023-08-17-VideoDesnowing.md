@@ -35,6 +35,14 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }    
+     main,
+    footer,
+    .nav-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    width: 80%;
+    }  
 </style>
 
 
