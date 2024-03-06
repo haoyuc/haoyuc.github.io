@@ -40,7 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // 假设图片数组
     const images = [
         { before: './assets/img/Lway/ours.jpg', after: './assets/img/Lway/stablesr.jpg' },
-        { before: './assets/img/Lway/ours2.jpg', after: './assets/img/Lway/stablesr2.jpg' }
+        { before: './assets/img/Lway/ours2.jpg', after: './assets/img/Lway/stablesr2.jpg' },
+        { before: './assets/img/Lway/ours3.png', after: './assets/img/Lway/BSRGAN.png' },
+        { before: './assets/img/Lway/ours4.png', after: './assets/img/Lway/stablesr4.png' },
+        { before: './assets/img/Lway/stablesr5_ours.png', after: './assets/img/Lway/stablesr5.png' },
         // 添加更多图片路径
     ];
 
