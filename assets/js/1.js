@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         handle.style.left = x + 'px';
         imgOverlay.style.clip = `rect(0, ${x}px, ${rect.height}px, 0)`;
+        startAutoChange(); // 重置自动轮换定时器
     };
 
     const slideFinish = () => {
@@ -26,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     handle.addEventListener('mousedown', slideReady);
-});
+// });
 
 
 
 
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
     const beforeImage = document.querySelector('.before-image');
     const afterImage = document.querySelector('.img-overlay img');
     const prevButton = document.getElementById('prevImage');
@@ -48,6 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ];
 
     let currentIndex = 0; // 当前图片索引
+    let autoChange; // 用于存储定时器的变量
 
     // 更新图片函数
     function updateImages(index) {
@@ -55,6 +57,20 @@ document.addEventListener('DOMContentLoaded', function() {
         afterImage.src = images[index].after;
     }
 
+
+    function startAutoChange() {
+        if (autoChange) clearInterval(autoChange); // 如果已存在定时器，则清除
+
+        autoChange = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length; // 更新索引，循环显示图片
+            updateImages(currentIndex);
+        }, 5000); // 包括淡入淡出的总时间
+    }
+
+    // 初始化自动轮换
+    startAutoChange();
+    
+    
     // 上一张图片
     prevButton.addEventListener('click', function() {
         if (currentIndex > 0) {
@@ -65,6 +81,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex = images.length - 1;
             updateImages(currentIndex);
         }
+        startAutoChange(); // 重置自动轮换定时器
     });
 
     // 下一张图片
@@ -77,5 +94,16 @@ document.addEventListener('DOMContentLoaded', function() {
             currentIndex = 0;
             updateImages(currentIndex);
         }
+        startAutoChange(); // 重置自动轮换定时器
     });
+
+    // 自动轮换图片
+    // setInterval(() => {
+    //     currentIndex = (currentIndex + 1) % images.length; // 更新索引，循环显示图片
+    //     updateImages(currentIndex);
+    // }, 6000); // 每3秒切换一次图片
+
+
+
+
 });
