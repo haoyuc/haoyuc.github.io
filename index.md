@@ -192,10 +192,12 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     <p style="color: #0070c9; margin-top: 0px;">PhD student @ HKUST(GZ)</p>
     <p style="margin-bottom: 25px;"></p>
     <p style="margin: 0;">I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. </p>
-    <br/>
+    <p>
         I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Prof. Lei Zhu</a>.  
-        <br><br>
-        Mainly intrest in computer vision, especially in Low-level Vision and Image Processing.
+    </p>
+    <p>
+        Mainly intrest in computer vision, especially in Low-level Vision and Image Processing. 
+    </p>
         <p style="margin-bottom:0px;">
         <!-- <a href="mailto:hchen794@connect.hkust-gz.edu.cn"> Email </a> &nbsp;/&nbsp; -->
         <!-- <a href="https://scholar.google.com/citations?&user=KWbcBucAAAAJ"> Google Scholar </a> &nbsp;/&nbsp; -->
@@ -789,6 +791,7 @@ SIAM International Conference on Data Mining <span class="s1">(SDM)</span>, 2024
 Winter Conference on Applications of Computer Vision <span class="s1">(WACV)</span>, 2023, 2024    <br>
 ACM SIGGRAPH VRCAI, 2022     <br>
 IEEE Transactions on Circuits and Systems for Video Technology     <br>
+IEEE Transactions on Mobile Computing  <br>
 The Computer Vison     <br>
 </div>
 
