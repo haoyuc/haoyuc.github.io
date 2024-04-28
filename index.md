@@ -739,7 +739,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 	<div class="media-body">
 		<p class="media-heading">
 			<strong>
-				 AWS Shanghai AI Lab
+				 Amazon Web Services Shanghai AI Lab
 		 </strong><br>
      <span   style="font-size: 14px;">
 			2020.5 ~ 2020.11. Software Develop Engineer Intern. <a href="https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ" target="_blank">Mentor: Zhi Zhang</a>  
