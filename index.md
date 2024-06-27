@@ -193,10 +193,10 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     <p style="margin-bottom: 25px;"></p>
     <p style="margin: 0;">I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. </p>
     <p>
-        I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Prof. Lei Zhu</a>.  
+        I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Prof. Lei Zhu</a> and <a href="https://scholar.google.com/citations?user=XhyKVFMAAAAJ&hl=en">Prof. Ping Tan</a>.  
     </p>
     <p>
-        Mainly intrest in computer vision, especially in Low-level Vision and Image Processing. 
+        Mainly intrest in computer vision, especially in Low-level Vision, Image Processing, Multi-Modal Language Models and Generative models. 
     </p>
         <p style="margin-bottom:0px;">
         <!-- <a href="mailto:hchen794@connect.hkust-gz.edu.cn"> Email </a> &nbsp;/&nbsp; -->
