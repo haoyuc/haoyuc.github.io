@@ -226,6 +226,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 <ul>
+  <li><strong style="color: rgb(90, 100, 120);">2024-07</strong>: One paper to appear in ECCV 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in CVPR 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: Three papers to appear in ACM MM 2023.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: One first author paper to appear in ICCV 2023.</li>
@@ -281,6 +282,71 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 # Publications
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+<!-- =================================================================================== -->
+  <tr>
+    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/UltraPixel.jpg" alt="">
+    </td>
+    <td width="75%" valign="center" class="text-wrapper"> 
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2024</div>
+      <div  class="paper-title">
+        UltraPixel: Advancing Ultra-High-Resolution Image Synthesis to New Peaks
+      </div>
+      <div class="author">
+      Jingjing Ren, Wenbo Li, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Bin Shao, Yong Guo, Long Peng, Lei Zhu
+      </div>
+      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
+     <!-- <br> -->
+      <!-- <a href="https://haoyuchen.com/LWay">[Website]</a>  -->
+      <!-- <a href="https://arxiv.org/abs/2403.02601">[arxiv]</a>  -->
+      <!-- <a href="">[Code]</a> -->
+      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+      <br>
+      <!-- <p> 
+          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+      </p> -->
+    </td>
+</tr>
+<!-- =================================================================================== -->
+
+
+
+<!-- =================================================================================== -->
+  <tr>
+    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/eccv24.jpg" alt="">
+    </td>
+    <td width="75%" valign="center" class="text-wrapper"> 
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ECCV, 2024</div>
+      <div  class="paper-title">
+        Semi-Supervised Video Desnowing Network via Temporal Decoupling Experts and Distribution-Driven Contrastive Regularization
+      </div>
+      <div class="author">
+      Hongtao Wu, Yijun Yang, Angelica Aviles-Rivero, Jingjing Ren, Sixiang Chen, <span class="author-me">Haoyu Chen</span>, Lei Zhu
+      </div>
+      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
+     <!-- <br> -->
+      <!-- <a href="https://haoyuchen.com/LWay">[Website]</a>  -->
+      <!-- <a href="https://arxiv.org/abs/2403.02601">[arxiv]</a>  -->
+      <!-- <a href="">[Code]</a> -->
+      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+      <br>
+      <!-- <p> 
+          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+      </p> -->
+    </td>
+</tr>
+<!-- =================================================================================== -->
+
 
 
 
@@ -684,7 +750,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 </table>
 
 
-3 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 1 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 3 ***arXiv***
+3 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 2 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 4 ***arXiv***
 
 <p style="padding:6px;"> </p>
 
