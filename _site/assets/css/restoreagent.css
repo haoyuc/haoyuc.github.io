@@ -1,0 +1,85 @@
+.ezy__header37 {
+  background-color: #d9d4d0;
+  color: #151618;
+  position: relative;
+  padding: 90px 0; /* 缩小整体高度 */
+  display: flex;
+  justify-content: flex-start; /* 让文字靠左 */
+  align-items: center;
+  z-index: 1;
+}
+
+@media (min-width: 768px) {
+  .ezy__header37 {
+    padding: 135px 0; /* 在大屏幕上也缩小高度 */
+  }
+}
+
+.ezy__header37-heading {
+  font-weight: 700;
+  font-size: 40px; /* 调整字体大小 */
+  line-height: 1.2;
+  color: #F1F1F1; /* 修改后的浅灰色字体 */
+}
+
+
+.ezy__subheading {
+  font-size: 30px; /* 调整副标题的字体大小 */
+  color: #F1F1F1; /* 与主标题颜色一致 */
+}
+
+@media (min-width: 991px) {
+  .ezy__header37-heading {
+    font-size: 60px; /* 调整字体大小 */
+  }
+  .ezy__subheading {
+    font-size: 50px; /* 调整副标题的字体大小 */
+  }
+}
+
+.ezy__header37-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #000000, #3e3e3e);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.ezy__header37-btn {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #d3d3d33e !important; /* 设置按钮的初始背景颜色为浅灰色，并使用 !important */
+  color: #c5c5c5 !important;
+  border-radius: 8px;
+  padding: 13px 40px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.3s; /* 添加过渡效果 */
+}
+
+.ezy__header37-btn:hover {
+  /* background-color: rgb(13, 110, 253) !important; 悬停时的蓝色背景，并使用 !important */
+  background-color: #4ba5b3cb !important; /* 悬停时的蓝色背景，并使用 !important */
+  color: #fff !important;
+}
+
+
+.has-text-justified {
+  padding-top: 20px;
+  font-size: 15px;
+  /* font-weight: bold; */
+  color: #e5e5e5e6 !important;
+  /* padding: 13px 40px; */
+  line-height: 1;
+}
+
+
+.has-text-justified p {
+  color: #f3f3f360 !important;
+}
+

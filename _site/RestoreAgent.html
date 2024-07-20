@@ -69,9 +69,11 @@
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
 
-<link rel="stylesheet" href="./assets/css/index.css" />
+<link rel="stylesheet" href="./assets/css/restoreagent.css" />
 
 <link rel="icon" href="./assets/images/favicon.svg" />
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -123,182 +125,42 @@
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title">Low-Res Leads the Way</h1>
-          <h2 class="title is-3 publication-title">Improving Generalization for Super-Resolution by Self-Supervised Learning</h2>
-          <h5 class="is-size-6 publication-authors" style="padding-bottom:10px;">CVPR 2024</h5> 
-            <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://haoyuchen.com/">Haoyu Chen</a><sup>1</sup>,</span>
-            <span class="author-block">
-              <a href="https://fenglinglwb.github.io/">Wenbo Li</a><sup>2</sup>,</span>
-            <span class="author-block">
-              <a href="https://www.jasongt.com/">Jinjin Gu</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?hl=zh-CN&amp;user=wcuqACgAAAAJ">Jingjing Ren</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              Haoze Sun<sup>4</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=0ua28KoAAAAJ">Xueyi Zou</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=JPUwfAMAAAAJ">Youliang Yan</a><sup>2</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://scholar.google.com.hk/citations?user=fs8HQxQAAAAJ">Zhensong Zhang</a><sup>2</sup>
-            </span>
-            <span class="author-block">
-              <a href="https://sites.google.com/site/indexlzhu/home">Lei Zhu</a><sup>1,5</sup>
-            </span>
-          </div>
-            <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>The Hong Kong University of Science and Technology (Guangzhou),</span>
-            <span class="author-block"><sup>2</sup>Huawei Noah’s Ark Lab</span>
-            <span class="author-block"><sup>3</sup>The University of Sydney</span>
-            <span class="author-block"><sup>4</sup>Tsinghua University</span>
-            <span class="author-block"><sup>5</sup>The Hong Kong University of Science and Technology</span>
-            </div>
-          <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <span class="link-block">
-                <a href="https://arxiv.org/abs/2403.02601" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
-              <!-- <span class="link-block">
-                <a href=""
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
-              </span> -->
-          </div>
+<section class="ezy__header37">
+  <div class="ezy__header37-overlay"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
+        <h2 class="ezy__header37-heading mb-4 mb-md-5">
+          Restore<span class="ezy__header37-heading mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
+        </h2>
+        <h3 class="ezy__subheading mb-4 mb-md-5">
+          Autonomous Image Restoration Agent via Multimodal Large Language Models
+        </h3>
+        <button type="button" class="btn ezy__header37-btn">PDF</button>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div style="display: flex;justify-content: center;align-items: center; position: relative;">
-
-  <button id="prevImage" aria-label="上一张" class="toggle-button"></button>
-
-  <div class="ba-slider">
-    <img src="./assets/img/Lway/ours.jpg" alt="Before" class="before-image" />
-    <div class="img-overlay" style="clip: rect(0px, 250px, 500px, 0px);">
-        <img src="./assets/img/Lway/stablesr.jpg" alt="After" />
-    </div>
-    <div class="slider-handle" style="left: 250px;">
-      <div class="handle-center"></div> 
-    </div>
-    <button id="nextImage" aria-label="下一张" class="toggle-button"></button>
-  </div>
-  
-</div>
-
-
-
-<h2 class="subtitle has-text-centered" style="padding-top: 15px;">
-  <span class="dnerf">LWay</span>  improves the generalization and detail restoration capabilities of SR models on unseen real-world image.
-</h2>
-
-
-
-
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <!-- <section class="section"> -->
-        <div class="container is-max-desktop">
-          <!-- Abstract. -->
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <h2 class="title is-3">Abstract</h2>
+        <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
               <div class="content has-text-justified">
                 <p>
-                  For image super-resolution (SR), bridging the gap between the performance on synthetic datasets and real-world degradation scenarios remains a challenge. 
-                  This work introduces a novel "Low-Res Leads the Way" (LWay) training framework, 
-                  merging Supervised Pre-training with Self-supervised Learning to enhance the adaptability of SR models to real-world images. 
+Natural images captured by mobile devices often suffer from multiple types of degradation, such as noise, blur, and low light. Traditional image restoration methods require manual selection of specific tasks, algorithms, and execution sequences, which is time-consuming and may yield suboptimal results. All-in-one models, though capable of handling multiple tasks, typically support only a limited range and often produce overly smooth, low-fidelity outcomes due to their broad data distribution fitting. 
                 </p>
                 <p>
-                  Our approach utilizes a low-resolution (LR) reconstruction network to extract degradation embeddings from LR images, 
-                  merging them with super-resolved outputs for LR reconstruction. 
-                  Leveraging unseen LR images for self-supervised learning guides the model to adapt its modeling space to the target domain, 
-                  facilitating fine-tuning of SR models without requiring paired high-resolution (HR) images. 
-                  The integration of Discrete Wavelet Transform (DWT) further refines the focus on high-frequency details. 
+To address these challenges, we first define a new pipeline for restoring images with multiple degradations, and then introduce RestoreAgent, an intelligent image restoration system leveraging multimodal large language models. RestoreAgent autonomously assesses the type and extent of degradation in input images and performs restoration through </p>
+<p style="margin-bottom:5px;"><span style="color:#4ba5b39f">(1)</span> 
+determining the appropriate restoration tasks, </p>
+<p style="margin-bottom:5px;"><span style="color:#4ba5b39f">(2)</span> 
+optimizing the task sequence, </p>
+<p style="margin-bottom:5px;"><span style="color:#4ba5b39f">(3)</span> 
+selecting the most suitable models, and </p>
+<p><span style="color:#4ba5b39f">(4)</span> executing the restoration. 
                 </p>
                 <p>
-                  Extensive evaluations show that our method significantly improves the generalization and detail restoration 
-                  capabilities of SR models on unseen real-world datasets, outperforming existing methods. 
-                  Our training regime is universally compatible, requiring no network architecture modifications, 
-                  making it a practical solution for real-world SR applications.
+Experimental results demonstrate the superior performance of RestoreAgent in handling complex degradation, surpassing human experts. Furthermore, the system’s modular design facilitates the fast integration of new tasks and models, enhancing its flexibility and scalability for various applications.
                 </p>
               </div>
-            </div>
-          </div>
-          <!--/ Abstract. -->
-        </div>
-      <!-- </section> -->
+      </div>
     </div>
   </div>
 </section>
-
-
-<!-- <section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">          
-          <p>
-            For image super-resolution (SR), bridging the gap between the performance on synthetic datasets and real-world degradation scenarios remains a challenge. 
-            This work introduces a novel "Low-Res Leads the Way" (LWay) training framework, 
-            merging Supervised Pre-training with Self-supervised Learning to enhance the adaptability of SR models to real-world images. 
-          </p>
-          <p>
-            Our approach utilizes a low-resolution (LR) reconstruction network to extract degradation embeddings from LR images, 
-            merging them with super-resolved outputs for LR reconstruction. 
-            Leveraging unseen LR images for self-supervised learning guides the model to adapt its modeling space to the target domain, 
-            facilitating fine-tuning of SR models without requiring paired high-resolution (HR) images. 
-            The integration of Discrete Wavelet Transform (DWT) further refines the focus on high-frequency details. 
-          </p>
-          <p>
-            Extensive evaluations show that our method significantly improves the generalization and detail restoration 
-            capabilities of SR models on unseen real-world datasets, outperforming existing methods. 
-            Our training regime is universally compatible, requiring no network architecture modifications, 
-            making it a practical solution for real-world SR applications.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -333,11 +195,6 @@
     <!--/ Abstract. -->
   </div>
 </section>
-
-
-
-
-
 
 <section class="section">
   <div class="container is-max-desktop">
@@ -437,7 +294,6 @@
   </div>
 </section>
 
-
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
@@ -449,7 +305,6 @@
 }</code></pre>
   </div>
 </section>
-
 
 <footer class="footer">
   <div class="container">
@@ -479,17 +334,14 @@
 
 <!-- </body> -->
 <!-- </html> -->
-</div>
 
 
 <!-- </div> -->
 
 <!-- <div class="pagination" style="border-top:0px solid #e5e5e5;"> -->
   <!-- 
-    <a href="/RestoreAgent" class="left next">Prev</a>
   
-  
-    <a href="/VideoDesnowing" class="right next">Next</a>
+    <a href="/LWay" class="right next">Next</a>
    -->
 
   <!-- <a href="#" class="top">Top</a> -->
