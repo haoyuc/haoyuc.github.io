@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Low-Res Leads the Way"
+title:  "RestoreAgent"
 info: "Haoyu Chen"
-tech : "Super Resolution"
+tech : "Restore Agent"
 type: arXiv
 imgurl: ../assets/img/AAN.jpg
 pdfurl: https://arxiv.org/pdf/2104.09497.pdf
