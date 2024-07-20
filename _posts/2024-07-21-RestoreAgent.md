@@ -2,7 +2,7 @@
 layout: post
 title:  "RestoreAgent"
 info: "Haoyu Chen"
-tech : "Restore Agent"
+tech : "RestoreAgent "
 type: arXiv
 imgurl: ../assets/img/AAN.jpg
 pdfurl: https://arxiv.org/pdf/2104.09497.pdf
