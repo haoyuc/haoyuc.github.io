@@ -341,6 +341,30 @@ Once the restoration sequence and model selection are determined, RestoreAgent a
         });
       </script>        
     </div>
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock6" style="max-width: 80% !important;">
+    <!-- <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div> -->
+    <div class="gradient-text motivation-title">
+     Visual comparisons with All-in-One Methods
+    </div>    
+    <!-- <div class="gradient-text motivation-small-title">
+      Inflexible models limit optimal performance
+    </div> -->
+    <div class="image-container" style="max-width: 1200px !important;">
+      <img src="./assets/img/RestoreAgent/visual_all-in-one.png" alt="Sample Image" style="width:100%">
+    </div>   
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock6 = document.getElementById('motivationBlock6');
+      const blockPosition = motivationBlock6.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock6.classList.add('visible');
+      }
+    });
+  </script>     
   </div>
 </section>
 
