@@ -37,13 +37,15 @@
   }
 }
 
+
+
 .ezy__header37-overlay {
   position: absolute;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(135deg, #000000, #3e3e3e);
+  background: linear-gradient(135deg, #000000, #2b2b2b);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -106,7 +108,7 @@
   /* border: 1px solid #ddd; */
   border-radius: 8px;
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(120px);
   transition: opacity 2.1s ease, transform 2.1s ease;
 }
 
@@ -118,9 +120,10 @@
 .motivation-title {
   font-size: 2.5em;
   font-weight: bold;
-  background: linear-gradient(to right, #5AB9BE, #3B34CE);
+  /* background: linear-gradient(to right, #5AB9BE, #3B34CE); */
   -webkit-background-clip: text;
-  color: transparent;
+  /* color: transparent; */
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -147,3 +150,83 @@
   /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
+
+
+
+.ezy__header37-heading-2 {
+  font-weight: 700;
+  font-size: 50px; /* 调整字体大小 */
+  line-height: 1.2;
+  color: #ffffff; /* 修改后的浅灰色字体 */
+}
+
+
+.ezy__subheading-2 {
+  font-size: 30px; /* 调整副标题的字体大小 */
+  color: #f1f1f1; /* 与主标题颜色一致 */
+}
+
+@media (min-width: 991px) {
+  .ezy__header37-heading-2 {
+    font-size: 60px; /* 调整字体大小 */
+  }
+  .ezy__subheading-2 {
+    font-size: 40px; /* 调整副标题的字体大小 */
+  }
+}
+
+
+
+.ezy__subheading-3 {
+  font-size: 20px; /* 调整副标题的字体大小 */
+  color: #fffefe; /* 与主标题颜色一致 */
+}
+
+@media (min-width: 991px) {
+  .ezy__subheading-3 {
+    font-size: 25px; /* 调整副标题的字体大小 */
+  }
+}
+
+
+
+
+
+
+
+.motivation-0 {
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 2s ease, transform 2s ease;
+}
+
+.motivation-0.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.motivation-0-text {
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 3s ease, transform 3s ease;
+}
+
+.motivation-0-text.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+.publication-authors {
+  color: #f3f3f360;
+}

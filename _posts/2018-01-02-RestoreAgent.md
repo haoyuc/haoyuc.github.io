@@ -103,16 +103,56 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
   <div class="container">
     <div class="row align-items-center">
       <!--  -->
-      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
+      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5 motivation-0" id="motivationBlock0"> <!-- 添加偏移量 -->
         <h2 class="ezy__header37-heading mb-4 mb-md-5">
           Restore<span class="ezy__header37-heading mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
         </h2>
         <h3 class="ezy__subheading mb-4 mb-md-5">
           Autonomous Image Restoration Agent via Multimodal Large Language Models
         </h3>
+            <div class="publication-authors">
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://haoyuchen.com/">Haoyu Chen</a><sup> 1  </sup></span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://fenglinglwb.github.io/">Wenbo Li</a><sup> 2  </sup></span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://www.jasongt.com/">Jinjin Gu</a><sup> 3  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?hl=zh-CN&user=wcuqACgAAAAJ">Jingjing Ren</a><sup> 1  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?user=0ua28KoAAAAJ">Sixiang Chen</a><sup> 2  </sup>
+            </span>
+            <p style="margin-bottom:0px;"></p>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?user=JPUwfAMAAAAJ">Tian Ye</a><sup> 2  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?user=fs8HQxQAAAAJ">Renjing Pei</a><sup> 2  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?user=fs8HQxQAAAAJ">Kaiwen Zhou</a><sup> 2  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://scholar.google.com.hk/citations?user=fs8HQxQAAAAJ">Fenglong Song</a><sup> 2  </sup>
+            </span>
+            <span class="author-block">
+              <a style="color: #c2c2c2e7;" href="https://sites.google.com/site/indexlzhu/home">Lei Zhu</a><sup> 1,4  </sup>
+            </span>
+          </div>
+            <div class="publication-authors" style="padding-bottom:30px;padding-top:15px;">
+            <span class="author-block"><sup>1 </sup>The Hong Kong University of Science and Technology (Guangzhou)</span>
+            <p style="margin-bottom:0px;"></p>
+            <span class="author-block"><sup>2 </sup>Huawei Noah’s Ark Lab</span>
+            <p style="margin-bottom:0px;"></p>
+            <span class="author-block"><sup>3 </sup>The University of Sydney</span>
+            <p style="margin-bottom:0px;"></p>
+            <span class="author-block"><sup>4 </sup>The Hong Kong University of Science and Technology</span>
+            </div>           
         <button type="button" class="btn ezy__header37-btn">PDF</button>
       </div>
-      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
+      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5 motivation-0-text" id="motivationBlock0text"> <!-- 添加偏移量 -->
           <div class="content has-text-justified">
                 <p>
 Natural images captured by mobile devices often suffer from multiple types of degradation, such as noise, blur, and low light. Traditional image restoration methods require manual selection of specific tasks, algorithms, and execution sequences, which is time-consuming and may yield suboptimal results. All-in-one models, though capable of handling multiple tasks, typically support only a limited range and often produce overly smooth, low-fidelity outcomes due to their broad data distribution fitting. 
@@ -132,6 +172,13 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
                 </p>
           </div>
       </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const motivationBlock0 = document.getElementById('motivationBlock0');
+      motivationBlock0.classList.add('visible');
+      motivationBlock0text.classList.add('visible');
+    });
+  </script>
 
 
 
@@ -229,6 +276,70 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
       }
     });
   </script>  
+      <div class="col-12 col-md-8 offset-md-1  motivation" id="motivationBlock4" style="padding-top:120px;">
+        <h2 class="ezy__header37-heading-2 mb-4 mb-md-5">
+          Restore<span class="ezy__header37-heading-2 mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
+        </h2>
+        <h3 class="ezy__subheading-2 mb-4 mb-md-5" style="padding-bottom:50px;">
+          Autonomous Image Restoration Agent via Multimodal Large Language Models
+        </h3>   
+      </div>
+      <script>
+        document.addEventListener('scroll', function() {
+          const motivationBlock4 = document.getElementById('motivationBlock4');
+          const blockPosition = motivationBlock4.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          if (blockPosition < screenPosition) {
+            motivationBlock4.classList.add('visible');
+          }
+        });
+      </script>  
+      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock5">
+        <h3 class="ezy__subheading-3">
+          1. Degradation Type Identification
+        </h3>
+        <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
+              <p>
+RestoreAgent automatically identifies the types of degradation present in an input image and determines the corresponding restoration tasks required.                
+              </p>
+        </div>        
+        <h3 class="ezy__subheading-3">
+          2. Adaptive Restoration Sequence
+        </h3>
+        <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
+              <p>
+RestoreAgent surpasses the limitations of fixed, human-defined model execution sequences by adaptively assessing the unique characteristics of each input image to determine the optimal order for applying the restoration models, maximizing the effectiveness of the image restoration process.   
+             </p>
+        </div>          
+        <h3 class="ezy__subheading-3">
+          3. Optimal Model Selection
+        </h3>  
+        <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
+              <p>
+Based on the specific degradation patterns in the input image,
+RestoreAgent dynamically selects the most appropriate model from the available pool for each
+restoration task, ensuring optimal performance.
+              </p>
+        </div>                                
+        <h3 class="ezy__subheading-3">
+          4. Automated Execution
+        </h3> 
+        <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
+              <p>
+Once the restoration sequence and model selection are determined, RestoreAgent autonomously executes the entire restoration pipeline without the need for manual intervention.
+              </p>
+        </div>                 
+      </div>
+      <script>
+        document.addEventListener('scroll', function() {
+          const motivationBlock5 = document.getElementById('motivationBlock5');
+          const blockPosition = motivationBlock5.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.3;
+          if (blockPosition < screenPosition) {
+            motivationBlock5.classList.add('visible');
+          }
+        });
+      </script>        
     </div>
   </div>
 </section>
@@ -238,144 +349,6 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
 
 
 
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">LWay:  Low-Res Leads the Way</h2>
-        <div class="content has-text-justified">
-          <img src="./assets/img/Lway/net.jpg">
-          <p>
-          </p>
-          <p>
-            The proposed training pipeline (LWay) consists of two steps. 
-          </p>
-          <p>
-            <strong>Step 1</strong>, we pre-train a LR reconstruction network to capture degradation embedding from LR images. 
-            This embedding is then applied to HR images, regenerating LR content. 
-          </p>
-          <p>
-            <strong>Step 2</strong>, for test images, a pre-trained SR model generates SR outputs, 
-            which are then degraded by the fixed LR reconstruction network. 
-            We iteratively update the SR model using a self-supervised learning loss applied to LR images, 
-            with a focus on high-frequency details through weighted loss. 
-          </p>
-          <p>
-            This refinement process enhances the SR model’s generalization performance 
-            on previously unseen images.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
-
-
-
-
-
-
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h4 class="title is-6">Unsupervised learning using unpaired data</h4>
-          <img src="./assets/img/Lway/1.jpg">
-          <!-- <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p> -->
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-      <!-- Matting. -->
-      <div class="column">
-        <h4 class="title is-6">Supervised learning using synthetic paired data</h4>
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./assets/img/Lway/2.jpg">
-            <!-- <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--/ Matting. -->
-    <div class="columns is-centered">
-      <!-- Visual Effects. -->
-      <div class="column">
-        <div class="content">
-          <h4 class="title is-6">Self-supervised learning using single image</h4>
-          <img src="./assets/img/Lway/3.jpg">
-          <!-- <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p> -->
-        </div>
-      </div>
-      <!--/ Visual Effects. -->
-      <!-- Matting. -->
-      <div class="column">
-        <h4 class="title is-6">Supervised pre-training + Self-supervised learning (Ours)</h4>
-        <div class="columns is-centered">
-          <div class="column content">
-            <img src="./assets/img/Lway/4.jpg">
-            <!-- <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p> -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Results</h2>
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Fine-tuning process</h3>
-        <div class="content has-text-justified">
-          <img src="./assets/img/Lway/iteration.jpg">
-          <p>
-            The SR model advances through the proposed fine-tuning iterations, 
-            moving from the supervised learning (SL) space of synthetic degradation to 
-            the self-supervised learning (SSL) space learned from test images. 
-            This results in enhanced SR quality and fidelity.
-          </p>
-        </div>
-        <br/>
-        <!--/ Interpolating. -->
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Qualitative comparisons on real-world datasets</h3>
-        <div class="content has-text-justified">
-          <img src="./assets/img/Lway/samples.jpg">
-          <p>
-            <!-- Qualitative comparisons on real-world datasets.  -->
-            The content within the blue box represents a zoomed-in image.
-            Using <span class="dnerf">LWay</span>, every model has a great improvment.
-          </p>
-        </div>
-        <!--/ Re-rendering. -->
-        <h3 class="title is-4">Qualitative comparisons on old films</h3>
-        <div class="content has-text-justified">
-          <img src="./assets/img/Lway/movie.jpg">
-          <!-- <p>
-            Using <span class="dnerf">LWay</span>, every model has a great improvment.
-          </p> -->
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
 
 
 <section class="section" id="BibTeX">
@@ -391,34 +364,6 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
 </section>
 
 
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://github.com/haoyuc" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
-    </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            Website template credit to <a
-              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
 
 <!-- </body> -->
 <!-- </html> -->
