@@ -181,11 +181,17 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
      why does using a fixed or random task execution order fail?
     </div>    
     <div class="gradient-text motivation-small-title">
-      Wrong execution order causes wrong results.
+      Wrong execution order causes wrong results
     </div>
     <div class="image-container">
-      <img src="./assets/img/RestoreAgent/motivation_3.png" alt="Sample Image" style="width:100%">
-    </div>     
+      <img src="./assets/img/RestoreAgent/motivation_4.png" alt="Sample Image" style="width:100%">
+    </div>  
+    <div class="gradient-text motivation-small-title">
+      Same degradation types with diFerent patterns require distinct execution orders
+    </div>
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_5.png" alt="Sample Image" style="width:100%">
+    </div>         
   </div>
   <script>
     document.addEventListener('scroll', function() {
@@ -197,10 +203,33 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
       }
     });
   </script>  
+
+
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock3">
+    <!-- <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div> -->
+    <div class="gradient-text motivation-title">
+     Why does using one fixed for one task fail?
+    </div>    
+    <div class="gradient-text motivation-small-title">
+      Inflexible models limit optimal performance
     </div>
-
-
-
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_6.png" alt="Sample Image" style="width:100%">
+    </div>   
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock3 = document.getElementById('motivationBlock3');
+      const blockPosition = motivationBlock3.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock3.classList.add('visible');
+      }
+    });
+  </script>  
+    </div>
   </div>
 </section>
 
