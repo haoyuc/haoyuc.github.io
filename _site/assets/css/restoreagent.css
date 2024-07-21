@@ -83,3 +83,67 @@
   color: #f3f3f360 !important;
 }
 
+
+
+
+
+
+
+
+
+
+.motivation {
+  padding-top: 30px;
+}
+
+.motivation-small-title {
+
+
+}
+
+.motivation {
+  padding: 20px;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2.1s ease, transform 2.1s ease;
+}
+
+.motivation.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.motivation-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  background: linear-gradient(to right, #5AB9BE, #3B34CE);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+.motivation-small-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #d2d2d294;
+  /* background: linear-gradient(to right, #5AB9BE, #3B34CE); */
+  -webkit-background-clip: text;
+  /* color: transparent; */
+  padding-top: 20px;
+  margin-bottom: 0px;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 10px;
+  padding: 20px;
+  /* background: rgba(255, 255, 255, 0.166); */
+  /* border-radius: 15px; */
+  backdrop-filter: blur(30px);
+  /* border: 1px solid rgba(255, 255, 255, 0.3); */
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+

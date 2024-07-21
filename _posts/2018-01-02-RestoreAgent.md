@@ -102,6 +102,7 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
   <div class="ezy__header37-overlay"></div>
   <div class="container">
     <div class="row align-items-center">
+      <!--  -->
       <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
         <h2 class="ezy__header37-heading mb-4 mb-md-5">
           Restore<span class="ezy__header37-heading mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
@@ -110,9 +111,9 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
           Autonomous Image Restoration Agent via Multimodal Large Language Models
         </h3>
         <button type="button" class="btn ezy__header37-btn">PDF</button>
-        </div>
-        <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
-              <div class="content has-text-justified">
+      </div>
+      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5"> <!-- 添加偏移量 -->
+          <div class="content has-text-justified">
                 <p>
 Natural images captured by mobile devices often suffer from multiple types of degradation, such as noise, blur, and low light. Traditional image restoration methods require manual selection of specific tasks, algorithms, and execution sequences, which is time-consuming and may yield suboptimal results. All-in-one models, though capable of handling multiple tasks, typically support only a limited range and often produce overly smooth, low-fidelity outcomes due to their broad data distribution fitting. 
                 </p>
@@ -129,11 +130,80 @@ selecting the most suitable models, and </p>
                 <p>
 Experimental results demonstrate the superior performance of RestoreAgent in handling complex degradation, surpassing human experts. Furthermore, the system’s modular design facilitates the fast integration of new tasks and models, enhancing its flexibility and scalability for various applications.
                 </p>
-              </div>
+          </div>
       </div>
+
+
+
+
+  <div class="col-12 col-md-11 offset-md-1 mb-1 mb-md-2 mt-5 mt-md-6 motivation" id="motivationBlock">
+    <div class="gradient-text motivation-title">
+      Why do all-in-one models fail?
     </div>
+    <div class="gradient-text motivation-small-title">
+      Not truly "all": Models still fail on unseen degradation types
+    </div>
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_1.png" alt="Sample Image" style="width:100%">
+    </div>    
+    <div class="gradient-text motivation-small-title">
+      Limited performance: Specialized models outperform generalists
+    </div>
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_2.png" alt="Sample Image" style="width:100%">
+    </div>  
+    <div class="gradient-text motivation-small-title">
+      Single Task + All-in-One > All-in-One only
+    </div>
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_3.png" alt="Sample Image" style="width:100%">
+    </div>        
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock = document.getElementById('motivationBlock');
+      const blockPosition = motivationBlock.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock.classList.add('visible');
+      }
+    });
+  </script>
+
+
+
+
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock2">
+    <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div>
+    <div class="gradient-text motivation-title">
+     why does using a fixed or random task execution order fail?
+    </div>    
+    <div class="gradient-text motivation-small-title">
+      Wrong execution order causes wrong results.
+    </div>
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_3.png" alt="Sample Image" style="width:100%">
+    </div>     
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock2 = document.getElementById('motivationBlock2');
+      const blockPosition = motivationBlock2.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock2.classList.add('visible');
+      }
+    });
+  </script>  
+    </div>
+
+
+
   </div>
 </section>
+
 
 
 
