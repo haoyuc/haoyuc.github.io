@@ -230,3 +230,135 @@
 .publication-authors {
   color: #f3f3f360;
 }
+
+
+
+
+.modern-table {
+  width: 90%;
+  border-collapse: separate;
+  border-spacing: 0;
+  color: white;
+  /* font-family: Arial, sans-serif; */
+  font-size: 12px; /* 减小了基础字体大小 */
+  background: linear-gradient(145deg, #4e4e4f5b, #22232446);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.modern-table th, .modern-table td {
+  padding: 10px; /* 稍微减少了内边距 */
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.649);
+
+}
+
+.modern-table th:not(:first-child), 
+.modern-table td:not(:first-child) {
+  text-align: center; /* 除第一列外，所有列居中对齐 */
+}
+
+.modern-table thead {
+  background: rgba(0, 0, 0, 0.2);
+}
+.modern-table thead th {
+  /* font-weight: bold; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px; /* 减小了表头字体大小 */
+}
+.modern-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.modern-table tbody td:first-child {
+  text-align: left;
+  /* font-weight: bold; */
+}
+.modern-table caption {
+  caption-side: top;
+  padding-bottom: 30px;
+  font-size: 25px; /* 减小了标题字体大小 */
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.02);
+  color: white;
+}
+
+
+
+
+
+.table-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+.scrollable-table {
+  min-width: 1200px;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 12px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+.scrollable-table th, .scrollable-table td {
+  padding: 10px;
+  text-align: center !important;
+  border-bottom: 1px solid #333;
+  white-space: nowrap;
+  color: #e0e0e0;
+  font-size: 12px;
+
+}
+.scrollable-table thead {
+  background: #2c2c2c;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.scrollable-table thead th {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+}
+.scrollable-table tbody tr:hover {
+  filter: brightness(1.2);
+}
+.scrollable-table tbody td:first-child {
+  text-align: left;
+  font-weight: bold;
+  color: #ffffff;
+  position: sticky;
+  left: 0;
+  background: #1e1e1e;
+  z-index: 2;
+  text-align: left !important;
+
+}
+.scrollable-table .empty {
+  background-color: #252525;
+}
+.scrollable-table tbody td:first-child::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  width: 5px;
+  background: linear-gradient(to right, rgba(255,255,255,0.05), rgba(255,255,255,0));
+}
+
+/* Group colors */
+.scrollable-table .group-1 { background-color: rgba(89, 91, 94, 0.168); }
+.scrollable-table .group-2 { background-color: rgba(55, 55, 55, 0.1); }
+.scrollable-table .group-3 { background-color: rgba(89, 91, 94, 0.252); }
+.scrollable-table .group-4 { background-color: rgba(55, 55, 55, 0.1); }
+
+.scrollable-table thead .group-1 { background-color: rgba(97, 97, 97, 0.3); }
+.scrollable-table thead .group-2 { background-color: rgba(52, 52, 52, 0.3); }
+.scrollable-table thead .group-3 { background-color: rgba(115, 115, 115, 0.3); }
+.scrollable-table thead .group-4 { background-color: rgba(77, 77, 77, 0.3); }

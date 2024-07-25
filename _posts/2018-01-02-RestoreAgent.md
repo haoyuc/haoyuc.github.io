@@ -257,7 +257,7 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
       For use multiple task-specific models,
     </div> -->
     <div class="gradient-text motivation-title">
-     Why does using one fixed for one task fail?
+     Why does using one fixed model for one task fail?
     </div>    
     <div class="gradient-text motivation-small-title">
       Inflexible models limit optimal performance
@@ -294,7 +294,7 @@ Experimental results demonstrate the superior performance of RestoreAgent in han
           }
         });
       </script>  
-      <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock5">
+      <div class="col-12 col-md-8 offset-md-1 motivation" id="motivationBlock5">
         <h3 class="ezy__subheading-3">
           1. Degradation Type Identification
         </h3>
@@ -328,7 +328,7 @@ restoration task, ensuring optimal performance.
               <p>
 Once the restoration sequence and model selection are determined, RestoreAgent autonomously executes the entire restoration pipeline without the need for manual intervention.
               </p>
-        </div>                 
+        </div>                  
       </div>
       <script>
         document.addEventListener('scroll', function() {
@@ -345,15 +345,10 @@ Once the restoration sequence and model selection are determined, RestoreAgent a
     <!-- <div class="gradient-text motivation-title">
       For use multiple task-specific models,
     </div> -->
-    <div class="gradient-text motivation-title">
-     Visual comparisons with All-in-One Methods
-    </div>    
-    <!-- <div class="gradient-text motivation-small-title">
-      Inflexible models limit optimal performance
-    </div> -->
+<!--  -->
     <div class="image-container" style="max-width: 1200px !important;">
-      <img src="./assets/img/RestoreAgent/visual_all-in-one.png" alt="Sample Image" style="width:100%">
-    </div>   
+      <img src="./assets/img/RestoreAgent/method.png" alt="Sample Image" style="width:100%">
+    </div>      
   </div>
   <script>
     document.addEventListener('scroll', function() {
@@ -365,6 +360,373 @@ Once the restoration sequence and model selection are determined, RestoreAgent a
       }
     });
   </script>     
+
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock7" style="max-width: 80% !important;">
+    <!-- <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div> -->
+<!--  -->   
+    <div class="gradient-text motivation-title">
+     Visual Results
+    </div>    
+    <!-- <div class="gradient-text motivation-small-title">
+      Inflexible models limit optimal performance
+    </div> -->
+    <div class="image-container" style="max-width: 1200px !important;">
+      <img src="./assets/img/RestoreAgent/results.png" alt="Sample Image" style="width:100%">
+    </div>    
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock7 = document.getElementById('motivationBlock7');
+      const blockPosition = motivationBlock7.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock7.classList.add('visible');
+      }
+    });
+  </script>     
+
+
+
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock9" style="max-width: 80% !important;">
+    <!-- <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div> -->
+<!--  -->   
+    <div class="gradient-text motivation-title" style="padding-bottom:15px;">
+     RestoreAgent Outperforms All-in-One Models 
+    </div>    
+  <div class="table-scroll-container">
+      <table class="scrollable-table">
+          <thead>
+              <tr>
+                  <th rowspan="2"></th>
+                  <th colspan="4" class="group-1">noise + JPEG</th>
+                  <th colspan="4" class="group-2">haze + noise</th>
+                  <th colspan="4" class="group-3">rain + haze + noise</th>
+                  <th colspan="4" class="group-4">rain + haze + noise + JPEG</th>
+              </tr>
+              <tr>
+                  <th class="group-1">PSNR ↑</th>
+                  <th class="group-1">SSIM ↑</th>
+                  <th class="group-1">LPIPS ↓</th>
+                  <th class="group-1">DISTS ↓</th>
+                  <th class="group-2">PSNR ↑</th>
+                  <th class="group-2">SSIM ↑</th>
+                  <th class="group-2">LPIPS ↓</th>
+                  <th class="group-2">DISTS ↓</th>
+                  <th class="group-3">PSNR ↑</th>
+                  <th class="group-3">SSIM ↑</th>
+                  <th class="group-3">LPIPS ↓</th>
+                  <th class="group-3">DISTS ↓</th>
+                  <th class="group-4">PSNR ↑</th>
+                  <th class="group-4">SSIM ↑</th>
+                  <th class="group-4">LPIPS ↓</th>
+                  <th class="group-4">DISTS ↓</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Real-ESRGAN</td>
+                  <td class="group-1">23.43</td>
+                  <td class="group-1">0.7242</td>
+                  <td class="group-1">0.3022</td>
+                  <td class="group-1">0.2106</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td>StableSR</td>
+                  <td class="group-1">17.61</td>
+                  <td class="group-1">0.4464</td>
+                  <td class="group-1">0.3705</td>
+                  <td class="group-1">0.2124</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-2">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-3">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td>AirNet</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-2">17.56</td>
+                  <td class="group-2">0.5897</td>
+                  <td class="group-2">0.5569</td>
+                  <td class="group-2">0.2964</td>
+                  <td class="group-3">18.22</td>
+                  <td class="group-3">0.6767</td>
+                  <td class="group-3">0.4314</td>
+                  <td class="group-3">0.2336</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td>PromptIR</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-2">16.13</td>
+                  <td class="group-2">0.5428</td>
+                  <td class="group-2">0.6696</td>
+                  <td class="group-2">0.3544</td>
+                  <td class="group-3">17.81</td>
+                  <td class="group-3">0.7099</td>
+                  <td class="group-3">0.4506</td>
+                  <td class="group-3">0.2317</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td>MiOIR</td>
+                  <td class="group-1">23.98</td>
+                  <td class="group-1">0.6961</td>
+                  <td class="group-1">0.3266</td>
+                  <td class="group-1">0.2325</td>
+                  <td class="group-2">15.79</td>
+                  <td class="group-2">0.4790</td>
+                  <td class="group-2">0.7118</td>
+                  <td class="group-2">0.3628</td>
+                  <td class="group-3">16.22</td>
+                  <td class="group-3">0.6388</td>
+                  <td class="group-3">0.4719</td>
+                  <td class="group-3">0.2771</td>
+                  <td class="group-4">13.80</td>
+                  <td class="group-4">0.6410</td>
+                  <td class="group-4">0.4875</td>
+                  <td class="group-4">0.2939</td>
+              </tr>
+              <tr>
+                  <td>InstructIR</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-2">17.36</td>
+                  <td class="group-2">0.4288</td>
+                  <td class="group-2">0.7696</td>
+                  <td class="group-2">0.3646</td>
+                  <td class="group-3">19.45</td>
+                  <td class="group-3">0.6897</td>
+                  <td class="group-3">0.3994</td>
+                  <td class="group-3">0.2170</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td>DA-CLIP</td>
+                  <td class="group-1">22.47</td>
+                  <td class="group-1">0.6128</td>
+                  <td class="group-1">0.3525</td>
+                  <td class="group-1">0.2287</td>
+                  <td class="group-2">16.98</td>
+                  <td class="group-2">0.7061</td>
+                  <td class="group-2">0.3901</td>
+                  <td class="group-2">0.2737</td>
+                  <td class="group-3">15.44</td>
+                  <td class="group-3">0.6011</td>
+                  <td class="group-3">0.4597</td>
+                  <td class="group-3">0.2754</td>
+                  <td class="group-4">15.30</td>
+                  <td class="group-4">0.6863</td>
+                  <td class="group-4">0.3871</td>
+                  <td class="group-4">0.2627</td>
+              </tr>
+              <tr>
+                  <td>AutoDIR</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-1">-</td>
+                  <td class="group-2">17.51</td>
+                  <td class="group-2">0.6942</td>
+                  <td class="group-2">0.4248</td>
+                  <td class="group-2">0.2444</td>
+                  <td class="group-3">19.22</td>
+                  <td class="group-3">0.7705</td>
+                  <td class="group-3">0.3043</td>
+                  <td class="group-3">0.1802</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+                  <td class="group-4">-</td>
+              </tr>
+              <tr>
+                  <td style="color:#4BA5B3; font-weight:bold;">RestoreAgent</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-1">25.32</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-1">0.7806</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-1">0.2308</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-1">0.1958</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-2">20.47</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-2">0.8053</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-2">0.2193</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-2">0.1758</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-3">19.53</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-3">0.8237</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-3">0.2166</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-3">0.1638</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-4">19.72</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-4">0.7816</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-4">0.2741</td>
+                  <td style="color:#4BA5B3; font-weight:bold;" class="group-4">0.1903</td>
+            </tr>
+            <!-- 您可以继续添加更多的行，遵循相同的模式 -->
+        </tbody>
+    </table>
+  </div>     
+    <div class="gradient-text motivation-title" style="font-size:2em;padding-top:15px;">
+     Visual comparisons with All-in-One models
+    </div>    
+    <!-- <div class="gradient-text motivation-small-title">
+      Inflexible models limit optimal performance
+    </div> -->
+    <div class="image-container" style="max-width: 1200px !important;">
+      <img src="./assets/img/RestoreAgent/visual_all-in-one.png" alt="Sample Image" style="width:100%">
+    </div>   
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock9 = document.getElementById('motivationBlock9');
+      const blockPosition = motivationBlock9.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock9.classList.add('visible');
+      }
+    });
+  </script>     
+
+
+
+
+
+
+
+
+  <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock8" style="max-width: 80% !important;">
+    <div class="gradient-text motivation-title">
+     Challenges in Human Expert Decision-making
+    </div>    
+    <!-- <div class="gradient-text motivation-small-title">
+      Inflexible models limit optimal performance
+    </div> -->
+    <div class="image-container" style="max-width: 900px !important;">
+      <img src="./assets/img/RestoreAgent/visual_b.png" alt="Sample Image" style="width:90%">
+    </div>       
+<table class="modern-table">
+  <caption>RestoreAgent significantly outperformed Human Expert decision-making across various degraded datasets
+</caption>
+  <thead>
+    <tr>
+      <th></th>
+      <th>PSNR ↑</th>
+      <th>SSIM ↑</th>
+      <th>LPIPS ↓</th>
+      <th>DISTS ↓</th>
+      <th>balanced ↑</th>
+      <th>ranking ↓(%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Random Order & Model</td>
+      <td>21.31</td>
+      <td>0.7139</td>
+      <td>0.3246</td>
+      <td>0.2241</td>
+      <td>1.92</td>
+      <td>34.7</td>
+    </tr>
+    <tr>
+      <td>Random Order + Predict Model</td>
+      <td>21.74</td>
+      <td>0.7385</td>
+      <td>0.2848</td>
+      <td>0.2045</td>
+      <td>2.89</td>
+      <td>26.1</td>
+    </tr>
+    <tr>
+      <td>Random Model + Predict Order</td>
+      <td>22.42</td>
+      <td>0.7574</td>
+      <td>0.2750</td>
+      <td>0.2027</td>
+      <td>3.44</td>
+      <td>22.7</td>
+    </tr>
+    <tr>
+      <td>Pre-defined Order and Model</td>
+      <td>22.38</td>
+      <td>0.7639</td>
+      <td>0.2644</td>
+      <td>0.1986</td>
+      <td>3.48</td>
+      <td>22.1</td>
+    </tr>
+    <tr>
+      <td style="color:white;">Human Expert</td>
+      <td style="color:white;">22.51</td>
+      <td style="color:white;">0.7634</td>
+      <td style="color:white;">0.2670</td>
+      <td style="color:white;">0.2014</td>
+      <td style="color:white;">3.73</td>
+      <td style="color:white;">19.5</td>
+    </tr>
+    <tr>
+      <td style="color:#4BA5B3; font-weight:bold;">RestoreAgent</td>
+      <td style="color:#4BA5B3; font-weight:bold;">22.61</td>
+      <td style="color:#4BA5B3; font-weight:bold;">0.7700</td>
+      <td style="color:#4BA5B3; font-weight:bold;">0.2513</td>
+      <td style="color:#4BA5B3; font-weight:bold;">0.1890</td>
+      <td style="color:#4BA5B3; font-weight:bold;">4.38</td>
+      <td style="color:#4BA5B3; font-weight:bold;">12.9</td>
+    </tr>
+  </tbody>
+</table> 
+
+
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock8 = document.getElementById('motivationBlock8');
+      const blockPosition = motivationBlock8.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock8.classList.add('visible');
+      }
+    });
+  </script>     
+
+
+
   </div>
 </section>
 
