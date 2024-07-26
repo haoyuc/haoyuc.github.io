@@ -150,7 +150,11 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
             <p style="margin-bottom:0px;"></p>
             <span class="author-block"><sup>4 </sup>The Hong Kong University of Science and Technology</span>
             </div>           
-        <button type="button" class="btn ezy__header37-btn">PDF</button>
+        <!-- <button type="button" class="btn ezy__header37-btn">PDF</button> -->
+
+<a href="https://arxiv.org/abs/2407.18035" target="_blank">
+  <button type="button" class="btn ezy__header37-btn">PDF</button>
+</a>
       </div>
       <div class="col-12 col-md-8 offset-md-1 mb-4 mb-md-5 motivation-0-text" id="motivationBlock0text"> <!-- 添加偏移量 -->
           <div class="content has-text-justified">
