@@ -740,11 +740,13 @@ Once the restoration sequence and model selection are determined, RestoreAgent a
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{chen2024lowres,
-  author    = {Chen, Haoyu and Li, Wenbo and Gu, Jinjin and Ren, Jingjing and Sun, Haoze and Zou, Xueyi and Yan, Youliang and Zhang, Zhensong and Zhu, Lei},
-  title     = {Low-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning},
-  journal   = {CVPR},
-  year      = {2024},
+    <pre><code>@misc{chen2024restoreagent,
+    title={RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models},
+    author={Haoyu Chen and Wenbo Li and Jinjin Gu and Jingjing Ren and Sixiang Chen and Tian Ye and Renjing Pei and Kaiwen Zhou and Fenglong Song and Lei Zhu},
+    year={2024},
+    eprint={2407.18035},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
 }</code></pre>
   </div>
 </section>

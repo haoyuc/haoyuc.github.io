@@ -301,7 +301,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
      <!-- <br> -->
       <a href="https://haoyuchen.com/RestoreAgent">[Website]</a> 
-      <!-- <a href="https://arxiv.org/abs/2407.02158">[arxiv]</a>  -->
+      <a href="https://arxiv.org/abs/2407.18035">[arxiv]</a> 
       <!-- <a href="https://github.com/catcathh/UltraPixel">[Code]</a> -->
       <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
       <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
