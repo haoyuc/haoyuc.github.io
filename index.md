@@ -361,7 +361,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 <!-- =================================================================================== -->
   <tr>
     <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/face.jpg" alt="">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/face1.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
       <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2023</div>
@@ -619,7 +619,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
   <!-- =================================================================================== -->
   <tr>
     <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.jpg" alt="">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.gif" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
       <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ICCV, 2023</div>
