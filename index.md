@@ -394,6 +394,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
     </tbody>
 </table>
+<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px; margin-bottom:25px;">
 <span style="font-weight:600;font-size:17px;"> 
 &nbsp;&nbsp; Generalizable Image Restoration
 </span>
@@ -606,6 +607,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     
     </tbody>
 </table>
+<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px; margin-bottom:25px;">
 <span style="font-weight:600;font-size:17px;"> 
 &nbsp;&nbsp;  Adverse Weather Restoration
 </span>
@@ -784,6 +786,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     
     </tbody>
 </table>
+<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px;margin-bottom:25px; ">
 <span style="font-weight:600;font-size:17px;"> 
 &nbsp;&nbsp;  Other
 </span>
