@@ -24,15 +24,6 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
 
 
 
-  <script>
-  var _hmt = _hmt || [];
-  (function() {
-    var hm = document.createElement("script");
-    hm.src = "https://hm.baidu.com/hm.js?a4d947977fccdcb7bc695c66ee1f90dd";
-    var s = document.getElementsByTagName("script")[0]; 
-    s.parentNode.insertBefore(hm, s);
-  })();
-  </script>
 
 <style>
   body {
@@ -918,28 +909,7 @@ Once the restoration sequence and model selection are determined, RestoreAgent a
 
 
 
-  <div class="col-12 col-md-8 offset-md-2"  style="max-width: 80% !important;">
 
-  <!-- Statcounter code for RestoreAgent
-  http://haoyuchen.com/RestoreAgent on Google Sites (new) -->
-  <script type="text/javascript">
-  var sc_project=13021972; 
-  var sc_invisible=0; 
-  var sc_security="c62173b0"; 
-  var scJsHost = "https://";
-  document.write("<sc"+"ript type='text/javascript' src='" +
-  scJsHost+
-  "statcounter.com/counter/counter.js'></"+"script>");
-  </script>
-  <noscript><div class="statcounter"><a title="Web Analytics"
-  href="https://statcounter.com/" target="_blank"><img
-  class="statcounter"
-  src="https://c.statcounter.com/13021972/0/c62173b0/0/"
-  alt="Web Analytics"
-  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-  <!-- End of Statcounter Code -->
-
-  </div>
 
 
 <!-- </body> -->
