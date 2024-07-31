@@ -337,7 +337,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
         UltraPixel: Advancing Ultra-High-Resolution Image Synthesis to New Peaks
       </div>
       <div class="author">
-      Jingjing Ren, Wenbo Li, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Bin Shao, Yong Guo, Long Peng, Lei Zhu
+      Jingjing Ren*, Wenbo Li*, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Bin Shao, Yong Guo, Long Peng, Lei Zhu
       </div>
       <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
      <!-- <br> -->
