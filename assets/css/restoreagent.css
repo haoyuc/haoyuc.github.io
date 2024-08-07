@@ -90,7 +90,18 @@
 
 
 
-
+.gradient-text-1 {
+  /* font-size: 2.5em; */
+  /* font-weight: bold; */
+  /* background: linear-gradient(to right, #5AB9BE, #3B34CE); */
+  /* -webkit-background-clip: text; */
+  /* color: transparent; */
+  /* color: white; */
+  /* margin-bottom: 20px; */
+  background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  color: transparent;  
+}
 
 
 

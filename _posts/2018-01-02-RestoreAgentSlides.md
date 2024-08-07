@@ -142,12 +142,39 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
 
 
 
+
+  <div class="col-12 col-md-11 offset-md-1 mb-1 mb-md-2 mt-5 mt-md-6 motivation" id="motivationBlocke" style="padding-bottom:400px;">
+    <div class="gradient-text motivation-title">
+      How to handle an image containing various degradations?
+    </div>
+    <div class="gradient-text-1 motivation-title" style="padding-left:60px; padding-top:70px;color:#4ba5b3cb;">
+      1. &nbsp; All-in-One Restoration Models
+    </div>    
+    <div class="gradient-text-1 motivation-title" style="padding-left:60px;padding-top:10px;color:#4ba5b3cb;">
+      2. &nbsp; Multiple Task-specific Restoration Models
+    </div>    
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlocke = document.getElementById('motivationBlocke');
+      const blockPosition = motivationBlocke.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlocke.classList.add('visible');
+      }
+    });
+  </script>
+
+
+
+
+
   <div class="col-12 col-md-11 offset-md-1 mb-1 mb-md-2 mt-5 mt-md-6 motivation" id="motivationBlock" style="padding-bottom:100px;">
     <div class="gradient-text motivation-title">
       Why do all-in-one models fail?
     </div>
     <div class="image-container" style="padding:5px;">
-      <img src="./assets/img/RestoreAgent/motivation_0.png" alt="Sample Image" style="width:100%">
+      <img src="./assets/img/RestoreAgent/motivation_0-1.png" alt="Sample Image" style="width:90%">
     </div>       
     <!-- <div class="gradient-text motivation-small-title">
       Not truly "all": Models still fail on unseen degradation types
@@ -253,13 +280,37 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
   </script>  
 
 
-  <div class="col-12 col-md-10 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock3" style="padding-bottom:300px;">
+  <div class="col-12 col-md-10 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlockf" style="padding-bottom:200px;">
     <!-- <div class="gradient-text motivation-title">
       For use multiple task-specific models,
     </div> -->
     <div class="gradient-text motivation-title">
      Why does using one fixed model for one task fail?
     </div>    
+    <div class="image-container">
+      <img src="./assets/img/RestoreAgent/motivation_0-2.png" alt="Sample Image" style="width:80%;padding-left:300px;">
+    </div>   
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlockf = document.getElementById('motivationBlockf');
+      const blockPosition = motivationBlockf.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlockf.classList.add('visible');
+      }
+    });
+  </script>  
+
+
+
+  <div class="col-12 col-md-10 offset-md-1 mb-4 mb-md-5  motivation" id="motivationBlock3" style="padding-bottom:300px;">
+    <!-- <div class="gradient-text motivation-title">
+      For use multiple task-specific models,
+    </div> -->
+    <!-- <div class="gradient-text motivation-title">
+     Why does using one fixed model for one task fail?
+    </div>     -->
     <div class="gradient-text motivation-small-title">
       Inflexible models limit optimal performance
     </div>
@@ -277,30 +328,32 @@ text: Among recent advances in SISR, attention mechanisms are crucial for high p
       }
     });
   </script>  
-      <div class="col-12 col-md-8 offset-md-1  motivation" id="motivationBlock4" style="padding-top:120px;">
-        <h2 class="ezy__header37-heading-2 mb-4 mb-md-5">
-          Restore<span class="ezy__header37-heading-2 mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
-        </h2>
-        <h3 class="ezy__subheading-2 mb-4 mb-md-5" style="padding-bottom:30px;">
-          Autonomous Image Restoration Agent via Multimodal Large Language Models
-        </h3>   
-      </div>
-      <script>
-        document.addEventListener('scroll', function() {
-          const motivationBlock4 = document.getElementById('motivationBlock4');
-          const blockPosition = motivationBlock4.getBoundingClientRect().top;
-          const screenPosition = window.innerHeight / 1.3;
-          if (blockPosition < screenPosition) {
-            motivationBlock4.classList.add('visible');
-          }
-        });
-      </script>  
-      <div class="col-12 col-md-8 offset-md-1 motivation" id="motivationBlock5">
-        <h3 class="ezy__subheading-3">
-          1. Degradation Type Identification
-        </h3>
-        <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
-              <p>
+
+
+  <div class="col-12 col-md-8 offset-md-1  motivation" id="motivationBlock4" style="padding-top:120px;">
+    <h2 class="ezy__header37-heading-2 mb-4 mb-md-5">
+      Restore<span class="ezy__header37-heading-2 mb-4 mb-md-5" style="color: #4BA5B3;"> A</span>gent
+    </h2>
+    <h3 class="ezy__subheading-2 mb-4 mb-md-5" style="padding-bottom:30px;">
+      Autonomous Image Restoration Agent via Multimodal Large Language Models
+    </h3>   
+  </div>
+  <script>
+    document.addEventListener('scroll', function() {
+      const motivationBlock4 = document.getElementById('motivationBlock4');
+      const blockPosition = motivationBlock4.getBoundingClientRect().top;
+      const screenPosition = window.innerHeight / 1.3;
+      if (blockPosition < screenPosition) {
+        motivationBlock4.classList.add('visible');
+      }
+    });
+  </script>  
+  <div class="col-12 col-md-8 offset-md-1 motivation" id="motivationBlock5">
+    <h3 class="ezy__subheading-3">
+      1. Degradation Type Identification
+    </h3>
+    <div class="content has-text-justified" style="padding-top:0px;paddomg-bottom:20px;">
+          <p>
 RestoreAgent automatically identifies the types of degradation present in an input image and determines the corresponding restoration tasks required.                
               </p>
         </div>        
