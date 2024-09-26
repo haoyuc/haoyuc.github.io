@@ -226,6 +226,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 <ul>
+  <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in NeurIPS 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2024-07</strong>: One paper to appear in ECCV 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in CVPR 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: Three papers to appear in ACM MM 2023.</li>
@@ -297,7 +298,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/restoreagent.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2024</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">NeurIPS, 2024</div>
       <div  class="paper-title">
         RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models
       </div>
@@ -332,7 +333,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/UltraPixel.jpg" alt="">
     </td>
     <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2024</div>
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">NeurIPS, 2024</div>
       <div  class="paper-title">
         UltraPixel: Advancing Ultra-High-Resolution Image Synthesis to New Peaks
       </div>
