@@ -226,7 +226,8 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 <ul>
-  <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in NeurIPS 2024.</li>
+  <li><strong style="color: rgb(90, 100, 120);">2025-02</strong>: Two papers to appear in CVPR 2025.</li>
+  <li><strong style="color: rgb(90, 100, 120);">2024-09</strong>: Two papers to appear in NeurIPS 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2024-07</strong>: One paper to appear in ECCV 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in CVPR 2024.</li>
   <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: Three papers to appear in ACM MM 2023.</li>
@@ -289,6 +290,44 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
 
 
 <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+
+
+
+<!-- =================================================================================== -->
+  <tr>
+    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
+      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/POSTA.jpg" alt="">
+    </td>
+    <td width="75%" valign="center" class="text-wrapper"> 
+      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2025</div>
+      <div  class="paper-title">
+        POSTA: A Go-to Framework for Customized Artistic Poster Generation
+      </div>
+      <div class="author">
+      <span class="author-me">Haoyu Chen*</span>, Xiaojie Xu*, Wenbo Li, Jingjing Ren, Tian Ye, Songhua Liu, Ying-Cong Chen, Lei Zhu, Xinchao Wang
+      </div>
+      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
+     <!-- <br> -->
+      <!-- <a href="https://haoyuchen.com/RestoreAgent">[Website]</a>  -->
+      <!-- <a href="https://arxiv.org/abs/2407.18035">[arxiv]</a>  -->
+      <!-- <a href="https://github.com/catcathh/UltraPixel">[Code]</a> -->
+      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
+      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
+      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
+      <br>
+      <!-- <p> 
+          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
+      </p> -->
+    </td>
+</tr>
+<!-- =================================================================================== -->
+
+
+
+
+
 
 
 
@@ -862,8 +901,6 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
     </tbody>
 </table>
 
-
-3 ***CVPR*** &nbsp;&nbsp; 1 ***ICCV*** &nbsp;&nbsp; 2 ***ECCV*** &nbsp;&nbsp; 1 ***ICML*** &nbsp;&nbsp; 3 ***ACM MM*** &nbsp;&nbsp; 4 ***arXiv***
 
 <p style="padding:6px;"> </p>
 
