@@ -350,7 +350,7 @@ Mainly intrest in computer vision, especially in **Low-level Vision**.
       <a href="https://jingjingrenabc.github.io/ultrapixel/">[Website]</a> 
       <a href="https://arxiv.org/abs/2407.02158">[arxiv]</a> 
       <a href="https://github.com/catcathh/UltraPixel">[Code]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
+      <a href="https://huggingface.co/spaces/roubaofeipi/UltraPixel-demo">[Demo]</a> 
       <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
       <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
       <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
