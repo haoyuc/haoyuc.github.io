@@ -812,7 +812,7 @@ pre {
                     </div>
                     <div class="space-y-6 mt-6 pt-4">
                         <!-- SRP -->
-                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
                             <div class="flex-shrink-0 w-64 flex items-center">
                                 <img src="./assets/img/SRP.jpg" alt="SRP" class="w-full rounded">
                             </div>
