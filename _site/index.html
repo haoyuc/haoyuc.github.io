@@ -47,1096 +47,1143 @@
   </div> -->
 
   <div class="content">
-    <p><br /></p>
+    <!-- <!DOCTYPE html>
+<html lang="en"> -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Unified Autoregressive Visual Generation and Understanding</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    
+    <!-- 内联 CSS -->
+    <style>
+:root {
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
-<!--# Bio
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 14px;
+}
 
-I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021.    
-I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by [Prof. Lei Zhu](https://sites.google.com/site/indexlzhu/home).   
-Mainly intrest in computer vision, especially in **Low-level Vision**.
+.font-geist-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
 
-[Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ) &nbsp;&nbsp;&nbsp;
-[GitHub](https://github.com/haoyuc) &nbsp;&nbsp;&nbsp;
-[Email](mailto:hchen794@connect.hkust-gz.edu.cn)
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
 
--->
+/* Timeline styles */
+.timeline-item {
+  transition: transform 0.3s ease;
+}
 
-<style>
-  a:hover {
-    text-decoration: underline;
+.timeline-item:hover {
+  transform: translateX(5px);
+}
+
+/* Responsive table styles */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
- main,
- footer,
- .nav-container {
-   display: block;
-   margin: 0 auto;
-   max-width: 800px;
-   width: 80%;
- }  
-</style>
-
-<style>
-  @keyframes blink {
-    0% {
-      opacity: 1;
-    }
-    50% {
-      opacity: 0.5;
-      transform: scale(1.1);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  a:hover {
-    animation: blink 1s forwards;
-    /* color: red; */
-    /* text-shadow: 0 0 4px yellow; */
-  }
-</style>
-
-<div style="display: flex; padding-top:20px; padding-bottom:5px; flex-wrap: wrap;">
-
-
-  <!-- Left Column -->
-  <div style="flex: 1.35; width: 25%; padding: 0px; box-sizing: border-box; min-width:150px; padding-bottom:30px;" class="left-column">
-    <img src="../assets/img/IMG_6589.JPG" alt="Left Image" style="max-width: 100%; height: auto; margin-bottom: 30px; box-shadow:1px 1px 5px 0px rgba(0,0,0,0.5);" />
-    <!-- <p style="text-align:left;"> -->
-      <!-- <h1 style="margin-top:2px!important;">
-        <name>Haoyu Chen</name>
-      </h1>
-    <p style="color: rgb(0, 102, 153); margin-top: 0px;">PhD student @ HKUST(GZ)</p> -->
-
-
-  <div class="media">
-    <a name="fsaf" class="pull-left" style="padding-right:10px;">
-      <img class="media-object" src="../assets/img/email.svg" width="20px" height="20px" style="margin-bottom:10px;" />
-    </a>
-    <div class="media-body">
-      <p class="media-heading" style="color: rgb(118, 130, 150); font-size: 0.9em;">
-        <strong style="color: rgb(90, 100, 120);">
-          <a href="mailto:hchen794@connect.hkust-gz.edu.cn" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">E-mail</a>
-      </strong>
-        <!-- @hchen794 -->
-        <!-- @connect.hkust-gz.edu.cn -->
-      </p>
-    </div>
-  </div>
-
-  <div class="media">
-    <a name="fsaf" class="pull-left" style="padding-right:10px;">
-      <img class="media-object" src="../assets/img/google_scholar.png" width="20px" height="20px" style="margin-bottom:10px;" />
-    </a>
-    <div class="media-body">
-      <p class="media-heading" style="color: rgb(118, 130, 150); font-size: 0.9em;">
-        <strong style="color: rgb(90, 100, 120);">
-          <a href="https://scholar.google.com/citations?user=KWbcBucAAAAJ" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">Scholar</a>
-      </strong>
-        <!-- @Haoyu Chen -->
-        <!-- @connect.hkust-gz.edu.cn -->
-      </p>
-    </div>
-  </div>
-
-  <div class="media">
-    <a name="fsaf" class="pull-left" style="padding-right:10px;">
-      <img class="media-object" src="../assets/img/github.svg" width="20px" height="20px" style="margin-bottom:10px;" />
-    </a>
-    <div class="media-body">
-      <p class="media-heading" style="color: rgb(118, 130, 150); font-size: 0.9em;">
-        <strong style="color: rgb(90, 100, 120);">
-          Github
-      </strong>
-        <a href="https://github.com/haoyuc" style="color: rgb(90, 100, 120);" onmouseover="this.style.color='#006699';this.style.transition='color 0.3s ease'" onmouseout="this.style.color='#5A6478';">@haoyuc</a>
-      </p>
-    </div>
-  </div>
-
-  <div class="media">
-  <a name="fsaf" class="pull-left" style="padding-right:10px;">
-    <img class="media-object" src="../assets/img/wechat.svg" width="20px" height="20px" />
-  </a>
-  <div class="media-body">
-    <p class="media-heading" style="color: rgb(118, 130, 150); font-size: 0.9em;">
-      <strong style="color: rgb(90, 100, 120);">
-        Wechat
-    </strong>
-    <span onmouseover="showText('Feel free to contact me.')" onmouseout="hideText()">@haoyuc98</span>
-    </p>
-  </div>
-</div>
-
-  <!-- <style>
-    /* 添加样式以使 tooltip 更美观 */
-    span.tooltip {
-      position: relative;
-      cursor: pointer;
-    }
-
-    span.tooltip::after {
-      content: attr(data-tooltip);
-      position: absolute;
-      background-color: #fff;
-      color: #000;
-      padding: 5px;
-      border-radius: 5px;
-      bottom: 125%;
-      left: 50%;
-      transform: translateX(-50%);
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-    }
-
-    span.tooltip:hover::after {
-      opacity: 1;
-      visibility: visible;
-      writing-mode: horizontal-tb;
-
-    }
-  </style>
-
-
-  <p>悬停在 <span class="tooltip" data-tooltip="Feel free to content me.">这里</span> 显示新的文字。</p> -->
-
-
-<!-- <span onmouseover="showText('Feel free to content me.')" onmouseout="hideText()">悬停在这里</span> -->
-
-<div id="tooltip" style="display: none; position: absolute; background-color: #fff; border: 1px solid #ccc; padding: 5px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); border-radius: 8px; transition: opacity 0.s;"></div>
-
-<script>
-  function showText(text) {
-    var tooltip = document.getElementById('tooltip');
-    tooltip.innerHTML = text;
-    tooltip.style.display = 'block';
-  }
-
-  function hideText() {
-    var tooltip = document.getElementById('tooltip');
-    tooltip.style.display = 'none';
-  }
-</script>
-
-
-  </div>
-
-
-  <!-- Right Column -->
-  <div style="flex: 3; width: 70%; padding: 20px; box-sizing: border-box; margin-left: auto; padding-left:50px; padding-top:0px;" class="right-column">
-    <h1 style="margin-top:2px!important;">
-        <name>Haoyu Chen</name>
-    </h1>
-    <p style="color: #0070c9; margin-top: 0px;">PhD student @ HKUST(GZ)</p>
-    <p style="margin-bottom: 25px;"></p>
-    <p style="margin: 0;">I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021. </p>
-    <p>
-        I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by <a href="https://sites.google.com/site/indexlzhu/home?authuser=0">Prof. Lei Zhu</a> and <a href="https://scholar.google.com/citations?user=XhyKVFMAAAAJ&amp;hl=en">Prof. Ping Tan</a>.  
-    </p>
-    <p>
-        Mainly intrest in computer vision, especially in Low-level Vision, Image Processing, Multi-Modal Models and Generative Models. 
-    </p>
-        <p style="margin-bottom:0px;">
-        <!-- <a href="mailto:hchen794@connect.hkust-gz.edu.cn"> Email </a> &nbsp;/&nbsp; -->
-        <!-- <a href="https://scholar.google.com/citations?&user=KWbcBucAAAAJ"> Google Scholar </a> &nbsp;/&nbsp; -->
-        <!-- <a href="https://github.com/haoyuc"> GitHub </a>  -->
-  </p>  
-  </div>
-
-
-
-</div>
-
-<hr style="border-top: 1px solid #e3e3e3; margin-top: -5px " />
-
-<h1 id="news">News</h1>
-
-<!-- - **2023-07**: Three papers to appear in ACM MM 2023.
-- **2023-07**: One first author paper to appear in ICCV 2023.
-- **2023-04**: One paper to appear in ICML 2023.
-- **2023-02**: One first author paper to appear in CVPR 2023.  
-- **2022-09**: I am now a Ph.D. student at HKUSTGZ. -->
-
-<ul>
-  <li><strong style="color: rgb(90, 100, 120);">2025-02</strong>: Two papers to appear in CVPR 2025.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2024-09</strong>: Two papers to appear in NeurIPS 2024.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2024-07</strong>: One paper to appear in ECCV 2024.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2024-02</strong>: Two papers to appear in CVPR 2024.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: Three papers to appear in ACM MM 2023.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2023-07</strong>: One first author paper to appear in ICCV 2023.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2023-04</strong>: One paper to appear in ICML 2023.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2023-02</strong>: One first author paper to appear in CVPR 2023.</li>
-  <li><strong style="color: rgb(90, 100, 120);">2022-09</strong>: I am now a Ph.D. student at HKUSTGZ.</li>
-</ul>
-
-<h1 id="education">Education</h1>
-
-<p>
-</p>
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/hkust.png" width="50px" height="48px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="font-size: 15px;">
-				 The Hong Kong University of Science and Technology (Guangzhou)
-		 </strong><br />
-     <span style="font-size: 14px;">
-			Ph.D. student, 2022 ~ present.
-     </span>
-		</p>
-	</div>
-</div>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/cuhksz.png" width="50px" height="48px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="font-size: 15px;">
-				 The Chinese University of Hong Kong, Shenzhen
-		 </strong><br />
-     <span style="font-size: 14px;">
-			B.Eng., Major in Computer Science and Engineering, Sep 2017 - Jul 2021.
-     </span>
-		</p>
-	</div>
-</div>
-
-<h1 id="publications">Publications</h1>
-
-<p style="padding-top: 5px;"> </p>
-
-<p><span style="font-weight:600;font-size:17px;"> 
-    Generative Models and AIGC
-</span></p>
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/POSTA.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2025</div>
-      <div class="paper-title">
-        POSTA: A Go-to Framework for Customized Artistic Poster Generation
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen*</span>, Xiaojie Xu*, Wenbo Li, Jingjing Ren, Tian Ye, Songhua Liu, Ying-Cong Chen, Lei Zhu, Xinchao Wang
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <a href="https://haoyuchen.com/POSTA">[Website]</a> 
-      <a href="https://arxiv.org/abs/2503.14908">[arxiv]</a> 
-      <!-- <a href="https://github.com/catcathh/UltraPixel">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/UltraPixel.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">NeurIPS, 2024</div>
-      <div class="paper-title">
-        UltraPixel: Advancing Ultra-High-Resolution Image Synthesis to New Peaks
-      </div>
-      <div class="author">
-      Jingjing Ren*, Wenbo Li*, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Bin Shao, Yong Guo, Long Peng, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <a href="https://jingjingrenabc.github.io/ultrapixel/">[Website]</a> 
-      <a href="https://arxiv.org/abs/2407.02158">[arxiv]</a> 
-      <a href="https://github.com/catcathh/UltraPixel">[Code]</a>
-      <a href="https://huggingface.co/spaces/roubaofeipi/UltraPixel-demo">[Demo]</a> 
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/face1.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2023</div>
-      <div class="paper-title">
-        Towards Flexible, Scalable, and Adaptive Multi-Modal Conditioned Face Synthesis
-      </div>
-      <div class="author">
-      Jingjing Ren, Cheng Xu, <span class="author-me">Haoyu Chen</span>, Xinran Qin, Chongyi Li, Lei Zhu
-      </div>
-      <div style="font-size: 12px;!important">
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-      <a href="https://jingjingrenabc.github.io/multimodal-face-synthesis/">[Website]</a> 
-      <a href="https://arxiv.org/abs/2312.16274">[arxiv]</a> 
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      </div>
-      <!-- <br> -->
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-    </tbody>
-</table>
-<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px; margin-bottom:25px;" />
-
-<p><span style="font-weight:600;font-size:17px;"> 
-    Multi-Modal Models and Agents
-</span></p>
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/restoreagent.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">NeurIPS, 2024</div>
-      <div class="paper-title">
-        RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen</span>, Wenbo Li, Jinjin Gu, Jingjing Ren, Sixiang Chen, Tian Ye, Renjing Pei, Kaiwen Zhou, Fenglong Song, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <a href="https://haoyuchen.com/RestoreAgent">[Website]</a> 
-      <a href="https://arxiv.org/abs/2407.18035">[arxiv]</a> 
-      <!-- <a href="https://github.com/catcathh/UltraPixel">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/JarvisIR.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2025</div>
-      <div class="paper-title">
-        JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration
-      </div>
-      <div class="author">
-      Yunlong Lin*, Zixu Lin*, <span class="author-me">Haoyu Chen*</span>, Panwang Pan*,  Chenxin Li, Sixiang Chen, Kairun Wen, Yeying Jin, Wenbo Li, Xinghao Ding
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <!-- <a href="https://haoyuchen.com/RestoreAgent">[Website]</a>  -->
-      <!-- <a href="https://arxiv.org/abs/2407.18035">[arxiv]</a>  -->
-      <!-- <a href="https://github.com/catcathh/UltraPixel">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-
-
-    </tbody>
-</table>
-<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px; margin-bottom:25px;" />
-
-<p><span style="font-weight:600;font-size:17px;"> 
-   Generalizable Image Restoration
-</span></p>
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/cvpr24.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2024</div>
-      <div class="paper-title">
-        Low-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen</span>, Wenbo Li, Jinjin Gu, Jingjing Ren, Haoze Sun, Xueyi Zou, Youliang Yan, Zhensong Zhang, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <a href="https://haoyuchen.com/LWay">[Website]</a> 
-      <a href="https://arxiv.org/abs/2403.02601">[arxiv]</a> 
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mask.jpg" alt="dise" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2023</div>
-      <div class="paper-title">
-        Masked Image Training for Generalizable Deep Image Denoising
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen*</span>, Jinjin Gu*, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu
-      </div>
-      <!-- <em>IEEE Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong></em>, 2023 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://arxiv.org/abs/2303.13132">[arxiv]</a> 
-      <a href="https://github.com/haoyuc/MaskedDenoising">[Code]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/coser.png" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">CVPR, 2024</div>
-      <div class="paper-title">
-        CoSeR: Bridging Image and Language for Cognitive Super-Resolution
-      </div>
-      <div class="author">
-      Haoze Sun, Wenbo Li, Jianzhuang Liu, <span class="author-me">Haoyu Chen</span>, Renjing Pei, Xueyi Zou, Youliang Yan, Yujiu Yang
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <a href="https://coser-main.github.io/">[Website]</a> 
-      <a href="https://arxiv.org/abs/2311.16512">[arxiv]</a> 
-      <a href="https://github.com/TianheWu/CoSeR">[Code]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/icml23.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ICML, 2023</div>
-      <div class="paper-title">
-        Crafting Training Degradation Distribution for the Accuracy-Generalization Trade-off in Real-World Super-Resolution
-      </div>
-      <div class="author">
-      Ruofan Zhang, Jinjin Gu, <span class="author-me">Haoyu Chen</span>, Chao Dong, Yulun Zhang, Wenming Yang
-      </div>
-      <!-- <em>International Conference on Machine Learning <strong>(ICML)</strong></em>, 2023 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://arxiv.org/abs/2305.18107">[arxiv]</a> 
-      <a href="">[Code]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-  
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/AAN.jpg" alt="dise" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper">
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2021</div>
-      <div class="paper-title">
-        Attention in Attention Network for Image Super-Resolution
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen</span>, Jinjin Gu, Zhi Zhang
-      </div>
-      <!-- <em>arXiv</em>, 2021 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://arxiv.org/abs/2104.09497">[arxiv]</a> 
-      <a href="https://github.com/haoyuc/A2N">[Code]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-      <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-        <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/PIPAL.jpg" alt="dise" />
-      </td>
-      <td width="75%" valign="center" class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ECCV, 2020</div>
-        <div class="paper-title">
-          PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration
+}
+
+/* Paper network styles */
+#paper-network {
+  background-color: #FAFAFA;
+  border-radius: 0.5rem;
+}
+
+/* Animation for sections */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Styling for code blocks */
+pre {
+  border-radius: 0.375rem;
+  padding: 1rem;
+  overflow-x: auto;
+  line-height: 1.5;
+}
+
+/* Active navigation link */
+.nav-active {
+  color: #111827;
+  font-weight: 500;
+}
+
+/* Tooltip styles */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: rgba(17, 24, 39, 0.9);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
+  pointer-events: none;
+}
+
+.tooltip .tooltip-text::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: rgba(17, 24, 39, 0.9) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Custom background color */
+.bg-gray-50 {
+    background-color: rgb(249 250 251 / 53%) !important;
+}
+
+.bg-gray-75 {
+    background-color: rgba(246, 247, 248, 0.702);
+}
+
+.bg-gray-150 {
+    background-color: rgb(236 238 241);
+}
+
+/* 自定义作者名字颜色 */
+.author-name {
+    color: rgb(223, 144, 144) !important;
+    font-weight: 600;
+}
+
+/* 第一作者论文卡片样式 */
+.first-author-paper {
+    border: 1px solid rgba(232, 232, 232, 0.224)
+}
+
+/* 自定义滚动条样式 */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.group:hover .group-hover\:opacity-100 {
+    transition-delay: 0s;
+}
+.group:not(:hover) .group-hover\:opacity-100 {
+    transition-delay: 3s;
+}
+.group:hover .group-hover\:visible {
+    transition-delay: 0s;
+}
+.group:not(:hover) .group-hover\:visible {
+    transition-delay: 3s;
+}
+.group > div {
+    transition-property: opacity, visibility !important;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; visibility: hidden; }
+    to { opacity: 1; visibility: visible; }
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; visibility: visible; }
+    99% { opacity: 0; visibility: visible; }
+    100% { opacity: 0; visibility: hidden; }
+}
+
+.wechat-tooltip {
+    animation: fadeOut 0.3s ease-in-out forwards;
+}
+
+.group:hover .wechat-tooltip {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.group:not(:hover) .wechat-tooltip {
+    animation: fadeOut 0.3s ease-in-out 3s forwards;
+}
+
+#wechat-tooltip {
+    transition: opacity 0.3s ease-in-out, visibility 0s linear 0s;
+}
+
+.text-base {
+    font-size: 14px;
+}
+
+.text-sm {
+    font-size: 13px;
+}
+
+.text-xs {
+    font-size: 12px;
+}
+    </style>
+</head>
+<body class="bg-white text-gray-900 min-h-screen">
+    <!-- Prevent zooming -->
+    <script>
+        window.addEventListener("wheel", (e)=> {
+            const isPinching = e.ctrlKey
+            if(isPinching) e.preventDefault()
+        }, { passive: false })
+    </script>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-semibold">Haoyu Chen</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#news" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">News</a>
+                        <a href="#education" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Education</a>
+                        <a href="#publications" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Publications</a>
+                        <a href="#experience" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Experience</a>
+                        <a href="#academic-service" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Service &amp; Awards</a>
+                        <a href="#interests" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Interests</a>
+                    </div>
+                </div>
+            </div>
         </div>
-      <div class="author">
-        Jinjin Gu, Haoming Cai, <span class="author-me">Haoyu Chen</span>, Xiaoxin Ye, Jimmy S.Ren, Chao Dong
-      </div>
-        <!-- <em>European Conference on Computer Vision  <strong>(ECCV)</strong></em>, 2020 -->
-        <!-- <br> -->
-        <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a> 
-        <a href="https://arxiv.org/abs/2007.12142">[arxiv]</a> 
-        <a href="https://github.com/HaomingCai/PIPAL-Codebase">[Code]</a>
-        <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a> 
-        <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a> 
-        <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a> 
-        <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a> 
-    <br />
-        <!-- <p> 
-            We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-        </p> -->
-      </td>
-  </tr>
-  <!-- =================================================================================== -->
+    </nav>
 
+    <!-- Hero Section -->
+    <section class="pt-32 pb-12 bg-gradient-to-r from-gray-50 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row gap-16">
+                    <div class="flex-shrink-0 w-80">
+                        <img src="./assets/img/IMG_6589.JPG" alt="Haoyu Chen" class="w-full object-cover rounded-lg shadow-lg mb-4" />
+                        <div class="flex items-center justify-between space-x-4 mt-2">
+                            <a href="mailto:hchen794@connect.hkust-gz.edu.cn" class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 group flex-1">
+                                <i data-lucide="mail" class="w-5 h-5 mb-1 text-gray-600 group-hover:text-blue-600 transition-colors duration-200"></i>
+                                <span class="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-200">E-mail</span>
+                            </a>
+                            <a href="https://scholar.google.com/citations?user=KWbcBucAAAAJ" target="_blank" class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 group flex-1">
+                                <svg class="w-5 h-5 mb-1 text-gray-600 group-hover:text-blue-600 transition-colors duration-200" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" />
+                                </svg>
+                                <span class="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-200">Scholar</span>
+                            </a>
+                            <a href="https://github.com/haoyuc" target="_blank" class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 group flex-1">
+                                <i data-lucide="github" class="w-5 h-5 mb-1 text-gray-600 group-hover:text-blue-600 transition-colors duration-200"></i>
+                                <span class="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-200">Github</span>
+                            </a>
+                            <div class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 rounded-lg flex-1 relative group">
+                                <i data-lucide="message-circle" class="w-5 h-5 mb-1 text-gray-600"></i>
+                                <span class="text-xs text-gray-600">Wechat</span>
+                                <div id="wechat-tooltip" class="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-gray-300/90 backdrop-blur-sm text-gray-800 px-3 py-1.5 rounded-lg text-base whitespace-nowrap opacity-0 invisible transition-opacity duration-300">
+                                    <span class="block">ID: haoyuc98</span>
+                                    <div class="absolute -top-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-gray-300/90 rotate-45"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow">
+                        <h1 class="text-4xl font-bold mb-2">Haoyu Chen</h1>
+                        <p class="text-xl text-blue-600 mb-6">PhD student @ HKUST(GZ)</p>
+                        
+                        <p class="text-gray-700 mb-4">
+                            I received a Bachelor degree in Computer Science and Engineering at The Chinese University of Hong Kong, Shenzhen (CUHKSZ) in 2021.
+                        </p>
+                        
+                        <p class="text-gray-700 mb-4">
+                            I am a Ph.D. student at the Hong Kong University of Science and Technology (Guangzhou) advised by 
+                            <a href="#" class="text-blue-600 hover:underline">Prof. Lei Zhu</a> and 
+                            <a href="#" class="text-blue-600 hover:underline">Prof. Ping Tan</a>.
+                        </p>
+                        
+                        <p class="text-gray-700">
+                            Mainly intrest in computer vision, especially in Low-level Vision, Image Processing, Multi-Modal Models and Generative Models.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- News Section -->
+    <section id="news" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">News</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2025-02</span>
+                        <p class="text-gray-700">Two papers to appear in CVPR 2025.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2024-09</span>
+                        <p class="text-gray-700">Two papers to appear in NeurIPS 2024.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2024-07</span>
+                        <p class="text-gray-700">One paper to appear in ECCV 2024.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2024-02</span>
+                        <p class="text-gray-700">Two papers to appear in CVPR 2024.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2023-07</span>
+                        <p class="text-gray-700">Three papers to appear in ACM MM 2023.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2023-07</span>
+                        <p class="text-gray-700">One first author paper to appear in ICCV 2023.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2023-04</span>
+                        <p class="text-gray-700">One paper to appear in ICML 2023.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2023-02</span>
+                        <p class="text-gray-700">One first author paper to appear in CVPR 2023.</p>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <span class="text-gray-500 text-sm font-medium whitespace-nowrap">2022-09</span>
+                        <p class="text-gray-700">I am now a Ph.D. student at HKUSTGZ.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Education Section -->
+    <section id="education" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Education</h2>
+                
+                <!-- HKUST(GZ) -->
+                <div class="bg-gray-50 rounded-2xl px-8 py-5 mb-4 border border-gray-100">
+                    <div class="flex items-center space-x-10">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/hkust.png" alt="HKUST(GZ) Logo" class="w-12 h-12 object-contain" />
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-medium text-lg text-gray-900">The Hong Kong University of Science and Technology (Guangzhou)</h4>
+                                <span class="text-gray-500 text-sm bg-gray-100 px-2 py-0.5 rounded">2022 - Present</span>
+                            </div>
+                            <p class="text-gray-700 text-base mb-0.5">Ph.D. student</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CUHKSZ -->
+                <div class="bg-gray-50 rounded-2xl px-8 py-5 border border-gray-100">
+                    <div class="flex items-center space-x-10">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/cuhksz.png" alt="CUHKSZ Logo" class="w-12 h-12 object-contain" />
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-medium text-lg text-gray-900">The Chinese University of Hong Kong, Shenzhen</h4>
+                                <span class="text-gray-500 text-sm bg-gray-100 px-2 py-0.5 rounded">2017 - 2021</span>
+                            </div>
+                            <p class="text-gray-700 text-base mb-0.5">B.Eng., Major in Computer Science and Engineering</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Publications</h2>
+                
+                <!-- Generative Models and AIGC -->
+                <div class="mb-16">
+                    <div class="sticky top-16 z-10 -mx-8 px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900">Generative Models and AIGC</h3>
+                    </div>
+                    <div class="space-y-6 mt-6 pt-4">
+                        <!-- POSTA -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/POSTA.jpg" alt="POSTA" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">CVPR 2025</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">POSTA: A Go-to Framework for Customized Artistic Poster Generation</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>*, Xiaojie Xu*, Wenbo Li, Jingjing Ren, Tian Ye, Songhua Liu, Ying-Cong Chen, Lei Zhu, Xinchao Wang</p>
+                                <div class="flex gap-3">
+                                    <a href="https://haoyuchen.com/POSTA" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2503.14908" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UltraPixel -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/UltraPixel.jpg" alt="UltraPixel" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">NeurIPS 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">UltraPixel: Advancing Ultra-High-Resolution Image Synthesis to New Peaks</h4>
+                                <p class="text-gray-500 text-base mb-2">Jingjing Ren*, Wenbo Li*, <span class="author-name">Haoyu Chen</span>, Renjing Pei, Bin Shao, Yong Guo, Long Peng, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://jingjingrenabc.github.io/ultrapixel/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2407.02158" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="https://github.com/catcathh/UltraPixel" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://huggingface.co/spaces/roubaofeipi/UltraPixel-demo" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Demo</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Face Synthesis -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/face1.jpg" alt="Face Synthesis" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">arXiv 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Towards Flexible, Scalable, and Adaptive Multi-Modal Conditioned Face Synthesis</h4>
+                                <p class="text-gray-500 text-base mb-2">Jingjing Ren, Cheng Xu, <span class="author-name">Haoyu Chen</span>, Xinran Qin, Chongyi Li, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://jingjingrenabc.github.io/multimodal-face-synthesis/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2312.16274" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Multi-Modal Models and Agents -->
+                <div class="mb-16">
+                    <div class="sticky top-16 z-10 -mx-8 px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900">Multi-Modal Models and Agents</h3>
+                    </div>
+                    <div class="space-y-6 mt-6 pt-4">
+                        <!-- RestoreAgent -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/restoreagent.jpg" alt="RestoreAgent" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">NeurIPS 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">RestoreAgent: Autonomous Image Restoration Agent via Multimodal Large Language Models</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>, Wenbo Li, Jinjin Gu, Jingjing Ren, Sixiang Chen, Tian Ye, Renjing Pei, Kaiwen Zhou, Fenglong Song, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://haoyuchen.com/RestoreAgent" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2407.18035" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- JarvisIR -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/JarvisIR.jpg" alt="JarvisIR" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">CVPR 2025</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</h4>
+                                <p class="text-gray-500 text-base mb-2">Yunlong Lin*, Zixu Lin*, <span class="author-name">Haoyu Chen</span>*, Panwang Pan*, Chenxin Li, Sixiang Chen, Kairun Wen, Yeying Jin, Wenbo Li, Xinghao Ding</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generalizable Image Restoration -->
+                <div class="mb-16">
+                    <div class="sticky top-16 z-10 -mx-8 px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900">Generalizable Image Restoration</h3>
+                    </div>
+                    <div class="space-y-6 mt-6 pt-4">
+                        <!-- LWay -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/cvpr24.jpg" alt="LWay" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">CVPR 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Low-Res Leads the Way: Improving Generalization for Super-Resolution by Self-Supervised Learning</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>, Wenbo Li, Jinjin Gu, Jingjing Ren, Haoze Sun, Xueyi Zou, Youliang Yan, Zhensong Zhang, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://haoyuchen.com/LWay" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2403.02601" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Masked Image Training -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/mask.jpg" alt="Masked Image Training" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">CVPR 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Masked Image Training for Generalizable Deep Image Denoising</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>*, Jinjin Gu*, Yihao Liu, Salma Abdel Magid, Chao Dong, Qiong Wang, Hanspeter Pfister, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://arxiv.org/abs/2303.13132" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="https://github.com/haoyuc/MaskedDenoising" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- CoSeR -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/coser.png" alt="CoSeR" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">CVPR 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">CoSeR: Bridging Image and Language for Cognitive Super-Resolution</h4>
+                                <p class="text-gray-500 text-base mb-2">Haoze Sun, Wenbo Li, Jianzhuang Liu, <span class="author-name">Haoyu Chen</span>, Renjing Pei, Xueyi Zou, Youliang Yan, Yujiu Yang</p>
+                                <div class="flex gap-3">
+                                    <a href="https://coser-main.github.io/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2311.16512" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="https://github.com/TianheWu/CoSeR" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ICML Paper -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/icml23.jpg" alt="ICML Paper" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ICML 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Crafting Training Degradation Distribution for the Accuracy-Generalization Trade-off in Real-World Super-Resolution</h4>
+                                <p class="text-gray-500 text-base mb-2">Ruofan Zhang, Jinjin Gu, <span class="author-name">Haoyu Chen</span>, Chao Dong, Yulun Zhang, Wenming Yang</p>
+                                <div class="flex gap-3">
+                                    <a href="https://arxiv.org/abs/2305.18107" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="#" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- AAN -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/AAN.jpg" alt="AAN" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">arXiv 2021</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Attention in Attention Network for Image Super-Resolution</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>, Jinjin Gu, Zhi Zhang</p>
+                                <div class="flex gap-3">
+                                    <a href="https://arxiv.org/abs/2104.09497" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="https://github.com/haoyuc/A2N" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- PIPAL -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/PIPAL.jpg" alt="PIPAL" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ECCV 2020</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">PIPAL: a Large-Scale Image Quality Assessment Dataset for Perceptual Image Restoration</h4>
+                                <p class="text-gray-500 text-base mb-2">Jinjin Gu, Haoming Cai, <span class="author-name">Haoyu Chen</span>, Xiaoxin Ye, Jimmy S.Ren, Chao Dong</p>
+                                <div class="flex gap-3">
+                                    <a href="https://www.jasongt.com/projectpages/pipal.html" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2007.12142" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                    <a href="https://github.com/HaomingCai/PIPAL-Codebase" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Benchmark</span>
+                                    </a>
+                                    <a href="https://www.jasongt.com/research-full" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Challenge</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Adverse Weather Restoration -->
+                <div class="mb-16">
+                    <div class="sticky top-16 z-10 -mx-8 px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900">Adverse Weather Restoration</h3>
+                    </div>
+                    <div class="space-y-6 mt-6 pt-4">
+                        <!-- Snow Removal -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/desnow.gif" alt="Snow Removal" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ICCV 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Snow Removal in Video: A New Dataset and A Novel Method</h4>
+                                <p class="text-gray-500 text-base mb-2"><span class="author-name">Haoyu Chen</span>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.html" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Paper</span>
+                                    </a>
+                                    <a href="https://github.com/haoyuc/VideoDesnowing" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Code</span>
+                                    </a>
+                                    <a href="https://haoyuchen.com/VideoDesnowing" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Dataset</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Triplane-Smoothed -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/ijcv.jpg" alt="Triplane-Smoothed" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">IJCV 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Triplane-Smoothed Video Dehazing with CLIP-Enhanced Generalization</h4>
+                                <p class="text-gray-500 text-base mb-2">Jingjing Ren, <span class="author-name">Haoyu Chen</span>, Tian Ye, Hongtao Wu, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://link.springer.com/article/10.1007/s11263-024-02161-0" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Paper</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Semi-Supervised Video Desnowing -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/eccv24.jpg" alt="Semi-Supervised Video Desnowing" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ECCV 2024</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Semi-Supervised Video Desnowing Network via Temporal Decoupling Experts and Distribution-Driven Contrastive Regularization</h4>
+                                <p class="text-gray-500 text-base mb-2">Hongtao Wu, Yijun Yang, Angelica Aviles-Rivero, Jingjing Ren, Sixiang Chen, <span class="author-name">Haoyu Chen</span>, Lei Zhu</p>
+                            </div>
+                        </div>
+
+                        <!-- Mask-Guided Progressive Network -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/mm1.jpg" alt="Mask-Guided Progressive Network" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ACM MM 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos</h4>
+                                <p class="text-gray-500 text-base mb-2">Hongtao Wu, Yijun Yang, <span class="author-name">Haoyu Chen</span>, Jingjing Ren, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3612001" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Paper</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Uncertainty-Driven Dynamic Degradation -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/mm2.jpg" alt="Uncertainty-Driven" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ACM MM 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Uncertainty-Driven Dynamic Degradation Perceiving and Background Modeling for Efficient Single Image Desnowing</h4>
+                                <p class="text-gray-500 text-base mb-2">Sixiang Chen*, Tian Ye*, Chenghao Xue, <span class="author-name">Haoyu Chen</span>, Yun Liu, Erkang Chen, Lei Zhu</p>
+                                <div class="flex gap-3">
+                                    <a href="https://dl.acm.org/pdf/10.1145/3581783.3612003" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Paper</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cross-scale Prototype Learning -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/mm3.jpg" alt="Cross-scale Prototype Learning" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">ACM MM 2023</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Cross-scale Prototype Learning Transformer for Image Snow Removal</h4>
+                                <p class="text-gray-500 text-base mb-2">Sixiang Chen*, Tian Ye*, Yun Liu, Jinbin Bai, <span class="author-name">Haoyu Chen</span>, Yunlong Lin, Jun Shi, Erkang Chen</p>
+                                <div class="flex gap-3">
+                                    <a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3611893" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Paper</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="mb-16">
+                    <div class="sticky top-16 z-10 -mx-8 px-8 py-4 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+                        <h3 class="text-xl font-semibold text-gray-900">Other</h3>
+                    </div>
+                    <div class="space-y-6 mt-6 pt-4">
+                        <!-- SRP -->
+                        <div class="flex gap-8 rounded-2xl px-8 py-4 bg-gray-75 first-author-paper">
+                            <div class="flex-shrink-0 w-64 flex items-center">
+                                <img src="./assets/img/SRP.jpg" alt="SRP" class="w-full rounded" />
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">arXiv 2018</p>
+                                </div>
+                                <h4 class="font-semibold text-xl text-gray-900 mb-1 leading-snug">Super-resolution perception for industrial sensor data</h4>
+                                <p class="text-gray-500 text-base mb-2">Jinjin Gu, <span class="author-name">Haoyu Chen</span>, Guolong Liu, Gaoqi Liang, Xinlei Wang, Junhua Zhao</p>
+                                <div class="flex gap-3">
+                                    <a href="https://arxiv.org/abs/1809.06687" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-8">Experience</h2>
+                
+                <!-- Xiaobing.AI -->
+                <div class="bg-gray-50 rounded-2xl px-8 py-5 mb-6 border border-gray-100">
+                    <div class="flex items-center space-x-10">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/xiaobing.png" alt="Xiaobing.AI Logo" class="w-12 h-12 object-contain" />
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-medium text-lg text-gray-900">Xiaobing.AI</h4>
+                                <span class="text-gray-500 text-sm bg-gray-150 px-2 py-0.5 rounded">2021.6 - 2022.2</span>
+                            </div>
+                            <p class="text-gray-700 text-base mb-0.5">Research Intern</p>
+                            <p class="text-gray-600 text-sm">Mentor: Dr. Baoyuan, Wang</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazon Web Services -->
+                <div class="bg-gray-50 rounded-2xl px-8 py-5 border border-gray-100">
+                    <div class="flex items-center space-x-10">
+                        <div class="flex-shrink-0">
+                            <img src="./assets/img/aws.png" alt="AWS Logo" class="w-12 h-12 object-contain" />
+                        </div>
+                        <div class="flex-grow">
+                            <div class="flex items-center justify-between mb-1">
+                                <h4 class="font-medium text-lg text-gray-900">Amazon Web Services Shanghai AI Lab</h4>
+                                <span class="text-gray-500 text-sm bg-gray-150 px-2 py-0.5 rounded">2020.5 - 2020.11</span>
+                            </div>
+                            <p class="text-gray-700 text-base mb-0.5">Software Develop Engineer Intern</p>
+                            <p class="text-gray-600 text-sm">Mentor: Zhi Zhang</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Service & Awards Section -->
+    <section id="academic-service" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-3xl font-bold mb-10">Academic Service &amp; Awards</h2>
+                
+                <!-- Competition Awards -->
+                <div class="mb-8">
+                    <h3 class="text-xl font-semibold mb-6 text-gray-900">Competition Awards</h3>
+                    <div class="bg-gray-50 rounded-lg px-8 py-5 border border-gray-100">
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <div class="flex items-center space-x-2 w-32 flex-shrink-0">
+                                    <i data-lucide="trophy" class="w-5 h-5 text-gray-900"></i>
+                                    <span class="font-medium text-gray-900">1st Place</span>
+                                </div>
+                                <span class="text-gray-700 ml-6">IEEE ICDM 2018 global AI challenge on meteorology</span>
+                            </li>
+                            <li class="flex items-center">
+                                <div class="flex items-center space-x-2 w-32 flex-shrink-0">
+                                    <i data-lucide="trophy" class="w-5 h-5 text-gray-900"></i>
+                                    <span class="font-medium text-gray-900">4th Place</span>
+                                </div>
+                                <span class="text-gray-700 ml-6">ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Program Committee / Reviewer -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-6 text-gray-900">Program Committee / Reviewer</h3>
+                    <div class="bg-gray-50 rounded-lg px-8 py-5 border border-gray-100">
+                        <!-- Conferences -->
+                        <div class="mb-6">
+                            <h4 class="font-medium text-gray-900 mb-3">Conferences</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2024</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">European Conference on Computer Vision (ECCV), 2024</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">The International Conference on Learning Representations (ICLR), 2025</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">ACM Multimedia (ACM MM), 2023, 2024</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD), 2023</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">SIAM International Conference on Data Mining (SDM), 2024</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">Winter Conference on Applications of Computer Vision (WACV), 2023, 2024</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">ACM SIGGRAPH VRCAI, 2022</p>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Journals -->
+                        <div>
+                            <h4 class="font-medium text-gray-900 mb-3">Journals</h4>
+                            <ul class="space-y-2">
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">IEEE Transactions on Circuits and Systems for Video Technology</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">IEEE Transactions on Mobile Computing</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <p class="text-gray-700">The Computer Vision</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interests & Hobbies Section -->
+    <section id="interests" class="py-12 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">Interests &amp; Hobbies</h2>
+                <div class="grid grid-cols-5 gap-6">
+                    <!-- Tennis -->
+                    <div class="bg-gray-50 rounded-lg px-6 py-4 border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl mb-2">🎾</span>
+                            <h3 class="text-lg font-medium text-gray-900">Tennis</h3>
+                        </div>
+                    </div>
+                    <!-- Diving -->
+                    <div class="bg-gray-50 rounded-lg px-6 py-4 border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl mb-2">🤿</span>
+                            <h3 class="text-lg font-medium text-gray-900">Diving</h3>
+                        </div>
+                    </div>
+                    <!-- Photography -->
+                    <div class="bg-gray-50 rounded-lg px-6 py-4 border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl mb-2">📸</span>
+                            <h3 class="text-lg font-medium text-gray-900">Photography</h3>
+                        </div>
+                    </div>
+                    <!-- Outdoor -->
+                    <div class="bg-gray-50 rounded-lg px-6 py-4 border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl mb-2">🏔️</span>
+                            <h3 class="text-lg font-medium text-gray-900">Outdoor</h3>
+                        </div>
+                    </div>
+                    <!-- Trail Running -->
+                    <div class="bg-gray-50 rounded-lg px-6 py-4 border border-gray-100">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl mb-2">🏃</span>
+                            <h3 class="text-lg font-medium text-gray-900">Trail Running</h3>
+                        </div>
+                    </div>
+                </div>
+                <p class="text-center text-gray-600 mt-6">Feel free to reach out if you share any of these interests - I'm always excited to connect with fellow enthusiasts!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 内联 JavaScript -->
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize Lucide icons
+  lucide.createIcons({
+    attrs: {
+      'stroke-width': 1.5
+    }
+  });
+  
+  // Add active state to navigation items based on scroll position
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('nav a');
+  
+  function setActiveNavItem() {
+    const scrollPosition = window.scrollY + 100;
     
-    </tbody>
-</table>
-<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px; margin-bottom:25px;" />
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+      const sectionId = section.getAttribute('id');
+      
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        navItems.forEach(navItem => {
+          navItem.classList.remove('text-gray-900', 'font-medium');
+          navItem.classList.add('text-gray-500');
+          
+          if (navItem.getAttribute('href') === `#${sectionId}`) {
+            navItem.classList.remove('text-gray-500');
+            navItem.classList.add('text-gray-900', 'font-medium');
+          }
+        });
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', setActiveNavItem);
+  setActiveNavItem();
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  // Mobile menu functionality (if needed)
+  const mobileMenuButton = document.querySelector('.mobile-menu-button');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+  
+  // Add animation when elements come into view
+  const animateElements = document.querySelectorAll('.animate-on-scroll');
+  
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  animateElements.forEach(element => {
+    observer.observe(element);
+  });
 
-<p><span style="font-weight:600;font-size:17px;"> 
-    Adverse Weather Restoration
-</span></p>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/desnow.gif" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ICCV, 2023</div>
-      <div class="paper-title">
-        Snow Removal in Video: A New Dataset and A Novel Method
-      </div>
-      <div class="author">
-      <span class="author-me">Haoyu Chen</span>, Jingjing Ren, Jinjin Gu, Hongtao Wu, Xuequan Lu, Haoming Cai, Lei Zhu
-      </div>
-      <!-- <em>International Conference on Computer Vision <strong>(ICCV)</strong></em>, 2023 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.html">[arxiv]</a> 
-      <a href="https://github.com/haoyuc/VideoDesnowing">[Code]</a>
-      <a href="https://haoyuchen.com/VideoDesnowing">[Dataset]</a>
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/ijcv.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">IJCV, 2024</div>
-      <div class="paper-title">
-        Triplane-Smoothed Video Dehazing with CLIP-Enhanced Generalization
-      </div>
-      <div class="author">
-      Jingjing Ren, <span class="author-me">Haoyu Chen</span>, Tian Ye, Hongtao Wu, Lei Zhu
-      </div>
-      <!-- <em>International Conference on Computer Vision <strong>(ICCV)</strong></em>, 2023 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://link.springer.com/article/10.1007/s11263-024-02161-0">[paper]</a> 
-      <!-- <a href="https://github.com/haoyuc/VideoDesnowing">[Code]</a> -->
-      <!-- <a href="https://haoyuchen.com/VideoDesnowing">[Dataset]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-
-
-<!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/eccv24.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ECCV, 2024</div>
-      <div class="paper-title">
-        Semi-Supervised Video Desnowing Network via Temporal Decoupling Experts and Distribution-Driven Contrastive Regularization
-      </div>
-      <div class="author">
-      Hongtao Wu, Yijun Yang, Angelica Aviles-Rivero, Jingjing Ren, Sixiang Chen, <span class="author-me">Haoyu Chen</span>, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <!-- <a href="https://haoyuchen.com/LWay">[Website]</a>  -->
-      <!-- <a href="https://arxiv.org/abs/2403.02601">[arxiv]</a>  -->
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm1.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
-      <div class="paper-title">
-        Mask-Guided Progressive Network for Joint Raindrop and Rain Streak Removal in Videos
-      </div>
-      <div class="author">
-      Hongtao Wu, Yijun Yang, <span class="author-me">Haoyu Chen</span>, Jingjing Ren, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-     <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3612001">[paper]</a> 
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-      <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
+  // Add tooltips to technical terms
+  document.querySelectorAll('.tooltip').forEach(tooltip => {
+    tooltip.addEventListener('mouseenter', function() {
+      const tooltipText = this.querySelector('.tooltip-text');
+      if (tooltipText) {
+        tooltipText.style.visibility = 'visible';
+        tooltipText.style.opacity = '1';
+      }
+    });
     
+    tooltip.addEventListener('mouseleave', function() {
+      const tooltipText = this.querySelector('.tooltip-text');
+      if (tooltipText) {
+        tooltipText.style.visibility = 'hidden';
+        tooltipText.style.opacity = '0';
+      }
+    });
+  });
+  
+  // Dark/light mode toggle (if implemented)
+  const themeToggle = document.querySelector('.theme-toggle');
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  }
 
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm2.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
-      <div class="paper-title">
-        Uncertainty-Driven Dynamic Degradation Perceiving and Background Modeling for Efficient Single Image Desnowing
-      </div>
-      <div class="author">
-      Sixiang Chen*, Tian Ye*, Chenghao Xue, <span class="author-me">Haoyu Chen</span>, Yun Liu, Erkang Chen, Lei Zhu
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-      <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://dl.acm.org/pdf/10.1145/3581783.3612003">[paper]</a> 
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
+  const tooltip = document.getElementById('wechat-tooltip');
+  const container = tooltip.parentElement;
+  let hideTimeout;
 
+  container.addEventListener('mouseenter', () => {
+    clearTimeout(hideTimeout);
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+  });
 
+  container.addEventListener('mouseleave', () => {
+    hideTimeout = setTimeout(() => {
+      tooltip.style.opacity = '0';
+      setTimeout(() => {
+        tooltip.style.visibility = 'hidden';
+      }, 300); // 等待淡出动画完成后再隐藏
+    }, 3000);
+  });
+});
+    </script>
+<!-- </body>
+</html> -->
 
-
-
-  <!-- =================================================================================== -->
-  <tr>
-    <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-      <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/mm3.jpg" alt="" />
-    </td>
-    <td width="75%" valign="center" class="text-wrapper"> 
-      <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">ACM MM, 2023</div>
-      <div class="paper-title">
-        Cross-scale Prototype Learning Transformer for Image Snow Removal
-      </div>
-      <div class="author">
-      Sixiang Chen*, Tian Ye*, Yun Liu, Jinbin Bai, <span class="author-me">Haoyu Chen</span>, Yunlong Lin, Jun Shi, Erkang Chen
-      </div>
-      <!-- <em>ACM Multimedia <strong>(ACM MM)</strong></em>, 2023 -->
-    <!-- <br> -->
-      <!-- <a href="https://www.jasongt.com/projectpages/pipal.html">[Website]</a>  -->
-      <a href="https://dl.acm.org/doi/pdf/10.1145/3581783.3611893">[paper]</a> 
-      <!-- <a href="">[Code]</a> -->
-      <!-- <a href="https://paperswithcode.com/dataset/pipal-perceptual-iqa-dataset">[Benchmark]</a>  -->
-      <!-- <a href="https://www.jasongt.com/research-full">[CVPR 2022 NTIRE Challenge]</a>  -->
-      <!-- <a href="https://www.youtube.com/watch?v=315Umwgpa6s">[Youtube]</a>  -->
-      <!-- <a href="https://www.bilibili.com/video/BV1cr4y1P7s4">[Bilibili]</a>  -->
-  <br />
-      <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-      </p> -->
-    </td>
-</tr>
-<!-- =================================================================================== -->
-
-
-
-
-    
-    </tbody>
-</table>
-<hr style="border-top: 1px solid #f0f0f0; margin-top: 25px;margin-bottom:25px; " />
-
-<p><span style="font-weight:600;font-size:17px;"> 
-    Other
-</span></p>
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-
-
-
-  <!-- =================================================================================== -->
-  <tr>
-        <td style="margin:5px;padding:5px;width:30%;max-width:30%" align="center" class="image-wrapper">
-          <img style="margin:5px;padding-right:20px;width:100%;max-width:100%;" src="../assets/img/SRP.jpg" alt="dise" />
-        </td>
-        <td width="75%" valign="center" class="text-wrapper">
-        <div style="color: rgb(118, 130, 150); font-size: 0.9em; line-height: 1.3;">arXiv, 2018</div>
-        <div class="paper-title">
-        Super-resolution perception for industrial sensor data
-      </div>
-      <div class="author">
-        Jinjin Gu, <span class="author-me">Haoyu Chen</span>, Guolong Liu, Gaoqi Liang, Xinlei Wang, Junhua Zhao             
-      </div>
-        <!-- <em>arXiv</em>, 2018 -->
-        <!-- <br> -->
-        <!-- <a href="https://sstzal.github.io/DFRF/">[Website]</a>  -->
-        <a href="https://arxiv.org/abs/1809.06687">[arxiv]</a> 
-        <!-- <a href="https://www.youtube.com/watch?v=F6fkVNk9bBw&amp;ab_channel=Shens">[Video]</a>  -->
-        <!-- <a href="https://github.com/sstzal/DFRF">[Code]</a> -->
-        <br />
-        <!-- <p> 
-          We propose a novel machine learning problem – the SRP problem as reconstructing high-quality data from unsatisfactory sensor data in industrial systems. 
-        </p> -->
-      </td>
-  </tr>
-    <!-- =================================================================================== -->
-
-
-    </tbody>
-</table>
-
-<p style="padding:6px;"> </p>
-
-<!-- <br> -->
-
-<h1 id="experience">Experience</h1>
-
-<!-- **Xiaobing.AI**.   
-	Research Intern.  Mentor: [Dr. Baoyuan, Wang](https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ), ( 2021.6 ~ 2022.2 )
-
-
-
-**AWS Shanghai AI Lab**.   
-	Software Develop Engineer Intern. Mentor: [Zhi Zhang](https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ), ( 2020.5 ~ 2020.11 )   
-
-
-**The Chinese University of Hong Kong. [GAP Lab](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html)**.   
-	Research Assistant.  Advisor: [Dr. Xiaoguang, Han](https://mypage.cuhk.edu.cn/academics/hanxiaoguang/index.html), ( 2019.6 ~ 2021 )   
-
-
-**Institute of Automation Chinese Academy of Sciences**.           
-	Research Assistant. Advisor: [Dr. Bo Xu](http://people.ucas.edu.cn/~xubo_casia), ( 2018.8 ~ 2018.9 )        -->
-
-<p style="margin-bottom: 20px;"></p>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/xiaobing.png" width="50px" height="48px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong>
-				 Xiaobing.AI
-		 </strong><br />
-     <span style="font-size: 14px;">
-			2021.6 ~ 2022.2. Research Intern.  <a href="https://scholar.google.com.hk/citations?user=OWa5rOEAAAAJ" target="_blank">Mentor: Dr. Baoyuan, Wang</a> 
-     </span>
-		</p>
-	</div>
-</div>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/aws.png" width="50px" height="48px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong>
-				 Amazon Web Services Shanghai AI Lab
-		 </strong><br />
-     <span style="font-size: 14px;">
-			2020.5 ~ 2020.11. Software Develop Engineer Intern. <a href="https://scholar.google.com.hk/citations?user=nZr0oXQAAAAJ" target="_blank">Mentor: Zhi Zhang</a>  
-     </span>
-		</p>
-	</div>
-</div>
-
-<!-- <div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/casia.png" width="50px" height="48px">
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong>
-				 Institute of Automation Chinese Academy of Sciences
-		 </strong><br>
-			2018.8 ~ 2018.9.  Research Assistant. <a href="http://people.ucas.edu.cn/~xubo_casia">Advisor: Dr. Bo Xu</a>       
-		</p>
-	</div>
-</div>
- -->
-
-<h1 id="academic-service--awards">Academic Service &amp; Awards</h1>
-
-<p><strong>Competition Awards</strong></p>
-<p style="margin-bottom: 2px;"></p>
-
-<div class="small-text">
-IEEE ICDM 2018 global AI challenge on meteorology, <span class="s1">1st place</span>.  <br /> 
-ECCV 2020 Workshop, AIM 2020 Challenge on Video Extreme Super-Resolution, <span class="s1">4th place</span>.
-</div>
-
-<p class="whiteline"></p>
-
-<p><strong>Program Committee / Reviewer</strong></p>
-<p style="margin-bottom: 2px;"></p>
-
-<div class="small-text">
-IEEE Conference on Computer Vision and Pattern Recognition <span class="s1">(CVPR)</span>, 2024   <br />
-European Conference on Computer Vision <span class="s1">(ECCV)</span>, 2024     <br />
-The International Conference on Learning Representations <span class="s1">(ICLR)</span>, 2025.   <br />
-ACM Multimedia <span class="s1">(ACM MM)</span>, 2023, 2024      <br />
-ACM SIGKDD Conference on Knowledge Discovery and Data Mining <span class="s1">(KDD)</span>, 2023     <br />
-SIAM International Conference on Data Mining <span class="s1">(SDM)</span>, 2024      <br />
-Winter Conference on Applications of Computer Vision <span class="s1">(WACV)</span>, 2023, 2024    <br />
-ACM SIGGRAPH VRCAI, 2022     <br />
-IEEE Transactions on Circuits and Systems for Video Technology     <br />
-IEEE Transactions on Mobile Computing  <br />
-The Computer Vison     <br />
-</div>
-
-<h1 id="hobbies--interests">Hobbies &amp; Interests</h1>
-<p style="margin-bottom: 5px;"></p>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/outdoor2.png" width="22px" height="22px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="color: rgb(90, 100, 120);">
-				 Outdoor
-		 </strong><br />
-		</p>
-	</div>
-</div>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/travel1.png" width="22px" height="22px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="color: rgb(90, 100, 120);">
-				 Travelling
-		 </strong><br />
-		</p>
-	</div>
-</div>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/tennis.png" width="22px" height="22px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="color: rgb(90, 100, 120);">
-				 Tennis
-		 </strong><br />
-		</p>
-	</div>
-</div>
-
-<div class="media">
-	<a name="fsaf" class="pull-left">
-		<img class="media-object" src="../assets/img/music.svg" width="22px" height="22px" />
-	</a>
-	<div class="media-body">
-		<p class="media-heading">
-			<strong style="color: rgb(90, 100, 120);">
-				 Music
-		 </strong><br />
-		</p>
-	</div>
-</div>
-
-<!--# Publications
-
-Please refer to my [Publication](https://haoyuchen.com/portfolio/) or [Google Scholar](https://scholar.google.com/citations?&user=KWbcBucAAAAJ).
-
--->
+</body>
 
     </br>
     <!-- <div class="social-layer">
@@ -1236,7 +1283,7 @@ Please refer to my [Publication](https://haoyuchen.com/portfolio/) or [Google Sc
 
     <footer>
       <span>
-        &copy; <time datetime="2025-03-24 23:20:32 +0900">2025</time> Haoyu Chen.
+        &copy; <time datetime="2025-04-01 20:27:20 +0800">2025</time> Haoyu Chen.
 
 
 
