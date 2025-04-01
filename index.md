@@ -263,7 +263,7 @@ pre {
                         <div class="flex items-center justify-between space-x-4 mt-2">
                             <a href="mailto:hchen794@connect.hkust-gz.edu.cn" class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 group flex-1">
                                 <i data-lucide="mail" class="w-5 h-5 mb-1 text-gray-600 group-hover:text-blue-600 transition-colors duration-200"></i>
-                                <span class="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-200">E-mail</span>
+                                <span class="text-xs text-gray-600 group-hover:text-blue-600 transition-colors duration-200">Mail</span>
                             </a>
                             <a href="https://scholar.google.com/citations?user=KWbcBucAAAAJ" target="_blank" class="flex flex-col items-center justify-center px-3 py-2 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 group flex-1">
                                 <svg class="w-5 h-5 mb-1 text-gray-600 group-hover:text-blue-600 transition-colors duration-200" viewBox="0 0 24 24" fill="currentColor">
