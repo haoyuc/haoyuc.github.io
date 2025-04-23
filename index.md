@@ -526,6 +526,32 @@ section {
                                 </div>
                             </div>
                         </div>
+
+
+                       
+                        <!-- Turbo2K -->
+                        <div class="flex flex-col md:flex-row gap-8 rounded-2xl px-8 py-4 publication-card">
+                             <div class="flex-shrink-0 w-5/6 mx-auto md:w-64 flex items-center">
+                                <img src="./assets/img/turbo2k.jpg" alt="Turbo2K" class="w-full rounded">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">arXiv 2025</p>
+                                </div>
+                                <h4 class="font-semibold text-lg text-gray-900 mb-1 leading-snug publication-title">Turbo2K: Towards Ultra-Efficient and High-Quality 2K Video Synthesis</h4>
+                                <p class="text-gray-500 text-sm mb-3 publication-authors">Jingjing Ren, Wenbo Li, Zhongdao Wang, Haoze Sun, Bangzhen Liu, <span class="author-name">Haoyu Chen</span>, Jiaqi Xu, Aoxue Li, Shifeng Zhang, Bin Shao, Yong Guo, Lei Zhu</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <a href="https://jingjingrenabc.github.io/turbo2k/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2504.14470" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                         
                         <!-- UltraPixel -->
                         <div class="flex flex-col md:flex-row gap-8 rounded-2xl px-8 py-4 publication-card">
@@ -618,6 +644,14 @@ section {
                 </div>
                                 <h4 class="font-semibold text-lg text-gray-900 mb-1 leading-snug publication-title">JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</h4>
                                 <p class="text-gray-500 text-sm mb-3 publication-authors">Yunlong Lin*, Zixu Lin*, <span class="author-name">Haoyu Chen</span>*, Panwang Pan*, Chenxin Li, Sixiang Chen, Kairun Wen, Yeying Jin, Wenbo Li, Xinghao Ding</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <a href="https://cvpr2025-jarvisir.github.io/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2504.04158" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
             </div>
         </div>
                     </div>
