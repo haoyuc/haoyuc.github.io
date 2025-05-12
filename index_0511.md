@@ -1,6 +1,7 @@
 ---
 layout: about 
 ---
+
 <!-- <!DOCTYPE html> -->
 <!-- <html lang="en"> -->
 <head>
@@ -113,7 +114,7 @@ section {
 }
 
 .publication-title {
-    font-size: 1rem !important;
+    font-size: 15px;
   }
   
 
@@ -320,7 +321,7 @@ section {
                         <a href="#education" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Education</a>
                         <a href="#publications" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Publications</a>
                         <a href="#experience" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Experience</a>
-                        <a href="#academic-service" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Service & Awards</a>
+                        <a href="#academic-service" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Awards</a>
                         <a href="#interests" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Interests</a>
                     </div>
                 </div>
@@ -338,7 +339,7 @@ section {
                     <a href="#education" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Education</a>
                     <a href="#publications" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Publications</a>
                     <a href="#experience" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Experience</a>
-                    <a href="#academic-service" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Service & Awards</a>
+                    <a href="#academic-service" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Awards</a>
                     <a href="#interests" class="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-base font-medium">Interests</a>
                 </div>
             </div>
@@ -398,6 +399,37 @@ section {
                 </div>
                             </div>
                         </div>
+    </section>
+
+    <!-- Job Seeking Section -->
+    <section class="py-6 bg-gradient-to-r from-blue-50 to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-sm p-6 border border-blue-100">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="p-2 bg-blue-50 rounded-full">
+                            <i data-lucide="briefcase" class="w-5 h-5 text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Job Seeking</h3>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        I am graduating in 2026 and currently seeking <span class="font-medium">full-time positions worldwide</span> in computer vision, AI research, or related fields. If you have any suitable opportunities or would like to discuss potential collaborations, please feel free to contact me via email or WeChat.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="mailto:hchen794@connect.hkust-gz.edu.cn" class="inline-flex items-center justify-center px-3 py-1.5 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors duration-200 text-sm">
+                            <i data-lucide="mail" class="w-3.5 h-3.5 mr-1.5"></i>
+                            <span>Contact via Email</span>
+                        </a>
+                        <div class="relative group">
+                            <button class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg transition-colors duration-200 text-sm">
+                                <i data-lucide="message-circle" class="w-3.5 h-3.5 mr-1.5"></i>
+                                <span>WeChat: haoyuc98</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- News Section -->
@@ -525,6 +557,32 @@ section {
                                 </div>
                             </div>
                         </div>
+
+
+                       
+                        <!-- Turbo2K -->
+                        <div class="flex flex-col md:flex-row gap-8 rounded-2xl px-8 py-4 publication-card">
+                             <div class="flex-shrink-0 w-5/6 mx-auto md:w-64 flex items-center">
+                                <img src="./assets/img/turbo2k.jpg" alt="Turbo2K" class="w-full rounded">
+                            </div>
+                            <div class="flex-grow">
+                                <div class="flex items-center justify-between mb-1">
+                                    <p class="text-gray-500 text-sm font-medium tracking-wide uppercase">arXiv 2025</p>
+                                </div>
+                                <h4 class="font-semibold text-lg text-gray-900 mb-1 leading-snug publication-title">Turbo2K: Towards Ultra-Efficient and High-Quality 2K Video Synthesis</h4>
+                                <p class="text-gray-500 text-sm mb-3 publication-authors">Jingjing Ren, Wenbo Li, Zhongdao Wang, Haoze Sun, Bangzhen Liu, <span class="author-name">Haoyu Chen</span>, Jiaqi Xu, Aoxue Li, Shifeng Zhang, Bin Shao, Yong Guo, Lei Zhu</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <a href="https://jingjingrenabc.github.io/turbo2k/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2504.14470" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+
                         
                         <!-- UltraPixel -->
                         <div class="flex flex-col md:flex-row gap-8 rounded-2xl px-8 py-4 publication-card">
@@ -617,6 +675,14 @@ section {
                 </div>
                                 <h4 class="font-semibold text-lg text-gray-900 mb-1 leading-snug publication-title">JarvisIR: Elevating Autonomous Driving Perception with Intelligent Image Restoration</h4>
                                 <p class="text-gray-500 text-sm mb-3 publication-authors">Yunlong Lin*, Zixu Lin*, <span class="author-name">Haoyu Chen</span>*, Panwang Pan*, Chenxin Li, Sixiang Chen, Kairun Wen, Yeying Jin, Wenbo Li, Xinghao Ding</p>
+                                <div class="flex flex-wrap gap-3">
+                                    <a href="https://cvpr2025-jarvisir.github.io/" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>Website</span>
+                                    </a>
+                                    <a href="https://arxiv.org/abs/2504.04158" class="inline-flex items-center justify-center px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-md transition-colors text-sm text-gray-600">
+                                        <span>arXiv</span>
+                                    </a>
+                                </div>
             </div>
         </div>
                     </div>
