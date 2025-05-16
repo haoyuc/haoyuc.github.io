@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>统一生成和理解的自回归模型架构</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/fontawesome-all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+    <!-- <nav class="nav">
+      <div class="nav-container">
+        <a href="/">
+          <h2 class="nav-title">Haoyu Chen</h2>
+        </a>
+        <ul>
+          <li><a href="/">About</a></li>
+          <li><a href="/portfolio/">Publication</a></li>
+        </ul>
+     </div>
+   </nav> -->
+
+    <main>
+      <!-- <div class="post"> -->
+  <!-- <h2 class="post-title">统一生成和理解的自回归模型架构</h2>
+  <div class="post-line"></div> -->
+
+  <!-- <!DOCTYPE html><html lang="zh"> -->
+<head><meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>统一生成和理解的自回归模型架构</title>
+    <style>
+        :root {
+            --background: #ffffff;
+            --surface: #f5f5f7;
+            --text-primary: #1d1d1f;
+            --text-secondary: #6e6e73;
+            --accent: #0071e3;
+            --divider: #d2d2d7;
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            
+            /* 更新的配色方案 - 优雅现代 */
+            --blue-primary: #0a84ff;
+            --blue-light: rgba(10, 132, 255, 0.1);
+            --violet-primary: #5e5ce6;
+            --violet-light: rgba(94, 92, 230, 0.1);
+            --teal-primary: #40bdb8;
+            --teal-light: rgba(64, 189, 184, 0.1);
+            --coral-primary: #ff6b6b;
+            --coral-light: rgba(255, 107, 107, 0.1);
+            --brown-primary: #bf8f68;
+            --brown-light: rgba(191, 143, 104, 0.1);
+            --success: #34c759;
+            --success-light: rgba(52, 199, 89, 0.1);
+            --warning: #ff9d0a;
+            --warning-light: rgba(255, 157, 10, 0.1);
+            --info: #64d2ff;
+            --info-light: rgba(100, 210, 255, 0.1);
+            --purple-primary: #af52de;
+            --purple-light: rgba(175, 82, 222, 0.1);
+            --green-primary: #30b94d;
+            --green-light: rgba(48, 185, 77, 0.1);
+            --amber-primary: #ff9500;
+            --amber-light: rgba(255, 149, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+        }
+        
+        body {
+            background-color: var(--background);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem 1rem;
+            line-height: 1.47059;
+            font-weight: 400;
+            letter-spacing: -0.022em;
+            zoom: 0.8; /* 设置默认缩放比例为80% */
+        }
+        
+        .container {
+            width: 80%;
+            max-width: 2500px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            color: var(--text-primary);
+        }
+        
+        .filter-container {
+            margin-bottom: 2rem;
+            background-color: var(--surface);
+            border-radius: 12px;
+            padding: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+        
+        .filter-label {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            flex: 0 0 100%;
+        }
+        
+        .filter-group {
+            position: relative;
+            flex: 1 1 200px;
+        }
+        
+        .select-wrapper {
+            position: relative;
+        }
+
+        .select-wrapper::after {
+            content: "⌄";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 16px;
+            pointer-events: none;
+        }
+        
+        select {
+            width: 100%;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid var(--divider);
+            background-color: var(--background);
+            font-size: 14px;
+            color: var(--text-primary);
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        select:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+        }
+        
+        .search-box {
+            position: relative;
+            flex: 1 1 280px;
+        }
+        
+        .search-input {
+            width: 100%;
+            padding: 10px 16px 10px 40px;
+            border-radius: 8px;
+            border: 1px solid var(--divider);
+            background-color: var(--background);
+            font-size: 14px;
+            color: var(--text-primary);
+            outline: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        
+        .search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(0, 113, 227, 0.2);
+        }
+        
+        .search-icon {
+            position: absolute;
+            left: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-secondary);
+            font-size: 16px;
+        }
+        
+        .reset-btn {
+            padding: 10px 16px;
+            border-radius: 8px;
+            background-color: var(--accent);
+            color: white;
+            font-size: 14px;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        
+        .reset-btn:hover {
+            background-color: #0062cc;
+        }
+
+        .table-container {
+            background-color: var(--background);
+            border-radius: 20px;
+            box-shadow: var(--card-shadow);
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .scroll-container {
+            overflow-x: auto;
+            padding: 1rem;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            table-layout: fixed;
+        }
+        
+        thead {
+            position: sticky;
+            top: 0;
+            background-color: var(--background);
+            z-index: 10;
+        }
+        
+        th {
+            padding: 16px;
+            text-align: left;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid var(--divider);
+            vertical-align: middle;
+        }
+        
+        /* 图像表示和代码开源列居中 */
+        th.text-center, td.text-center {
+            text-align: center;
+        }
+        
+        td {
+            padding: 16px;
+            vertical-align: middle; /* 所有行上下垂直居中 */
+            border-bottom: 1px solid var(--divider);
+            font-size: 14px;
+            line-height: 1.4;
+        }
+        
+        /* 新增的淡化样式 */
+        tr.filtered-row {
+            opacity: 0.35;
+            transition: opacity 0.3s ease;
+        }
+        
+        tr.highlighted-row {
+            position: relative;
+            z-index: 5;
+            transition: all 0.3s ease;
+        }
+        
+        tr.highlighted-row:hover {
+            transform: scale(1.01);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.07);
+        }
+        
+        tbody tr:hover {
+            background-color: var(--surface);
+        }
+        
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+        
+        /* 调整列宽设置（根据新增列重新分配） */
+        .col-model { width: 8%; }
+        .col-llm { width: 8%; }
+        .col-loss { width: 9%; }
+        .col-repr { width: 7%; }
+        .col-encoder { width: 13%; }
+        .col-decoder { width: 13%; }
+        .col-date { width: 7%; }
+        .col-org { width: 8%; }
+        .col-code { width: 9%; }
+        .col-interleaved { width: 9%; }
+        
+        .model-name {
+            font-weight: 600;
+            color: var(--text-primary);
+            font-size: 16px;
+        }
+        
+        .date {
+            white-space: nowrap;
+            color: var(--text-secondary);
+        }
+        
+        .org {
+            font-weight: 500;
+            white-space: nowrap;
+            color: gray;
+        }
+        
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4px 10px;
+            border-radius: 16px;
+            font-size: 12px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+        
+        /* 代码开源状态 */
+        .code-yes {
+            background-color: var(--success-light);
+            color: var(--success);
+            white-space: normal;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+        
+        .code-soon {
+            background-color: var(--warning-light);
+            color: var(--warning);
+            white-space: normal;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+        
+        .code-inference {
+            background-color: var(--violet-light);
+            color: var(--violet-primary);
+            white-space: normal;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+        
+        .code-pretrain {
+            background-color: var(--info-light);
+            color: var(--info);
+            white-space: normal;
+            word-wrap: break-word;
+            display: inline-block;
+        }
+        
+        /* Interleaved 标记 */
+        .interleaved-yes {
+            background-color: var(--amber-light);
+            color: var(--amber-primary);
+        }
+        
+        /* 图像生成 Loss 类型 - 更新的颜色方案 */
+        .loss-ntp {
+            background-color: var(--purple-light);
+            color: var(--purple-primary);
+        }
+        
+        .loss-diffusion {
+            background-color: var(--coral-light);
+            color: var(--coral-primary);
+        }
+        
+        .loss-regression {
+            background-color: var(--green-light);
+            color: var(--green-primary);
+        }
+        
+        .loss-ddpm {
+            background-color: var(--violet-light);
+            color: var(--violet-primary);
+        }
+        
+        .loss-mask {
+            background-color: var(--blue-light);
+            color: var(--blue-primary);
+        }
+        
+        /* 图像表示类型 - 更优雅的配色 */
+        .repr-continuous {
+            background-color: var(--teal-light);
+            color: var(--teal-primary);
+        }
+        
+        .repr-discrete {
+            background-color: var(--blue-light);
+            color: var(--blue-primary);
+        }
+        
+        .repr-hybrid {
+            background-color: var(--coral-light);
+            color: var(--coral-primary);
+        }
+        
+        /* 编解码器类型标签 */
+        .encoder-item, .decoder-item {
+            display: inline-block;
+            margin: 2px 0;
+            padding: 3px 0;
+            font-weight: 500;
+        }
+        
+        /* 连续类型编解码器 */
+        .encoder-continuous, .decoder-continuous {
+            color: var(--teal-primary);
+            border-bottom: 1px dotted var(--teal-primary);
+        }
+        
+        /* 离散类型编解码器 */
+        .encoder-discrete, .decoder-discrete {
+            color: #659cd3;
+            border-bottom: 1px dotted var(--blue-primary);
+        }
+        
+        /* SDXL类型 */
+        .decoder-sdxl {
+            color: var(--coral-primary);
+            border-bottom: 1px dotted var(--coral-primary);
+        }
+        
+        /* 混合或其他类型编解码器 */
+        .encoder-other, .decoder-other {
+            color: var(--text-secondary);
+        }
+        
+        .encoder-branch, .decoder-note, .interleaved-note {
+            display: block;
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-top: 2px;
+            font-style: italic;
+        }
+        
+        /* 添加特殊方法标记的样式 */
+        .future-method {
+            position: relative;
+            background: linear-gradient(120deg, rgba(52, 199, 89, 0.05) 0%, rgba(64, 189, 184, 0.1) 100%);
+            border-left: 3px solid var(--teal-primary);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .future-method:before {
+            content: "✧";
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            font-size: 10px;
+            color: var(--teal-primary);
+            opacity: 0.6;
+        }
+        
+        .future-method:hover {
+            background: linear-gradient(120deg, rgba(52, 199, 89, 0.08) 0%, rgba(64, 189, 184, 0.15) 100%);
+        }
+        
+        .multiline {
+            white-space: pre-line;
+        }
+        
+        .subtle-section {
+            background-color: var(--surface);
+            margin: -1rem;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .subtle-description {
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.5;
+        }
+        
+        .filter-status {
+            margin-top: 1rem;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+            font-style: italic;
+        }
+        
+        .filter-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            margin: 0 3px;
+            background-color: var(--blue-light);
+            color: var(--blue-primary);
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 32px;
+            }
+            
+            th, td {
+                padding: 12px 10px;
+            }
+            
+            .subtle-section {
+                padding: 0.75rem;
+            }
+            
+            .filter-group, .search-box {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>统一生成和理解的自回归模型架构</h1>
+        <p class="subtle-description">以下表格展示了最新多模态模型架构的关键技术特点比较，包括基础语言模型、图像生成策略和编解码方法。</p>
+        
+        <div class="filter-container">
+            <div class="filter-label">筛选选项</div>
+            
+            <div class="filter-group">
+                <div class="select-wrapper">
+                    <select id="llm-filter">
+                        <option value="">所有语言基模</option>
+                        <option value="LLaMa">LLaMa</option>
+                        <option value="Qwen">Qwen</option>
+                        <option value="DeepSeek">DeepSeek</option>
+                        <option value="Gemma">Gemma</option>
+                        <option value="Chameleon">Chameleon</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="select-wrapper">
+                    <select id="loss-filter">
+                        <option value="">所有生成Loss</option>
+                        <option value="next-token prediction">next-token prediction</option>
+                        <option value="Diffusion Loss">Diffusion Loss</option>
+                        <option value="image feature regression">image feature regression</option>
+                        <option value="DDPM">DDPM</option>
+                        <option value="mask token prediction">mask token prediction</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="select-wrapper">
+                    <select id="repr-filter">
+                        <option value="">所有图像表示</option>
+                        <option value="连续">连续</option>
+                        <option value="离散">离散</option>
+                        <option value="混合">混合</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="select-wrapper">
+                    <select id="org-filter">
+                        <option value="">所有机构</option>
+                        <option value="Meta">Meta</option>
+                        <option value="Google">Google</option>
+                        <option value="腾讯">腾讯</option>
+                        <option value="DeepSeek">DeepSeek</option>
+                        <option value="BAAI">BAAI</option>
+                        <option value="清华">清华</option>
+                        <option value="上交">上交</option>
+                        <option value="复旦">复旦</option>
+                        <option value="华为">华为</option>
+                        <option value="Bytedance">Bytedance</option>
+                        <option value="HKU">HKU</option>
+                        <option value="NUS">NUS</option>
+                        <option value="CUHK">CUHK</option>
+                        <option value="上海 AI Lab">上海 AI Lab</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="select-wrapper">
+                    <select id="interleaved-filter">
+                        <option value="">所有交错类型</option>
+                        <option value="interleaved">Interleaved</option>
+                        <option value="non-interleaved">Non-Interleaved</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="search-input" class="search-input" placeholder="搜索任何内容..." />
+            </div>
+            
+            <button id="reset-filters" class="reset-btn">重置筛选</button>
+            
+            <div id="filter-status" class="filter-status" style="display: none;">
+                当前筛选: <span id="active-filters"></span>
+            </div>
+        </div>
+        
+        <div class="table-container">
+            <div class="scroll-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-model">模型</th>
+                            <th class="col-llm">语言基模</th>
+                            <th class="col-loss">图像生成 Loss</th>
+                            <th class="col-repr text-center">图像表示</th>
+                            <th class="col-encoder">图像编码器</th>
+                            <th class="col-decoder">图像解码器</th>
+                            <th class="col-date">发布日期</th>
+                            <th class="col-org">机构</th>
+                            <th class="col-code text-center">代码开源</th>
+                            <th class="col-interleaved text-center">Interleaved</th>
+                        </tr>
+                    </thead>
+                    <tbody id="models-table-body">
+                        <tr data-model="SEED-X" data-llm="Llama2" data-loss="image feature regression" data-repr="连续" data-org="腾讯" data-interleaved="yes">
+                            <td><span class="model-name">SEED-X</span></td>
+                            <td>Llama2-chat-13B</td>
+                            <td><span class="pill loss-regression">image feature regression</span></td>
+                            <td class="text-center"><span class="pill repr-continuous">连续</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">ViT</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-sdxl">SD-XL</span>
+                                <span class="decoder-note">替换文本输入</span>
+                            </td>
+                            <td class="date">2024.04.22</td>
+                            <td class="org">腾讯</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center future-method">
+                                <span class="pill interleaved-yes">✓</span>
+                                <span class="interleaved-note">Interleaved / SEED-Story</span>
+                            </td>
+                        </tr>
+                        <tr data-model="Chameleon" data-llm="LLaMa" data-loss="next-token prediction" data-repr="离散" data-org="Meta" data-interleaved="yes">
+                            <td><span class="model-name">Chameleon</span></td>
+                            <td>LLaMa-2</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">VQ-SEG</span>
+                                <span class="encoder-branch">VQ-VAE 变体</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">VQ-SEG</span>
+                                <span class="decoder-note">VQ-VAE 变体</span>
+                            </td>
+                            <td class="date">2024.05.16</td>
+                            <td class="org">Meta</td>
+                            <td class="text-center"><span class="pill code-yes">Anole（one-text and one image）</span></td>
+                            <td class="text-center">
+                                <span class="pill interleaved-yes">✓</span>
+                                <span class="interleaved-note">类 Obelisc</span>
+                            </td>
+                        </tr>
+                        <tr data-model="Transfusion" data-loss="DDPM" data-repr="连续" data-org="Meta">
+                            <td><span class="model-name">Transfusion</span></td>
+                            <td></td>
+                            <td><span class="pill loss-ddpm">DDPM</span></td>
+                            <td class="text-center"><span class="pill repr-continuous">连续</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">VAE</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-continuous">VAE</span>
+                            </td>
+                            <td class="date">2024.08.20</td>
+                            <td class="org">Meta</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="Lumina-mGPT" data-llm="Chameleon" data-loss="next-token prediction" data-repr="离散" data-org="上海 AI Lab CUHK" data-interleaved="yes">
+                            <td><span class="model-name">Lumina-mGPT</span></td>
+                            <td>Chameleon</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">VQ-VAE</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">VQ-VAE</span>
+                            </td>
+                            <td class="date">2024.08.05</td>
+                            <td class="org">上海 AI Lab, CUHK</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center future-method">
+                                <span class="pill interleaved-yes">✓</span>
+                            </td>
+                        </tr>
+                        <tr data-model="Emu3" data-loss="next-token prediction" data-repr="离散" data-org="BAAI">
+                            <td><span class="model-name">Emu3</span></td>
+                            <td></td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">MoVQGAN</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">MoVQGAN</span>
+                            </td>
+                            <td class="date">2024.09.27</td>
+                            <td class="org">BAAI</td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="Show-o" data-loss="mask token prediction" data-repr="离散" data-org="NUS ByteDance" data-interleaved="yes">
+                            <td><span class="model-name">Show-o</span></td>
+                            <td></td>
+                            <td><span class="pill loss-mask">mask token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">MAGVIT-v2</span>
+                                <span class="encoder-branch">video tokenizer</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">MAGVIT-v2</span>
+                            </td>
+                            <td class="date">2024.08.22</td>
+                            <td class="org">NUS, ByteDance</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center">
+                                <span class="pill interleaved-yes">✓</span>
+                                <span class="interleaved-note">GenHowTo</span>
+                            </td>
+                        </tr>
+                        <tr data-model="Janus" data-llm="DeepSeek" data-loss="next-token prediction" data-repr="离散" data-org="DeepSeek">
+                            <td><span class="model-name">Janus</span></td>
+                            <td>DeepSeek-LLM</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">SigLIP</span>
+                                <span class="encoder-branch">理解任务</span>
+                                <span class="encoder-item encoder-discrete">VQ tokenizer</span>
+                                <span class="encoder-branch">生成任务</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">VQ tokenizer</span>
+                            </td>
+                            <td class="date">2024.10.17</td>
+                            <td class="org">DeepSeek</td>
+                            <td class="text-center"><span class="pill code-inference">Inference</span></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="VILA-U" data-llm="LLaMA" data-loss="next-token prediction" data-repr="离散" data-org="清华 MIT NVIDIA">
+                            <td><span class="model-name">VILA-U</span></td>
+                            <td>LLaMA-2-7B</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">RQ-VAE</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">RQ-VAE</span>
+                            </td>
+                            <td class="date">2024.09.06</td>
+                            <td class="org">清华，MIT， NVIDIA</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center future-method">
+                                <span class="pill interleaved-yes">✓</span>
+                                <span class="interleaved-note">mmc4</span>
+                            </td>
+                        </tr>
+                        <tr data-model="Liquid" data-llm="Gemma" data-loss="next-token prediction" data-repr="离散" data-org="Bytedance">
+                            <td><span class="model-name">Liquid</span></td>
+                            <td>Gemma-7B</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">VQ-SEG</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">VQ-SEG</span>
+                            </td>
+                            <td class="date">2024.12.05</td>
+                            <td class="org">Bytedance</td>
+                            <td class="text-center"><span class="pill code-pretrain">image-text pretrain</span></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="Orthus" data-llm="Chameleon" data-loss="Diffusion Loss" data-repr="连续" data-org="上交" data-interleaved="yes">
+                            <td><span class="model-name">Orthus</span></td>
+                            <td>Chameleon</td>
+                            <td><span class="pill loss-diffusion">Diffusion Loss</span></td>
+                            <td class="text-center"><span class="pill repr-continuous">连续</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">VAE</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-continuous">VAE</span>
+                            </td>
+                            <td class="date">2024.11.28</td>
+                            <td class="org">上交</td>
+                            <td class="text-center"><span class="pill code-inference">Inference</span></td>
+                            <td class="text-center">
+                                <span class="pill interleaved-yes">✓</span>
+                                <span class="interleaved-note">StoryStream</span>
+                            </td>
+                        </tr>
+                        <tr data-model="UniTok" data-llm="LLaMA" data-loss="next-token prediction" data-repr="离散" data-org="HKU Bytedance">
+                            <td><span class="model-name">UniTok</span></td>
+                            <td>Llama-2-7B</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-discrete">离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-discrete">UniTok</span>
+                                <span class="encoder-branch">同时在图像重建和文本对齐上训练</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">UniTok</span>
+                            </td>
+                            <td class="date">2025.02.27</td>
+                            <td class="org">HKU, Bytedance</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="UniFluid" data-llm="Gemma" data-loss="Diffusion Loss" data-repr="连续" data-org="Google DeepMind">
+                            <td><span class="model-name">UniFluid</span></td>
+                            <td>Gemma-2</td>
+                            <td><span class="pill loss-diffusion">Diffusion Loss</span></td>
+                            <td class="text-center"><span class="pill repr-continuous">连续</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">SigLIP</span>
+                                <span class="encoder-branch">理解任务</span>
+                                <span class="encoder-item encoder-continuous">VAE</span>
+                                <span class="encoder-branch">生成任务</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-continuous">VAE</span>
+                            </td>
+                            <td class="date">2025.03.17</td>
+                            <td class="org">Google DeepMind</td>
+                            <td class="text-center"></td>
+                            <td class="text-center"></td>
+                        </tr>
+                        <tr data-model="UniToken" data-llm="Chameleon" data-loss="next-token prediction" data-repr="混合" data-org="复旦 美团">
+                            <td><span class="model-name">UniToken</span></td>
+                            <td>Chameleon</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-hybrid">输入：连续+离散<br />输出：离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">SigLIP</span>
+                                <span class="encoder-item encoder-discrete">+ VQ-SEG</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-discrete">VQ-SEG</span>
+                            </td>
+                            <td class="date">2025.04.06</td>
+                            <td class="org">复旦, 美团</td>
+                            <td class="text-center"><span class="pill code-yes">✓</span></td>
+                            <td class="text-center future-method">
+                                <span class="pill interleaved-yes" style="background-color: var(--teal-light); color: var(--teal-primary);">✓</span>
+                                <span class="interleaved-note">训练支持</span>
+                            </td>
+                        </tr>
+                        <tr data-model="ILLUME+" data-llm="Qwen" data-loss="next-token prediction" data-repr="混合" data-org="华为 HKU">
+                            <td><span class="model-name">ILLUME+</span></td>
+                            <td>Qwen2.5</td>
+                            <td><span class="pill loss-ntp">next-token prediction</span></td>
+                            <td class="text-center"><span class="pill repr-hybrid">输入：连续<br />输出：离散</span></td>
+                            <td>
+                                <span class="encoder-item encoder-continuous">QwenViT</span>
+                                <span class="encoder-branch">Semantic Branch</span>
+                                <span class="encoder-item encoder-discrete">MoVQGAN</span>
+                                <span class="encoder-branch">Pixel Branch（改进版VQGAN）</span>
+                            </td>
+                            <td>
+                                <span class="decoder-item decoder-sdxl">SDXL</span>
+                                <span class="decoder-note">和noisy image latent 进行 concatenation</span>
+                            </td>
+                            <td class="date">2025.04.03</td>
+                            <td class="org">华为, HKU</td>
+                            <td class="text-center"><span class="pill code-soon">soon</span></td>
+                            <td class="text-center"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tableBody = document.getElementById('models-table-body');
+            const rows = tableBody.querySelectorAll('tr');
+            const llmFilter = document.getElementById('llm-filter');
+            const lossFilter = document.getElementById('loss-filter');
+            const reprFilter = document.getElementById('repr-filter');
+            const orgFilter = document.getElementById('org-filter');
+            const interleavedFilter = document.getElementById('interleaved-filter');
+            const searchInput = document.getElementById('search-input');
+            const resetButton = document.getElementById('reset-filters');
+            const filterStatus = document.getElementById('filter-status');
+            const activeFilters = document.getElementById('active-filters');
+            
+            // 添加事件监听器
+            llmFilter.addEventListener('change', applyFilters);
+            lossFilter.addEventListener('change', applyFilters);
+            reprFilter.addEventListener('change', applyFilters);
+            orgFilter.addEventListener('change', applyFilters);
+            interleavedFilter.addEventListener('change', applyFilters);
+            searchInput.addEventListener('input', applyFilters);
+            resetButton.addEventListener('click', resetFilters);
+            
+            // 筛选函数
+            function applyFilters() {
+                const llmValue = llmFilter.value.toLowerCase();
+                const lossValue = lossFilter.value.toLowerCase();
+                const reprValue = reprFilter.value;
+                const orgValue = orgFilter.value.toLowerCase();
+                const interleavedValue = interleavedFilter.value.toLowerCase();
+                const searchValue = searchInput.value.toLowerCase();
+                
+                let highlightedCount = 0;
+                let filterTagsHtml = '';
+                
+                // 构建活跃筛选器标签
+                if (llmValue) {
+                    filterTagsHtml += `<span class="filter-tag">语言基模: ${llmFilter.options[llmFilter.selectedIndex].text}</span>`;
+                }
+                if (lossValue) {
+                    filterTagsHtml += `<span class="filter-tag">生成Loss: ${lossFilter.options[lossFilter.selectedIndex].text}</span>`;
+                }
+                if (reprValue) {
+                    filterTagsHtml += `<span class="filter-tag">图像表示: ${reprFilter.options[reprFilter.selectedIndex].text}</span>`;
+                }
+                if (orgValue) {
+                    filterTagsHtml += `<span class="filter-tag">机构: ${orgFilter.options[orgFilter.selectedIndex].text}</span>`;
+                }
+                if (interleavedValue) {
+                    filterTagsHtml += `<span class="filter-tag">交错类型: ${interleavedFilter.options[interleavedFilter.selectedIndex].text}</span>`;
+                }
+                if (searchValue) {
+                    filterTagsHtml += `<span class="filter-tag">搜索: "${searchValue}"</span>`;
+                }
+                
+                // 显示或隐藏筛选状态
+                if (llmValue || lossValue || reprValue || orgValue || interleavedValue || searchValue) {
+                    activeFilters.innerHTML = filterTagsHtml;
+                    filterStatus.style.display = 'block';
+                } else {
+                    filterStatus.style.display = 'none';
+                }
+                
+                rows.forEach(row => {
+                    const rowData = {
+                        model: row.getAttribute('data-model').toLowerCase(),
+                        llm: row.getAttribute('data-llm')?.toLowerCase() || '',
+                        loss: row.getAttribute('data-loss')?.toLowerCase() || '',
+                        repr: row.getAttribute('data-repr') || '',
+                        org: row.getAttribute('data-org')?.toLowerCase() || '',
+                        interleaved: row.getAttribute('data-interleaved') || '',
+                        fullText: row.textContent.toLowerCase()
+                    };
+                    
+                    // 检查是否匹配所有筛选条件
+                    const matchesLLM = !llmValue || rowData.llm.includes(llmValue);
+                    const matchesLoss = !lossValue || rowData.loss.includes(lossValue);
+                    const matchesRepr = !reprValue || rowData.repr.includes(reprValue);
+                    const matchesOrg = !orgValue || rowData.org.includes(orgValue);
+                    const matchesSearch = !searchValue || rowData.fullText.includes(searchValue);
+                    
+                    // 特殊处理 interleaved 筛选
+                    let matchesInterleaved = true;
+                    if (interleavedValue === 'interleaved') {
+                        matchesInterleaved = rowData.interleaved === 'yes';
+                    } else if (interleavedValue === 'non-interleaved') {
+                        matchesInterleaved = rowData.interleaved !== 'yes';
+                    }
+                    
+                    // 所有条件都匹配才高亮显示行
+                    const shouldHighlight = matchesLLM && matchesLoss && matchesRepr && matchesOrg && matchesInterleaved && matchesSearch;
+                    
+                    // 新的行为：不隐藏，而是淡化未匹配的行
+                    if (shouldHighlight) {
+                        row.classList.remove('filtered-row');
+                        row.classList.add('highlighted-row');
+                        highlightedCount++;
+                    } else {
+                        row.classList.add('filtered-row');
+                        row.classList.remove('highlighted-row');
+                    }
+                });
+                
+                // 如果存在筛选但没有匹配项，显示提示
+                if ((llmValue || lossValue || reprValue || orgValue || interleavedValue || searchValue) && highlightedCount === 0) {
+                    // 如果愿意，可以在这里添加"无匹配"提示
+                    filterStatus.innerHTML += '<div style="margin-top:8px;">没有找到匹配的结果，尝试调整筛选条件</div>';
+                }
+            }
+            
+            // 重置所有筛选器
+            function resetFilters() {
+                llmFilter.selectedIndex = 0;
+                lossFilter.selectedIndex = 0;
+                reprFilter.selectedIndex = 0;
+                orgFilter.selectedIndex = 0;
+                interleavedFilter.selectedIndex = 0;
+                searchInput.value = '';
+                
+                // 移除所有行的淡化和高亮效果
+                rows.forEach(row => {
+                    row.classList.remove('filtered-row');
+                    row.classList.remove('highlighted-row');
+                });
+                
+                // 隐藏筛选状态
+                filterStatus.style.display = 'none';
+            }
+        });
+    </script>
+
+
+<!-- </body></html> -->
+</body>
+
+
+<!-- </div> -->
+
+<!-- <div class="pagination" style="border-top:0px solid #e5e5e5;"> -->
+  <!-- 
+  
+    <a href="/POSTA" class="right next">Next</a>
+   -->
+
+  <!-- <a href="#" class="top">Top</a> -->
+<!-- </div> -->
+
+
+
+    </main>
+
+    <footer>
+      <span>
+        &copy; <time datetime="2025-05-15 19:28:40 -0700">2025</time> Haoyu Chen.
+
+
+
+      <!-- Default Statcounter code for Haoyu Chen http://chenhaoyu.com -->
+<!--       <script type="text/javascript">
+      var sc_project=12491342; 
+      var sc_invisible=0; 
+      var sc_security="c00ed0d4"; 
+      var sc_https=1; 
+      var scJsHost = "https://";
+      document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+      </script> -->
+      <!-- <noscript> -->
+      &emsp;
+      <img  style="display:inline !important; margin: auto;"
+      src="https://c.statcounter.com/12491342/0/c00ed0d4/0/" alt="Web
+      Analytics" >
+      <!-- </noscript> -->
+      <!-- End of Statcounter Code -->      
+
+      </span>
+
+
+
+    </footer>
+  </body>
+</html>
