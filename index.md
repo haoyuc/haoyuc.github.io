@@ -1623,8 +1623,7 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 		<section class="section section--journal" id="publications">
 			<div class="section-aside">
 				<h2 class="section-title">Publications<span class="count">[10]</span></h2>
-				<p class="section-desc">Selected first-author work across low-level vision, restoration, and
-					generative models. Full list available on Google Scholar.</p>
+				<p class="section-desc">Selected first-author work. Full list available on Google Scholar.</p>
 			</div>
 			<div class="section-body">
 				<ul class="list">
