@@ -983,6 +983,8 @@ html.no-anim .split-line > span {
 
 	.section {
 		grid-template-columns: 1fr;
+		gap: 20px;
+		padding-block: 32px;
 	}
 
 	.section-aside,
@@ -990,13 +992,30 @@ html.no-anim .split-line > span {
 		grid-column: 1 / -1;
 	}
 
+	.hero {
+		padding-top: 36px;
+	}
+
 	.hero-title {
-		font-size: 40px;
+		font-size: clamp(34px, 9vw, 44px);
+		margin-top: 20px;
 	}
 
 	.hero-avatar {
-		width: 152px;
-		height: 152px;
+		width: 140px;
+		height: 140px;
+	}
+
+	.section-title {
+		font-size: 28px;
+	}
+
+	.testimonial-quote p {
+		font-size: 18px;
+	}
+
+	.testimonial-quote p + p {
+		margin-top: 16px;
 	}
 
 	.expertise-grid,
@@ -1037,6 +1056,82 @@ html.no-anim .split-line > span {
 		margin-left: auto;
 	}
 
+	.highlights-head {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
+		margin-bottom: 28px;
+	}
+
+	.section--highlights {
+		padding-top: 20px;
+	}
+
+	.news-date {
+		margin-top: 14px;
+	}
+}
+
+/* Phones: tighter rhythm, fluid headings, and edge-to-edge spacing. */
+@media (max-width: 479.98px) {
+	:root {
+		--page-pad: 16px;
+		--col-gap: 16px;
+	}
+
+	.nav {
+		gap: 12px 16px;
+	}
+
+	.nav-link {
+		font-size: 12px;
+	}
+
+	.section {
+		padding-block: 28px;
+	}
+
+	.hero {
+		padding-top: 28px;
+	}
+
+	.hero-title {
+		font-size: clamp(30px, 8.5vw, 38px);
+	}
+
+	.hero-avatar {
+		width: 120px;
+		height: 120px;
+	}
+
+	.section-title {
+		font-size: 26px;
+	}
+
+	.interests-grid {
+		gap: 12px;
+	}
+
+	.experience-grid {
+		gap: 14px 12px;
+	}
+
+	.experience-card {
+		padding: 14px 6px 12px;
+	}
+
+	.experience-name {
+		font-size: 16px;
+	}
+
+	.list-name {
+		font-size: 16px;
+	}
+
+	.list-link,
+	.section--awards .list-row {
+		padding-block: 16px;
+	}
 }
 
 
@@ -1301,6 +1396,29 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 
 	.news-detail-title {
 		font-size: 34px;
+	}
+
+	.news-variant-04-floating-lens .news-detail-shell {
+		padding: 14px;
+	}
+
+	.news-variant-04-floating-lens .news-detail-panel {
+		width: 100%;
+		max-height: calc(100dvh - 28px);
+		padding: 18px;
+		border-radius: 18px;
+	}
+
+	.news-variant-04-floating-lens .news-detail-content {
+		padding: 20px 2px 4px;
+	}
+
+	.news-variant-04-floating-lens .news-detail-title {
+		font-size: clamp(26px, 7.5vw, 34px);
+	}
+
+	.news-detail-summary {
+		font-size: 17px;
 	}
 }
 
@@ -2261,7 +2379,7 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 
     <footer>
       <span>
-        &copy; <time datetime="2026-06-08 23:45:39 +0800">2026</time> Haoyu Chen.
+        &copy; <time datetime="2026-06-09 00:03:35 +0800">2026</time> Haoyu Chen.
 
 
 
