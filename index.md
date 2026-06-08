@@ -1598,19 +1598,19 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 						<p class="experience-year">2026</p>
 					</li>
 					<li class="experience-card" data-reveal>
-						<img class="company-logo experience-logo" src="../assets/images/logo/adobe.jpg" alt="Adobe logo" loading="lazy">
+						<img class="company-logo experience-logo" src="../assets/images/logo/adobe.png" alt="Adobe logo" loading="lazy">
 						<h3 class="experience-name">Adobe</h3>
 						<p class="experience-role">[Research Intern]</p>
 						<p class="experience-year">2025</p>
 					</li>
 					<li class="experience-card" data-reveal>
-						<img class="company-logo experience-logo" src="../assets/images/logo/xiaobing.avif" alt="Xiaobing.AI logo" loading="lazy">
+						<img class="company-logo experience-logo" src="../assets/images/logo/xiaobing.png" alt="Xiaobing.AI logo" loading="lazy">
 						<h3 class="experience-name">Xiaobing.AI</h3>
 						<p class="experience-role">[Research Intern]</p>
 						<p class="experience-year">2021</p>
 					</li>
 					<li class="experience-card" data-reveal>
-						<img class="company-logo experience-logo" src="../assets/images/logo/aws.jpg" alt="AWS logo" loading="lazy">
+						<img class="company-logo experience-logo" src="../assets/images/logo/aws.png" alt="AWS logo" loading="lazy">
 						<h3 class="experience-name">AWS</h3>
 						<p class="experience-role">[Research Intern]</p>
 						<p class="experience-year">2020</p>
