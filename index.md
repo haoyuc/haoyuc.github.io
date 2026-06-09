@@ -655,6 +655,136 @@ html.js .experience-card[data-reveal].is-revealed .experience-year {
 }
 
 /* =========================================================================
+   Publications hover preview — a cursor-trailing image lens, plus an in-place
+   swap where the category label cross-fades into Homepage/PDF links on intent.
+   ========================================================================= */
+.pub-row {
+	cursor: pointer;
+	outline: none;
+}
+
+/* right cluster holds both the [Category] label and the links, stacked */
+.pub-swap {
+	position: relative;
+	margin-left: auto;
+	display: inline-flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.pub-swap .list-meta {
+	margin-left: 0;
+	transition: opacity 0.34s var(--ease-out-expo), transform 0.46s var(--ease-out-expo);
+}
+
+.list-row[data-open] .pub-swap.has-links .list-meta {
+	opacity: 0;
+	transform: translateX(-6px);
+}
+
+.pub-links {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	white-space: nowrap;
+	opacity: 0;
+	pointer-events: none;
+	transform: translateY(-50%) translateX(8px);
+	transition: opacity 0.4s var(--ease-out-expo) 0.05s, transform 0.55s var(--ease-out-expo) 0.05s;
+}
+
+.list-row[data-open] .pub-swap.has-links .pub-links {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateY(-50%);
+}
+
+.pub-link {
+	font-family: var(--font-mono);
+	font-size: 12px;
+	letter-spacing: 0;
+	color: var(--color-ink);
+	padding: 5px 11px;
+	border: 1px solid var(--color-line);
+	border-radius: 999px;
+	transition: color 0.26s var(--ease-out-expo), border-color 0.26s var(--ease-out-expo),
+		background 0.26s var(--ease-out-expo), transform 0.4s var(--ease-out-expo);
+}
+
+.pub-link:hover {
+	background: var(--color-ink);
+	color: #fff;
+	border-color: var(--color-ink);
+	transform: translateY(-1px);
+}
+
+/* cursor-trailing image preview (pure preview, no controls inside) */
+.pub-lens {
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 120;
+	width: 360px;
+	padding: 10px;
+	background: #fff;
+	border: 1px solid var(--color-line);
+	border-radius: 16px;
+	box-shadow: 0 30px 80px -34px rgba(0, 0, 0, 0.42);
+	pointer-events: none;
+	opacity: 0;
+	transform: translate3d(var(--lx, 0), var(--ly, 0), 0) translate(22px, 22px) scale(0.92) rotate(var(--lr, 0deg));
+	transform-origin: left top;
+	transition: opacity 0.42s var(--ease-out-expo), scale 0.5s var(--ease-out-expo);
+	will-change: transform, opacity;
+}
+
+.pub-lens.show {
+	opacity: 1;
+}
+
+.pub-lens-media {
+	overflow: hidden;
+	border-radius: 9px;
+	min-height: 120px;
+	background: linear-gradient(135deg, #f1f1f1, #d9d9d9);
+}
+
+.pub-lens-media img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+/* touch / small screens: no cursor lens; tap a row to reveal links inline */
+@media (max-width: 809.98px) {
+	.pub-lens {
+		display: none;
+	}
+
+	.pub-swap .pub-links {
+		position: static;
+		transform: none;
+		opacity: 1;
+		pointer-events: auto;
+		display: none;
+		margin-left: 10px;
+	}
+
+	.list-row[data-open] .pub-swap.has-links .pub-links {
+		display: inline-flex;
+		transform: none;
+	}
+
+	.list-row[data-open] .pub-swap.has-links .list-meta {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+/* =========================================================================
    Highlights
    ========================================================================= */
 .section--highlights {
@@ -1628,82 +1758,136 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 			<div class="section-body">
 				<ul class="list">
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/unified.jpg" tabindex="0" role="button" aria-label="Preview: How Long Can Unified Multimodal Models Generate Images Reliably?">
 							<span class="list-name">How Long Can Unified Multimodal Models Generate Images
 								Reliably? Taming Long-Horizon Interleaved Image Generation via Context
 								Curation</span>
-							<span class="list-meta">[Generative Models]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Generative Models]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://arxiv.org/abs/2603.07540" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">arXiv 2026</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/posta.jpg" tabindex="0" role="button" aria-label="Preview: POSTA">
 							<span class="list-name">POSTA: A Go-to Framework for Customized Artistic Poster
 								Generation</span>
-							<span class="list-meta">[Generative Models]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Generative Models]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://haoyuchen.com/POSTA" target="_blank" rel="noopener">Homepage</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2503.14908" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">CVPR 2025</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/JarvisIR.png" tabindex="0" role="button" aria-label="Preview: JarvisIR">
 							<span class="list-name">JarvisIR: Elevating Autonomous Driving Perception with Intelligent
 								Image Restoration</span>
-							<span class="list-meta">[Multi-Modal Agent]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Multi-Modal Agent]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://cvpr2025-jarvisir.github.io/" target="_blank" rel="noopener">Homepage</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2504.04158" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">CVPR 2025</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/photoartagent.jpg" tabindex="0" role="button" aria-label="Preview: PhotoArtAgent">
 							<span class="list-name">PhotoArtAgent: Intelligent Photo Retouching with Artist
 								Agents</span>
-							<span class="list-meta">[Multi-Modal Agent]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Multi-Modal Agent]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://arxiv.org/abs/2505.23130" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">CVPR 2026 Findings</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/restoreagent.jpg" tabindex="0" role="button" aria-label="Preview: RestoreAgent">
 							<span class="list-name">RestoreAgent: Autonomous Image Restoration Agent via Multimodal
 								LLMs</span>
-							<span class="list-meta">[Multi-Modal Agent]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Multi-Modal Agent]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://haoyuchen.com/RestoreAgent" target="_blank" rel="noopener">Homepage</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2407.18035" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">NeurIPS 2024</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/lway.png" tabindex="0" role="button" aria-label="Preview: Low-Res Leads the Way">
 							<span class="list-name">Low-Res Leads the Way: Improving Generalization for
 								Super-Resolution</span>
-							<span class="list-meta">[Low-level Vision]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Low-level Vision]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://haoyuchen.com/LWay" target="_blank" rel="noopener">Homepage</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2403.02601" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">CVPR 2024</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/mask.jpg" tabindex="0" role="button" aria-label="Preview: Masked Image Training">
 							<span class="list-name">Masked Image Training for Generalizable Deep Image Denoising</span>
-							<span class="list-meta">[Low-level Vision]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Low-level Vision]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://github.com/haoyuc/MaskedDenoising" target="_blank" rel="noopener">Code</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2303.13132" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">CVPR 2023</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/desnow.gif" tabindex="0" role="button" aria-label="Preview: Snow Removal in Video">
 							<span class="list-name">Snow Removal in Video: A New Dataset and A Novel Method</span>
-							<span class="list-meta">[Adverse Weather]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Adverse Weather]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://haoyuchen.com/VideoDesnowing" target="_blank" rel="noopener">Homepage</a>
+									<a class="pub-link" href="https://openaccess.thecvf.com/content/ICCV2023/papers/Chen_Snow_Removal_in_Video_A_New_Dataset_and_A_Novel_ICCV_2023_paper.pdf" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">ICCV 2023</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/desnow2.gif" tabindex="0" role="button" aria-label="Preview: Density-Aware Video Desnowing">
 							<span class="list-name">Density-Aware Video Desnowing with Robust Alignment on a
 								Large-Scale Dataset</span>
-							<span class="list-meta">[Adverse Weather]</span>
+							<span class="pub-swap">
+								<span class="list-meta">[Adverse Weather]</span>
+							</span>
 							<span class="list-year">TMM 2026</span>
-						</a>
+						</div>
 					</li>
 					<li class="list-row" data-reveal>
-						<a class="list-link" href="#">
+						<div class="list-link pub-row" data-paper data-img="../assets/images/papers/AAN.jpg" tabindex="0" role="button" aria-label="Preview: Attention in Attention Network">
 							<span class="list-name">Attention in Attention Network for Image Super-Resolution</span>
-							<span class="list-meta">[Low-level Vision]</span>
+							<span class="pub-swap has-links">
+								<span class="list-meta">[Low-level Vision]</span>
+								<span class="pub-links">
+									<a class="pub-link" href="https://github.com/haoyuc/A2N" target="_blank" rel="noopener">Code</a>
+									<a class="pub-link" href="https://arxiv.org/abs/2104.09497" target="_blank" rel="noopener">PDF</a>
+								</span>
+							</span>
 							<span class="list-year">arXiv 2021</span>
-						</a>
+						</div>
 					</li>
 				</ul>
 			</div>
@@ -1762,6 +1946,10 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 
 	<div class="interaction-cursor" data-interaction-cursor aria-hidden="true">
 		<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17V7h10"/><path d="M17 17 7 7"/></svg>
+	</div>
+
+	<div class="pub-lens" data-pub-lens aria-hidden="true">
+		<div class="pub-lens-media"><img alt="" data-pub-lens-img></div>
 	</div>
 
 	<div class="news-detail-shell" data-news-detail aria-hidden="true">
@@ -2234,6 +2422,94 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 		});
 	}
 
+})();
+	</script>
+
+	<!-- Publications: cursor-trailing image lens + hover-intent link reveal -->
+	<script>
+(function () {
+	'use strict';
+	const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	const rows = Array.prototype.slice.call(document.querySelectorAll('.pub-row'));
+	if (!rows.length) return;
+
+	const DELAY = 260; // ms of hover-intent before the preview opens
+
+	const lens = document.querySelector('[data-pub-lens]');
+	const lensImg = lens ? lens.querySelector('[data-pub-lens-img]') : null;
+	if (lensImg) {
+		lensImg.style.visibility = 'hidden';
+		lensImg.addEventListener('load', () => { lensImg.style.visibility = 'visible'; });
+		lensImg.addEventListener('error', () => { lensImg.style.visibility = 'hidden'; });
+	}
+
+	let tx = 0, ty = 0, cx = 0, cy = 0, active = false, raf = null;
+	function loop() {
+		cx += (tx - cx) * 0.16;
+		cy += (ty - cy) * 0.16;
+		const dx = Math.max(-6, Math.min(6, (tx - cx) * 0.5));
+		lens.style.setProperty('--lx', cx + 'px');
+		lens.style.setProperty('--ly', cy + 'px');
+		lens.style.setProperty('--lr', (dx * 0.6) + 'deg');
+		lens.style.scale = active ? '1' : '.92';
+		raf = requestAnimationFrame(loop);
+	}
+	const anyOpen = () => document.querySelector('.list-row[data-open]');
+	function showLens(src) {
+		if (!lens) return;
+		if (src && lensImg && lensImg.getAttribute('src') !== src) lensImg.setAttribute('src', src);
+		active = true;
+		lens.classList.add('show');
+		if (!raf) loop();
+	}
+	function hideLens() {
+		active = false;
+		if (lens) lens.classList.remove('show');
+	}
+
+	window.addEventListener('pointermove', (e) => {
+		if (e.pointerType === 'touch') return;
+		tx = e.clientX; ty = e.clientY;
+	}, { passive: true });
+
+	rows.forEach((row) => {
+		const li = row.closest('.list-row');
+		const src = row.getAttribute('data-img');
+		let timer = null;
+
+		const open = () => {
+			clearTimeout(timer);
+			timer = setTimeout(() => { li.setAttribute('data-open', ''); showLens(src); }, reduce ? 0 : DELAY);
+		};
+		const close = () => {
+			clearTimeout(timer);
+			li.removeAttribute('data-open');
+			if (!anyOpen()) hideLens();
+		};
+
+		row.addEventListener('mouseenter', open);
+		row.addEventListener('mouseleave', close);
+		row.addEventListener('focus', () => { li.setAttribute('data-open', ''); });
+		row.addEventListener('blur', close);
+
+		// touch / click: toggle the row open (links handle their own taps)
+		row.addEventListener('click', (e) => {
+			if (e.target.closest('.pub-link')) return;
+			if (li.hasAttribute('data-open')) li.removeAttribute('data-open');
+			else li.setAttribute('data-open', '');
+		});
+		row.addEventListener('keydown', (e) => {
+			if (e.key === 'Enter' || e.key === ' ') {
+				if (e.target.closest('.pub-link')) return;
+				e.preventDefault();
+				li.toggleAttribute('data-open');
+			}
+		});
+	});
+
+	// leaving the whole list hides the lens
+	const list = rows[0].closest('.list');
+	if (list) list.addEventListener('mouseleave', hideLens);
 })();
 	</script>
 <!-- </body> -->
