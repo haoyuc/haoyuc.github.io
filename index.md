@@ -758,27 +758,105 @@ html.js .experience-card[data-reveal].is-revealed .experience-year {
 	display: block;
 }
 
-/* touch / small screens: no cursor lens; tap a row to reveal links inline */
+/* the tap-to-expand panel is mobile-only; hidden on pointer devices */
+.pub-expand {
+	display: none;
+}
+
+/* =========================================================================
+   Touch / small screens — no hover exists, so the row becomes a tap target:
+   tapping accordion-expands an inline preview (image + links) with a soft
+   height reveal and a staggered fade-in. A small "+" rotates to mark state.
+   ========================================================================= */
 @media (max-width: 809.98px) {
 	.pub-lens {
 		display: none;
 	}
 
+	/* keep the [Category] label; the desktop swap-links never show on touch */
 	.pub-swap .pub-links {
-		position: static;
+		display: none;
+	}
+
+	.pub-row {
+		position: relative;
+		cursor: default;
+		-webkit-tap-highlight-color: transparent;
+	}
+
+	/* tappable affordance: a quiet plus that turns into a close mark */
+	.pub-row .list-year {
+		display: inline-flex;
+		align-items: center;
+		gap: 9px;
+	}
+
+	.pub-row .list-year::after {
+		content: "+";
+		font-family: var(--font-mono);
+		font-size: 15px;
+		line-height: 1;
+		color: var(--color-muted);
+		transition: transform 0.42s var(--ease-out-expo), color 0.3s ease;
+	}
+
+	.list-row[data-open] .pub-row .list-year::after {
+		transform: rotate(45deg);
+		color: var(--color-ink);
+	}
+
+	.list-row[data-open] .pub-row .list-name {
+		transform: none;
+	}
+
+	/* accordion height reveal */
+	.pub-expand {
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 0.55s var(--ease-out-expo);
+	}
+
+	.list-row[data-open] .pub-expand {
+		grid-template-rows: 1fr;
+	}
+
+	.pub-expand-inner {
+		overflow: hidden;
+		min-height: 0;
+	}
+
+	.pub-expand-media {
+		margin-top: 16px;
+		border-radius: 14px;
+		overflow: hidden;
+		background: linear-gradient(135deg, #f1f1f1, #d9d9d9);
+	}
+
+	.pub-expand-media img {
+		width: 100%;
+		height: auto;
+		display: block;
+		transform: scale(1.05);
+		opacity: 0;
+		transition: transform 0.8s var(--ease-out-expo), opacity 0.5s ease;
+	}
+
+	.list-row[data-open] .pub-expand-media img {
 		transform: none;
 		opacity: 1;
-		pointer-events: auto;
-		display: none;
-		margin-left: 10px;
 	}
 
-	.list-row[data-open] .pub-swap.has-links .pub-links {
-		display: inline-flex;
-		transform: none;
+	.pub-expand-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin: 14px 2px 6px;
+		opacity: 0;
+		transform: translateY(8px);
+		transition: opacity 0.45s ease 0.08s, transform 0.55s var(--ease-out-expo) 0.08s;
 	}
 
-	.list-row[data-open] .pub-swap.has-links .list-meta {
+	.list-row[data-open] .pub-expand-links {
 		opacity: 1;
 		transform: none;
 	}
@@ -1105,6 +1183,21 @@ html.no-anim .split-line > span {
 
 	.testimonial-quote p + p {
 		margin-top: 16px;
+	}
+
+	/* single-column page: lay the about links out in two columns so the
+	   divider lines stay short instead of stretching the full width */
+	.about-links {
+		width: 100%;
+		margin-top: 24px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 28px;
+	}
+
+	.about-links a {
+		grid-template-columns: 26px 1fr auto;
+		padding: 14px 0;
 	}
 
 	.expertise-grid,
@@ -1683,7 +1776,7 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 			</div>
 			<div class="section-body">
 				<figure class="testimonial" data-reveal>
-					<figcaption class="testimonial-author">Haoyu Chen&nbsp;&nbsp;·&nbsp;&nbsp;[Research Scientist @ Tongyi Lab,
+					<figcaption class="testimonial-author">Haoyu Chen&nbsp;&nbsp;·&nbsp;&nbsp;[Researcher @ Tongyi Lab,
 						Alibaba&nbsp;&nbsp;·&nbsp;&nbsp;Ph.D. @ HKUST (GZ)]</figcaption>
 					<blockquote class="testimonial-quote">
 						<p>I am a Ph.D. candidate at the Hong Kong University of Science and Technology (Guangzhou),
@@ -1724,7 +1817,7 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 					<li class="experience-card" data-reveal>
 						<img class="company-logo experience-logo" src="../assets/images/logo/tongyi.avif" alt="Tongyi Lab logo" loading="lazy">
 						<h3 class="experience-name">Tongyi Lab</h3>
-						<p class="experience-role">[Research Scientist]</p>
+						<p class="experience-role">[Researcher]</p>
 						<p class="experience-year">2026</p>
 					</li>
 					<li class="experience-card" data-reveal>
@@ -2472,14 +2565,53 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 		tx = e.clientX; ty = e.clientY;
 	}, { passive: true });
 
+	// build the mobile tap-to-expand panel once (hidden on pointer devices via CSS).
+	// We clone the row's links so there's a single source of truth in the markup.
+	function buildExpand(row, li, src) {
+		const linksWrap = row.querySelector('.pub-links');
+		const expand = document.createElement('div');
+		expand.className = 'pub-expand';
+		const inner = document.createElement('div');
+		inner.className = 'pub-expand-inner';
+		if (src) {
+			const media = document.createElement('div');
+			media.className = 'pub-expand-media';
+			const img = document.createElement('img');
+			img.loading = 'lazy';
+			img.decoding = 'async';
+			img.alt = '';
+			img.src = src;
+			media.appendChild(img);
+			inner.appendChild(media);
+		}
+		if (linksWrap && linksWrap.children.length) {
+			const lc = document.createElement('div');
+			lc.className = 'pub-expand-links';
+			lc.innerHTML = linksWrap.innerHTML;
+			inner.appendChild(lc);
+		}
+		expand.appendChild(inner);
+		li.appendChild(expand);
+	}
+
+	// accordion: opening one row closes the others (good for both touch + click)
+	function setOpen(li) {
+		document.querySelectorAll('.list-row[data-open]').forEach((o) => {
+			if (o !== li) o.removeAttribute('data-open');
+		});
+		li.setAttribute('data-open', '');
+	}
+
 	rows.forEach((row) => {
 		const li = row.closest('.list-row');
 		const src = row.getAttribute('data-img');
 		let timer = null;
 
+		buildExpand(row, li, src);
+
 		const open = () => {
 			clearTimeout(timer);
-			timer = setTimeout(() => { li.setAttribute('data-open', ''); showLens(src); }, reduce ? 0 : DELAY);
+			timer = setTimeout(() => { setOpen(li); showLens(src); }, reduce ? 0 : DELAY);
 		};
 		const close = () => {
 			clearTimeout(timer);
@@ -2489,20 +2621,21 @@ html.js .news-card[data-reveal].is-revealed:focus-visible {
 
 		row.addEventListener('mouseenter', open);
 		row.addEventListener('mouseleave', close);
-		row.addEventListener('focus', () => { li.setAttribute('data-open', ''); });
+		row.addEventListener('focus', () => { setOpen(li); });
 		row.addEventListener('blur', close);
 
-		// touch / click: toggle the row open (links handle their own taps)
+		// touch / click: toggle this row (links handle their own taps)
 		row.addEventListener('click', (e) => {
 			if (e.target.closest('.pub-link')) return;
 			if (li.hasAttribute('data-open')) li.removeAttribute('data-open');
-			else li.setAttribute('data-open', '');
+			else setOpen(li);
 		});
 		row.addEventListener('keydown', (e) => {
 			if (e.key === 'Enter' || e.key === ' ') {
 				if (e.target.closest('.pub-link')) return;
 				e.preventDefault();
-				li.toggleAttribute('data-open');
+				if (li.hasAttribute('data-open')) li.removeAttribute('data-open');
+				else setOpen(li);
 			}
 		});
 	});
